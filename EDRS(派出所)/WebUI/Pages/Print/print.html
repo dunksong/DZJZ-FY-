@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script language="javascript">
+        function printTure() //打印函数
+        {
+            document.all('qingkongyema').click(); //打印之前去掉页眉，页脚
+            document.all("dayinDiv").style.display = "none";
+            window.print();
+            document.all("dayinDiv").style.display = "";
+        }
+        function doPage() {
+            layLoading.style.display = "none";
+        }
+        var hkey_key;
+        var hkey_root = "HKEY_CURRENT_USER";
+        var hkey_path = "\\Software\\Microsoft\\Internet Explorer\\PageSetup\\";
+        //设置网页打印的页眉页脚为空
+        function pagesetup_null() {
+            var RegWsh = new ActiveXObject("WScript.Shell");
+            hkey_key = "header";
+            RegWsh.RegWrite(hkey_root + hkey_path + hkey_key, "");
+            hkey_key = "footer";
+            RegWsh.RegWrite(hkey_root + hkey_path + hkey_key, "");
+        }
+        //设置网页打印的页眉页脚为默认值
+        function pagesetup_default() {
+            try {
+                var RegWsh = new ActiveXObject("WScript.Shell");
+                hkey_key = "header";
+                RegWsh.RegWrite(hkey_root + hkey_path + hkey_key, "&w&b页码，&p/&P");
+                hkey_key = "footer";
+                RegWsh.RegWrite(hkey_root + hkey_path + hkey_key, "&u&b&d");
+            } catch (e) { }
+        }
+    </script>
+</head>
+<body>
+ 
+</body>
+</html>

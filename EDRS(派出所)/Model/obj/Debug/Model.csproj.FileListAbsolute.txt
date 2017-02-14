@@ -1,0 +1,20 @@
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\Model\bin\Debug\EDRS.Model.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\Model\bin\Debug\EDRS.Model.pdb
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\Model\obj\Debug\EDRS.Model.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\Model\obj\Debug\EDRS.Model.pdb
+E:\GA\EDRS(派出所)\Model\bin\Debug\EDRS.Model.dll
+E:\GA\EDRS(派出所)\Model\bin\Debug\EDRS.Model.pdb
+E:\GA\EDRS(派出所)\Model\obj\Debug\EDRS.Model.dll
+E:\GA\EDRS(派出所)\Model\obj\Debug\EDRS.Model.pdb
+E:\GA\EDRS(派出所)\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\DZJZ Work\GA\EDRS(派出所)\Model\bin\Debug\EDRS.Model.dll
+D:\DZJZ Work\GA\EDRS(派出所)\Model\bin\Debug\EDRS.Model.pdb
+D:\DZJZ Work\GA\EDRS(派出所)\Model\obj\Debug\EDRS.Model.dll
+D:\DZJZ Work\GA\EDRS(派出所)\Model\obj\Debug\EDRS.Model.pdb
+D:\DZJZ Work\GA\EDRS(派出所)\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\DZJZ\EDRS(派出所)\Model\bin\Debug\EDRS.Model.dll
+D:\DZJZ\EDRS(派出所)\Model\bin\Debug\EDRS.Model.pdb
+D:\DZJZ\EDRS(派出所)\Model\obj\Debug\EDRS.Model.dll
+D:\DZJZ\EDRS(派出所)\Model\obj\Debug\EDRS.Model.pdb
+D:\DZJZ\EDRS(派出所)\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

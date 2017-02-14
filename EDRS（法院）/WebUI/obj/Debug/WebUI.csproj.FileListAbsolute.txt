@@ -1,0 +1,216 @@
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\WebUI.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\WebUI.pdb
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.BLL.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Common.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Model.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\EDRS.BLL.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\EDRS.Common.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\EDRS.Model.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\EDRS.OracleDAL.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\itextsharp.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\LitJson.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Newtonsoft.Json.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Yy.ElectronicFile.IceBase.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Yy.ElectronicFile.TranInterface.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\ZC57s.CaseInfoServ.DigitalDossier.ICInterface.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\EDRS.IDAL.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\EDRS.DALFactory.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\COM.Excel.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\ExcelLibrary.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\NPOI.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\OpenSmtp.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Ice.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Yy.DownElectronicFile.IceBase.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Yy.DownElectronicFile.TranInterface.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\log4net.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.DataAccess.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\EDRS.DBUtility.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\IceBox.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\IceStorm.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\IceGrid.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Yy.ElectronicFile.AssistEntity.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Microsoft.Practices.ServiceLocation.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Microsoft.Practices.Unity.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\MySql.Data.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Glacier2.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Microsoft.Practices.Unity.Interception.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\EDRS.BLL.pdb
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\EDRS.Common.pdb
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.BLL.pdb
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Common.pdb
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Model.pdb
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\EDRS.Model.pdb
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\EDRS.OracleDAL.pdb
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\EDRS.IDAL.pdb
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\EDRS.DALFactory.pdb
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.DataAccess.pdb
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\EDRS.DBUtility.pdb
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\IceStorm.pdb
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\bin\IceStorm.xml
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\obj\Debug\WebUI.dll
+D:\DZJZ Work\FY\EDRS（法院）\WebUI\obj\Debug\WebUI.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\WebUI.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\WebUI.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.BLL.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Common.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Model.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\EDRS.BLL.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\EDRS.Common.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\EDRS.Model.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\EDRS.OracleDAL.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\itextsharp.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\LitJson.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Newtonsoft.Json.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Yy.ElectronicFile.IceBase.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Yy.ElectronicFile.TranInterface.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\ZC57s.CaseInfoServ.DigitalDossier.ICInterface.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\EDRS.IDAL.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\EDRS.DALFactory.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\ExcelLibrary.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\NPOI.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\OpenSmtp.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\COM.Excel.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Ice.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Yy.DownElectronicFile.IceBase.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Yy.DownElectronicFile.TranInterface.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\log4net.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.DataAccess.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\EDRS.DBUtility.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\IceBox.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\IceStorm.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\IceGrid.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Yy.ElectronicFile.AssistEntity.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Microsoft.Practices.ServiceLocation.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Microsoft.Practices.Unity.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\MySql.Data.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Glacier2.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Microsoft.Practices.Unity.Interception.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\EDRS.BLL.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\EDRS.Common.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.BLL.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Common.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Model.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\EDRS.Model.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\EDRS.OracleDAL.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\EDRS.IDAL.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\EDRS.DALFactory.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.DataAccess.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\EDRS.DBUtility.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\IceStorm.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\bin\IceStorm.xml
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\obj\Debug\WebUI.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\WebUI\obj\Debug\WebUI.pdb
+E:\FY\EDRS（法院）\WebUI\bin\WebUI.dll
+E:\FY\EDRS（法院）\WebUI\bin\WebUI.pdb
+E:\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.BLL.dll
+E:\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Common.dll
+E:\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Model.dll
+E:\FY\EDRS（法院）\WebUI\bin\EDRS.BLL.dll
+E:\FY\EDRS（法院）\WebUI\bin\EDRS.Common.dll
+E:\FY\EDRS（法院）\WebUI\bin\EDRS.Model.dll
+E:\FY\EDRS（法院）\WebUI\bin\EDRS.OracleDAL.dll
+E:\FY\EDRS（法院）\WebUI\bin\itextsharp.dll
+E:\FY\EDRS（法院）\WebUI\bin\LitJson.dll
+E:\FY\EDRS（法院）\WebUI\bin\Newtonsoft.Json.dll
+E:\FY\EDRS（法院）\WebUI\bin\Yy.ElectronicFile.IceBase.dll
+E:\FY\EDRS（法院）\WebUI\bin\Yy.ElectronicFile.TranInterface.dll
+E:\FY\EDRS（法院）\WebUI\bin\ZC57s.CaseInfoServ.DigitalDossier.ICInterface.dll
+E:\FY\EDRS（法院）\WebUI\bin\EDRS.IDAL.dll
+E:\FY\EDRS（法院）\WebUI\bin\EDRS.DALFactory.dll
+E:\FY\EDRS（法院）\WebUI\bin\ExcelLibrary.dll
+E:\FY\EDRS（法院）\WebUI\bin\NPOI.dll
+E:\FY\EDRS（法院）\WebUI\bin\COM.Excel.dll
+E:\FY\EDRS（法院）\WebUI\bin\Ice.dll
+E:\FY\EDRS（法院）\WebUI\bin\Yy.DownElectronicFile.IceBase.dll
+E:\FY\EDRS（法院）\WebUI\bin\Yy.DownElectronicFile.TranInterface.dll
+E:\FY\EDRS（法院）\WebUI\bin\OpenSmtp.dll
+E:\FY\EDRS（法院）\WebUI\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\FY\EDRS（法院）\WebUI\bin\log4net.dll
+E:\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.DataAccess.dll
+E:\FY\EDRS（法院）\WebUI\bin\EDRS.DBUtility.dll
+E:\FY\EDRS（法院）\WebUI\bin\IceBox.dll
+E:\FY\EDRS（法院）\WebUI\bin\IceStorm.dll
+E:\FY\EDRS（法院）\WebUI\bin\IceGrid.dll
+E:\FY\EDRS（法院）\WebUI\bin\Yy.ElectronicFile.AssistEntity.dll
+E:\FY\EDRS（法院）\WebUI\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\FY\EDRS（法院）\WebUI\bin\Microsoft.Practices.ServiceLocation.dll
+E:\FY\EDRS（法院）\WebUI\bin\Microsoft.Practices.Unity.dll
+E:\FY\EDRS（法院）\WebUI\bin\MySql.Data.dll
+E:\FY\EDRS（法院）\WebUI\bin\Glacier2.dll
+E:\FY\EDRS（法院）\WebUI\bin\Microsoft.Practices.Unity.Interception.dll
+E:\FY\EDRS（法院）\WebUI\bin\EDRS.BLL.pdb
+E:\FY\EDRS（法院）\WebUI\bin\EDRS.Common.pdb
+E:\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.BLL.pdb
+E:\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Common.pdb
+E:\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Model.pdb
+E:\FY\EDRS（法院）\WebUI\bin\EDRS.Model.pdb
+E:\FY\EDRS（法院）\WebUI\bin\EDRS.OracleDAL.pdb
+E:\FY\EDRS（法院）\WebUI\bin\EDRS.IDAL.pdb
+E:\FY\EDRS（法院）\WebUI\bin\EDRS.DALFactory.pdb
+E:\FY\EDRS（法院）\WebUI\bin\Cyvation.CCQE.DataAccess.pdb
+E:\FY\EDRS（法院）\WebUI\bin\EDRS.DBUtility.pdb
+E:\FY\EDRS（法院）\WebUI\bin\IceStorm.pdb
+E:\FY\EDRS（法院）\WebUI\bin\IceStorm.xml
+E:\FY\EDRS（法院）\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
+E:\FY\EDRS（法院）\WebUI\obj\Debug\WebUI.dll
+E:\FY\EDRS（法院）\WebUI\obj\Debug\WebUI.pdb
+D:\DZJZ\EDRS（法院）\WebUI\bin\WebUI.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\WebUI.pdb
+D:\DZJZ\EDRS（法院）\WebUI\bin\Cyvation.CCQE.BLL.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Common.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Model.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\EDRS.BLL.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\EDRS.Common.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\EDRS.Model.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\EDRS.OracleDAL.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\itextsharp.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\LitJson.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Newtonsoft.Json.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Yy.ElectronicFile.IceBase.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Yy.ElectronicFile.TranInterface.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\ZC57s.CaseInfoServ.DigitalDossier.ICInterface.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\EDRS.IDAL.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\EDRS.DALFactory.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\ExcelLibrary.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\NPOI.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Ice.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Yy.DownElectronicFile.IceBase.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Yy.DownElectronicFile.TranInterface.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\COM.Excel.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\OpenSmtp.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\log4net.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Cyvation.CCQE.DataAccess.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\EDRS.DBUtility.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\IceBox.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\IceStorm.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\IceGrid.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Yy.ElectronicFile.AssistEntity.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Microsoft.Practices.ServiceLocation.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Microsoft.Practices.Unity.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\MySql.Data.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Glacier2.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\Microsoft.Practices.Unity.Interception.dll
+D:\DZJZ\EDRS（法院）\WebUI\bin\EDRS.BLL.pdb
+D:\DZJZ\EDRS（法院）\WebUI\bin\EDRS.Common.pdb
+D:\DZJZ\EDRS（法院）\WebUI\bin\Cyvation.CCQE.BLL.pdb
+D:\DZJZ\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Common.pdb
+D:\DZJZ\EDRS（法院）\WebUI\bin\Cyvation.CCQE.Model.pdb
+D:\DZJZ\EDRS（法院）\WebUI\bin\EDRS.Model.pdb
+D:\DZJZ\EDRS（法院）\WebUI\bin\EDRS.OracleDAL.pdb
+D:\DZJZ\EDRS（法院）\WebUI\bin\EDRS.IDAL.pdb
+D:\DZJZ\EDRS（法院）\WebUI\bin\EDRS.DALFactory.pdb
+D:\DZJZ\EDRS（法院）\WebUI\bin\Cyvation.CCQE.DataAccess.pdb
+D:\DZJZ\EDRS（法院）\WebUI\bin\EDRS.DBUtility.pdb
+D:\DZJZ\EDRS（法院）\WebUI\bin\IceStorm.pdb
+D:\DZJZ\EDRS（法院）\WebUI\bin\IceStorm.xml
+D:\DZJZ\EDRS（法院）\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
+D:\DZJZ\EDRS（法院）\WebUI\obj\Debug\WebUI.dll
+D:\DZJZ\EDRS（法院）\WebUI\obj\Debug\WebUI.pdb

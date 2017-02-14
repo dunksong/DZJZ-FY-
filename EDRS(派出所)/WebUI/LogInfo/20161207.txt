@@ -1,0 +1,24 @@
+日志时间：2016/12/07 16:02:30
+发起路径：http://localhost:82/Pages/Business/CaseInfoManage.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public DataSet GetListByPageUnite(string strWhere, string orderby, int startIndex, int endIndex, params object[] objValues)
+所在类库：EDRS.OracleDAL.TYYW_GG_AJJBXX_Ex
+SQL语句：SELECT Ro,JZSCRXM,JZSCRGH,CJSJ,GGCJSJ,AJBH,WSBH,WSMC,ZZZT,IsRegard,AJMC,BMSAH,AJLB_MC,CBDW_MC,CBBM_MC,CBR,DQJD,SLRQ,AJZT,DQRQ,BJRQ,WCRQ,GDRQ,AJLB_BM,CBDW_BM,XYR,SFZH,TARYXX,SHR,ZJS,DJJ,ZYS,JZPZ,JZSHRBH,JZSHR,JZSHSJ,JZBH  FROM (  SELECT ROW_NUMBER() OVER (order by T.GGCJSJ DESC )AS Ro,JZSCRXM,JZSCRGH,CJSJ,GGCJSJ,AJBH,WSBH,WSMC,ZZZT,IsRegard,T.AJMC,T.BMSAH,T.AJLB_MC,T.CBDW_MC,T.CBBM_MC,T.CBR,T.DQJD,T.SLRQ,T.AJZT,T.DQRQ,T.BJRQ,T.WCRQ,T.GDRQ,T.AJLB_BM,T.CBDW_BM,T.SFSC,T.XYR,T.SFZH,T.TARYXX,T.SHR,T.ZJS,T.DJJ,T.ZYS,T.JZPZ,T.JZSHRBH,T.JZSHR,T.JZSHSJ,T.JZBH  from (select JZ.JZSCRXM,JZ.JZSCRGH,JZ.CJSJ,d.CJSJ GGCJSJ,JZ.AJBH,JZ.WSBH,JZ.WSMC,JZ.ZZZT,(select count(1) from yx_dzjz_jzjbxx y where (to_char(y.jzxgh) <> '0' and y.jzxgh is not null ) and y.Bmsah=d.Bmsah and y.sfsc='N') IsRegard,AJMC,d.BMSAH,AJLB_MC,CBDW_MC,CBBM_MC,CBR,DQJD,SLRQ,AJZT,DQRQ,BJRQ,WCRQ,GDRQ,AJLB_BM,CBDW_BM,d.SFSC,XYR,SFZH,TARYXX,SHR,ZJS,DJJ,ZYS,JZPZ,JZSHRBH,JZSHR,JZSHSJ,JZBH  from TYYW_GG_AJJBXX d  LEFT JOIN yx_dzjz_jzjbxx JZ ON (d.bmsah = JZ.BMSAH) where d.SFSC='N' and JZ.SFSC = 'N') T  WHERE 1=1  and CJSJ >= :CJSJ and SFSC='N' and trim(CBDW_BM) in(select distinct trim(QXBM) from xt_dm_qx a join XT_QX_RYJSFP b on trim(a.jsbm) = b.jsbm and trim(a.bmbm)=b.bmbm and trim(a.dwbm)=b.dwbm and gh=:GH1 and b.dwbm=:DWBM1 and a.qxlx=0)  and trim(AJLB_BM) in ( select distinct trim(QXBM) from xt_dm_qx a join XT_QX_RYJSFP b on trim(a.jsbm) = b.jsbm and trim(a.bmbm)=b.bmbm and trim(a.dwbm)=b.dwbm and gh=:GH2 and b.dwbm=:DWBM2 and a.qxlx=1)  ) TT WHERE TT.Ro between 1 and 50
+参数列表：{  [:CJSJ：2015/12/26 0:00:00]    [:GH1：0000]    [:DWBM1：440300000000]    [:GH2：0000]    [:DWBM2：440300000000]    }
+
+
+日志时间：2016/12/07 16:04:11
+发起路径：http://localhost:82/Pages/Business/CaseInfoManage.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public DataSet GetListByPageUnite(string strWhere, string orderby, int startIndex, int endIndex, params object[] objValues)
+所在类库：EDRS.OracleDAL.TYYW_GG_AJJBXX_Ex
+SQL语句：SELECT Ro,JZSCRXM,JZSCRGH,CJSJ,GGCJSJ,AJBH,WSBH,WSMC,ZZZT,IsRegard,AJMC,BMSAH,AJLB_MC,CBDW_MC,CBBM_MC,CBR,DQJD,SLRQ,AJZT,DQRQ,BJRQ,WCRQ,GDRQ,AJLB_BM,CBDW_BM,XYR,SFZH,TARYXX,SHR,ZJS,DJJ,ZYS,JZPZ,JZSHRBH,JZSHR,JZSHSJ,JZBH  FROM (  SELECT ROW_NUMBER() OVER (order by T.GGCJSJ DESC )AS Ro,JZSCRXM,JZSCRGH,CJSJ,GGCJSJ,AJBH,WSBH,WSMC,ZZZT,IsRegard,T.AJMC,T.BMSAH,T.AJLB_MC,T.CBDW_MC,T.CBBM_MC,T.CBR,T.DQJD,T.SLRQ,T.AJZT,T.DQRQ,T.BJRQ,T.WCRQ,T.GDRQ,T.AJLB_BM,T.CBDW_BM,T.SFSC,T.XYR,T.SFZH,T.TARYXX,T.SHR,T.ZJS,T.DJJ,T.ZYS,T.JZPZ,T.JZSHRBH,T.JZSHR,T.JZSHSJ,T.JZBH  from (select JZ.JZSCRXM,JZ.JZSCRGH,JZ.CJSJ,d.CJSJ GGCJSJ,JZ.AJBH,JZ.WSBH,JZ.WSMC,JZ.ZZZT,(select count(1) from yx_dzjz_jzjbxx y where (to_char(y.jzxgh) <> '0' and y.jzxgh is not null ) and y.Bmsah=d.Bmsah and y.sfsc='N') IsRegard,AJMC,d.BMSAH,AJLB_MC,CBDW_MC,CBBM_MC,CBR,DQJD,SLRQ,AJZT,DQRQ,BJRQ,WCRQ,GDRQ,AJLB_BM,CBDW_BM,d.SFSC,XYR,SFZH,TARYXX,SHR,ZJS,DJJ,ZYS,JZPZ,JZSHRBH,JZSHR,JZSHSJ,JZBH  from TYYW_GG_AJJBXX d  LEFT JOIN yx_dzjz_jzjbxx JZ ON (d.bmsah = JZ.BMSAH) where d.SFSC='N' and JZ.SFSC = 'N') T  WHERE 1=1  and CJSJ >= :CJSJ and SFSC='N' and trim(CBDW_BM) in(select distinct trim(QXBM) from xt_dm_qx a join XT_QX_RYJSFP b on trim(a.jsbm) = b.jsbm and trim(a.bmbm)=b.bmbm and trim(a.dwbm)=b.dwbm and gh=:GH1 and b.dwbm=:DWBM1 and a.qxlx=0)  and trim(AJLB_BM) in ( select distinct trim(QXBM) from xt_dm_qx a join XT_QX_RYJSFP b on trim(a.jsbm) = b.jsbm and trim(a.bmbm)=b.bmbm and trim(a.dwbm)=b.dwbm and gh=:GH2 and b.dwbm=:DWBM2 and a.qxlx=1)  ) TT WHERE TT.Ro between 1 and 50
+参数列表：{  [:CJSJ：2015/12/26 0:00:00]    [:GH1：0000]    [:DWBM1：440300000000]    [:GH2：0000]    [:DWBM2：440300000000]    }
+
+

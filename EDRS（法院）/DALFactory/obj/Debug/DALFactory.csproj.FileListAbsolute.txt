@@ -1,0 +1,124 @@
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.DALFactory.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.DALFactory.pdb
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.IDAL.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.Model.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.OracleDAL.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.DBUtility.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.Common.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\MySql.Data.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\ZC57s.CaseInfoServ.DigitalDossier.ICInterface.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\COM.Excel.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\ExcelLibrary.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\NPOI.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\OpenSmtp.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\Ice.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\Yy.DownElectronicFile.IceBase.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\Yy.DownElectronicFile.TranInterface.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\Newtonsoft.Json.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\IceBox.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\IceStorm.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\IceGrid.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\Glacier2.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.IDAL.pdb
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.Model.pdb
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.OracleDAL.pdb
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.DBUtility.pdb
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.Common.pdb
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\IceStorm.pdb
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\bin\Debug\IceStorm.xml
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\obj\Debug\DALFactory.csprojResolveAssemblyReference.cache
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\obj\Debug\EDRS.DALFactory.dll
+D:\DZJZ Work\FY\EDRS（法院）\DALFactory\obj\Debug\EDRS.DALFactory.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.DALFactory.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.DALFactory.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.IDAL.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.Model.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.OracleDAL.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.Common.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.DBUtility.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\ZC57s.CaseInfoServ.DigitalDossier.ICInterface.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\ExcelLibrary.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\NPOI.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\OpenSmtp.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\Newtonsoft.Json.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\COM.Excel.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\Ice.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\Yy.DownElectronicFile.IceBase.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\Yy.DownElectronicFile.TranInterface.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\MySql.Data.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\IceBox.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\IceStorm.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\IceGrid.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\Glacier2.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.IDAL.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.Model.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.OracleDAL.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.Common.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.DBUtility.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\IceStorm.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\bin\Debug\IceStorm.xml
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\obj\Debug\DALFactory.csprojResolveAssemblyReference.cache
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\obj\Debug\EDRS.DALFactory.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\DALFactory\obj\Debug\EDRS.DALFactory.pdb
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.DALFactory.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.DALFactory.pdb
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.IDAL.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.Model.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.OracleDAL.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.Common.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.DBUtility.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\ZC57s.CaseInfoServ.DigitalDossier.ICInterface.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\ExcelLibrary.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\NPOI.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\COM.Excel.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\Ice.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\Yy.DownElectronicFile.IceBase.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\Yy.DownElectronicFile.TranInterface.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\OpenSmtp.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\Newtonsoft.Json.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\MySql.Data.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\IceBox.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\IceStorm.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\IceGrid.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\Glacier2.dll
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.IDAL.pdb
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.Model.pdb
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.OracleDAL.pdb
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.Common.pdb
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\EDRS.DBUtility.pdb
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\IceStorm.pdb
+E:\FY\EDRS（法院）\DALFactory\bin\Debug\IceStorm.xml
+E:\FY\EDRS（法院）\DALFactory\obj\Debug\DALFactory.csprojResolveAssemblyReference.cache
+E:\FY\EDRS（法院）\DALFactory\obj\Debug\EDRS.DALFactory.dll
+E:\FY\EDRS（法院）\DALFactory\obj\Debug\EDRS.DALFactory.pdb
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\EDRS.DALFactory.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\EDRS.DALFactory.pdb
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\EDRS.IDAL.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\EDRS.Model.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\EDRS.OracleDAL.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\EDRS.DBUtility.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\EDRS.Common.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\MySql.Data.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\ZC57s.CaseInfoServ.DigitalDossier.ICInterface.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\ExcelLibrary.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\NPOI.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\Newtonsoft.Json.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\Ice.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\Yy.DownElectronicFile.IceBase.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\Yy.DownElectronicFile.TranInterface.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\COM.Excel.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\OpenSmtp.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\IceBox.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\IceStorm.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\IceGrid.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\Glacier2.dll
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\EDRS.IDAL.pdb
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\EDRS.Model.pdb
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\EDRS.OracleDAL.pdb
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\EDRS.DBUtility.pdb
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\EDRS.Common.pdb
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\IceStorm.pdb
+D:\DZJZ\EDRS（法院）\DALFactory\bin\Debug\IceStorm.xml
+D:\DZJZ\EDRS（法院）\DALFactory\obj\Debug\DALFactory.csprojResolveAssemblyReference.cache
+D:\DZJZ\EDRS（法院）\DALFactory\obj\Debug\EDRS.DALFactory.dll
+D:\DZJZ\EDRS（法院）\DALFactory\obj\Debug\EDRS.DALFactory.pdb

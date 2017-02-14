@@ -1,0 +1,8 @@
+D:\DZJZ Work\GA\EDRS(派出所)\项目资料\bin\Debug\项目资料.dll
+D:\DZJZ Work\GA\EDRS(派出所)\项目资料\bin\Debug\项目资料.pdb
+D:\DZJZ Work\GA\EDRS(派出所)\项目资料\obj\Debug\项目资料.dll
+D:\DZJZ Work\GA\EDRS(派出所)\项目资料\obj\Debug\项目资料.pdb
+D:\DZJZ\EDRS(派出所)\项目资料\bin\Debug\项目资料.dll
+D:\DZJZ\EDRS(派出所)\项目资料\bin\Debug\项目资料.pdb
+D:\DZJZ\EDRS(派出所)\项目资料\obj\Debug\项目资料.dll
+D:\DZJZ\EDRS(派出所)\项目资料\obj\Debug\项目资料.pdb

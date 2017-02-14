@@ -1,0 +1,78 @@
+﻿body
+{
+    margin:0;
+    text-align:left;
+    background-color: #E6F0FF; /*  min-height: 600px;     min-width: 900px; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#floater
+{
+    display: block;
+    /*height: 50%;*/
+    margin-bottom: -200px;
+    float: left;
+}
+
+#centent
+{
+    clear: both;
+    border: 1px solid #C0C0C0;
+    width: 680px;
+    height: 340px; /*left: 50%;     top: 50%;     position: absolute;     margin-left: -340px;     margin-top: -170px;*/
+    background-color: #FFFFFF;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #707070;
+}
+
+
+
+div.lead .left
+{
+    float: left;
+    width: 340px;
+    margin-top: 140px;
+}
+
+div.lead .left span
+{
+    font-size: large;
+}
+
+
+div.lead .middle
+{
+    float: left;
+    width: 1px;
+    height: 260px;
+    background-color: #C0C0C0;
+    margin-top: 40px;
+}
+
+div.lead .right
+{
+    float: right;
+    width: 339px;
+    margin-top: 110px;
+}
+
+div.lead .right div
+{
+}
+
+a.button
+{
+    font-size: 16px;
+}
+
+sss
+{
+    color: #333333;
+}

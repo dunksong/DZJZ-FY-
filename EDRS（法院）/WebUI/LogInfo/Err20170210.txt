@@ -1,0 +1,881 @@
+***********************[2017-02-10 15:45:51:424]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:45:57:925]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:46:03:188]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=DD14AE3A7A0542A7852837776A52985D&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:46:05:693]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=0FC774515ED946E0AFF6EE24ABAD1078&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:46:07:901]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:46:09:918]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:46:11:959]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:46:14:082]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:46:15:083]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:46:16:086]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:46:18:367]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:46:20:514]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=4A81D86386D34D08B0B49D17B39E73BE&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:46:22:529]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=4A81D86386D34D08B0B49D17B39E73BE&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:46:47:965]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=0FC774515ED946E0AFF6EE24ABAD1078&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:46:50:050]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=0FC774515ED946E0AFF6EE24ABAD1078&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:46:56:066]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:46:58:082]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:47:00:555]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=4A81D86386D34D08B0B49D17B39E73BE&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:47:02:834]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=0FC774515ED946E0AFF6EE24ABAD1078&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:47:06:443]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=4A81D86386D34D08B0B49D17B39E73BE&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:47:09:871]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:47:12:986]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=0FC774515ED946E0AFF6EE24ABAD1078&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:47:16:134]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:48:15:564]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:48:18:060]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:48:20:069]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:48:22:306]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=4A81D86386D34D08B0B49D17B39E73BE&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:48:24:322]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=4A81D86386D34D08B0B49D17B39E73BE&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:49:04:363]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:49:29:524]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:49:35:804]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=DE75558201CC4D65A3088C3AEB174FBA&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 15:49:39:290]***********************
+
+错误地址：http://10.1.1.205:83/Pages/LSYJ/ReadingFile.aspx?wjmc=0537728A80DA4D77AC5C75D88591C77E&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 16:23:12:525]***********************
+
+错误地址：http://192.168.42.150:83/Pages/LSYJ/ReadingFile.aspx?wjmc=D53B87D7CC40434D8C0860E9D1AF8683&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 16:23:16:851]***********************
+
+错误地址：http://192.168.42.150:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 16:23:52:064]***********************
+
+错误地址：http://192.168.42.150:83/Pages/LSYJ/ReadingFile.aspx?wjmc=8D9CE9E7689B4DD4B46ABD9ACBE35592&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2017-02-10 16:23:54:369]***********************
+
+错误地址：http://192.168.42.150:83/Pages/LSYJ/ReadingFile.aspx?wjmc=447A1945A624483FB6675989D7AC6912&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+

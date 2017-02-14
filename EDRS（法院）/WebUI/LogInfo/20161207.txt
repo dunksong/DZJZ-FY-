@@ -1,0 +1,287 @@
+日志时间：2016/12/07 16:01:01
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-03113: 通信通道的文件结尾
+进程 ID: 7520
+会话 ID: 70 序列号: 1205
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/07 16:01:11
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public EDRS.Model.XT_ZZJG_DWBM GetModel(string DWBM)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select DWBM,DWMC,DWJC,DWJB,FDWBM,SFSC from XT_ZZJG_DWBM  where DWBM=:DWBM 
+参数列表：{  [:DWBM：440300000000]    }
+
+
+日志时间：2016/12/07 16:01:33
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/07 16:01:33
+发起路径：http://localhost:83/Pages/Business/CaseInfoManage.aspx
+客户端浏览器：Firefox50
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public DataSet GetListByPageUnite(string strWhere, string orderby, int startIndex, int endIndex, params object[] objValues)
+所在类库：EDRS.OracleDAL.TYYW_GG_AJJBXX_Ex
+SQL语句：SELECT * FROM (  SELECT ROW_NUMBER() OVER (order by T.GGCJSJ DESC )AS Ro,T.* from (select JZ.JZSCRXM,JZ.CJSJ,d.CJSJ GGCJSJ,JZ.ZZZT,JZ.LAZZZT,d.BMSAH,AJLB_MC,CBDW_MC,CBBM_MC,d.CBR,DQJD, SLRQ,AJZT,DQRQ,BJRQ,WCRQ,dk.GDRQ,AJLB_BM,CBDW_BM,d.SFSC,SHR,ZJS,DJJ,ZYS,JZPZ,JZSHRBH,JZSHR,JZSHSJ,JZBH ,SMAJLA,SMAJCD,dk.ay AJMC,dk.sajg,dk.yg,dk.bg,dk.yyr,dk.sqzxr,dk.bzxr,dk.sarq,dk.jarq,dk.cjjg,dk.zxbd,dk.sljg,dk.zxjg,dk.jafs,dk.gldaxlh,dk.hytcy,dk.sjy,dk.zcs ,dk.djc,dk.ys,dk.ywt,dk.bgqx  from TYYW_GG_AJJBXX d JOIN tyyw_gg_ajjbxxkz dk on d.bmsah = dk.ahmc LEFT JOIN yx_dzjz_jzjbxx JZ ON (d.bmsah = JZ.BMSAH) where d.SFSC='N' and JZ.SFSC = 'N') T  WHERE 1=1  and CJSJ >= :CJSJ and SMAJCD = :SMAJCD and SFSC='N' and trim(CBDW_BM) in(select distinct trim(QXBM) from xt_dm_qx a join XT_QX_RYJSFP b on trim(a.jsbm) = b.jsbm and trim(a.bmbm)=b.bmbm and trim(a.dwbm)=b.dwbm and gh=:GH1 and b.dwbm=:DWBM1 and a.qxlx=0)  and trim(AJLB_BM) in ( select distinct trim(QXBM) from xt_dm_qx a join XT_QX_RYJSFP b on trim(a.jsbm) = b.jsbm and trim(a.bmbm)=b.bmbm and trim(a.dwbm)=b.dwbm and gh=:GH2 and b.dwbm=:DWBM2 and a.qxlx=1)  ) TT WHERE TT.Ro between 1 and 50
+参数列表：{  [:CJSJ：2015/12/26 0:00:00]    [:SMAJCD：1]    [:GH1：0000]    [:DWBM1：440300000000]    [:GH2：0000]    [:DWBM2：440300000000]    }
+
+
+日志时间：2016/12/07 16:01:33
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public EDRS.Model.XT_ZZJG_DWBM GetModel(string DWBM)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select DWBM,DWMC,DWJC,DWJB,FDWBM,SFSC from XT_ZZJG_DWBM  where DWBM=:DWBM 
+参数列表：{  [:DWBM：440300000000]    }
+
+
+日志时间：2016/12/07 16:01:34
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public EDRS.Model.XT_ZZJG_DWBM GetModel(string DWBM)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select DWBM,DWMC,DWJC,DWJB,FDWBM,SFSC from XT_ZZJG_DWBM  where DWBM=:DWBM 
+参数列表：{  [:DWBM：440300000000]    }
+
+
+日志时间：2016/12/07 16:02:04
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/07 16:02:04
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public EDRS.Model.XT_ZZJG_DWBM GetModel(string DWBM)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select DWBM,DWMC,DWJC,DWJB,FDWBM,SFSC from XT_ZZJG_DWBM  where DWBM=:DWBM 
+参数列表：{  [:DWBM：440300000000]    }
+
+
+日志时间：2016/12/07 16:02:19
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/07 16:02:19
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public EDRS.Model.XT_ZZJG_DWBM GetModel(string DWBM)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select DWBM,DWMC,DWJC,DWJB,FDWBM,SFSC from XT_ZZJG_DWBM  where DWBM=:DWBM 
+参数列表：{  [:DWBM：440300000000]    }
+
+
+日志时间：2016/12/07 16:02:19
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public EDRS.Model.XT_ZZJG_DWBM GetModel(string DWBM)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select DWBM,DWMC,DWJC,DWJB,FDWBM,SFSC from XT_ZZJG_DWBM  where DWBM=:DWBM 
+参数列表：{  [:DWBM：440300000000]    }
+
+
+日志时间：2016/12/07 16:02:23
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/07 16:02:46
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public EDRS.Model.XT_ZZJG_DWBM GetModel(string DWBM)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select DWBM,DWMC,DWJC,DWJB,FDWBM,SFSC from XT_ZZJG_DWBM  where DWBM=:DWBM 
+参数列表：{  [:DWBM：440300000000]    }
+
+
+日志时间：2016/12/07 16:02:51
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Firefox50
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/07 16:02:53
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Firefox50
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public EDRS.Model.XT_ZZJG_DWBM GetModel(string DWBM)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select DWBM,DWMC,DWJC,DWJB,FDWBM,SFSC from XT_ZZJG_DWBM  where DWBM=:DWBM 
+参数列表：{  [:DWBM：440300000000]    }
+
+
+日志时间：2016/12/07 17:11:59
+发起路径：http://localhost:83/Pages/Report/ProductionVolume.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-06550: 第 1 行, 第 23 列: 
+PLS-00302: 必须声明 'PROC_REPORT_GETZZL_FY' 组件
+ORA-06550: 第 1 行, 第 7 列: 
+PL/SQL: Statement ignored
+
+所在方法：public DataSet GetYJTJ(string strWhere,string strWhereAj, string orderby, int startIndex, int endIndex, out int count, params object[] objValues)
+所在类库：EDRS.OracleDAL.DataStatistics
+SQL语句：pkg_dzjz_report.proc_report_getzzl_fy
+参数列表：{  [p_where： and JZCZSJ >= to_date('2015/12/26','yyyy-mm-dd') and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_aj： and JZSCSJ >= to_date('2015/12/26','yyyy-mm-dd') and cbdw_bm in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_ry： and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_order：cbdw_bm ]    [p_pageindex：1]    [p_pagesize：50]    [p_count：null]    [p_cursor：null]    [p_errmsg：null]    }
+
+
+日志时间：2016/12/07 17:12:03
+发起路径：http://localhost:83/Pages/Report/ProductionVolume.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-06550: 第 1 行, 第 23 列: 
+PLS-00302: 必须声明 'PROC_REPORT_GETZZL_FY' 组件
+ORA-06550: 第 1 行, 第 7 列: 
+PL/SQL: Statement ignored
+
+所在方法：public DataSet GetYJTJ(string strWhere,string strWhereAj, string orderby, int startIndex, int endIndex, out int count, params object[] objValues)
+所在类库：EDRS.OracleDAL.DataStatistics
+SQL语句：pkg_dzjz_report.proc_report_getzzl_fy
+参数列表：{  [p_where： and JZCZSJ >= to_date('2015/12/26','yyyy-mm-dd') and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_aj： and JZSCSJ >= to_date('2015/12/26','yyyy-mm-dd') and cbdw_bm in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_ry： and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_order：cbdw_bm ]    [p_pageindex：1]    [p_pagesize：50]    [p_count：null]    [p_cursor：null]    [p_errmsg：null]    }
+
+
+日志时间：2016/12/07 17:12:03
+发起路径：http://localhost:83/Pages/Report/ProductionVolume.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-06550: 第 1 行, 第 23 列: 
+PLS-00302: 必须声明 'PROC_REPORT_GETZZL_FY' 组件
+ORA-06550: 第 1 行, 第 7 列: 
+PL/SQL: Statement ignored
+
+所在方法：public DataSet GetYJTJ(string strWhere,string strWhereAj, string orderby, int startIndex, int endIndex, out int count, params object[] objValues)
+所在类库：EDRS.OracleDAL.DataStatistics
+SQL语句：pkg_dzjz_report.proc_report_getzzl_fy
+参数列表：{  [p_where： and JZCZSJ >= to_date('2015/12/26','yyyy-mm-dd') and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_aj： and JZSCSJ >= to_date('2015/12/26','yyyy-mm-dd') and cbdw_bm in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_ry： and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_order：cbdw_bm ]    [p_pageindex：1]    [p_pagesize：50]    [p_count：null]    [p_cursor：null]    [p_errmsg：null]    }
+
+
+日志时间：2016/12/07 17:12:04
+发起路径：http://localhost:83/Pages/Report/ProductionVolume.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-06550: 第 1 行, 第 23 列: 
+PLS-00302: 必须声明 'PROC_REPORT_GETZZL_FY' 组件
+ORA-06550: 第 1 行, 第 7 列: 
+PL/SQL: Statement ignored
+
+所在方法：public DataSet GetYJTJ(string strWhere,string strWhereAj, string orderby, int startIndex, int endIndex, out int count, params object[] objValues)
+所在类库：EDRS.OracleDAL.DataStatistics
+SQL语句：pkg_dzjz_report.proc_report_getzzl_fy
+参数列表：{  [p_where： and JZCZSJ >= to_date('2015/12/26','yyyy-mm-dd') and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_aj： and JZSCSJ >= to_date('2015/12/26','yyyy-mm-dd') and cbdw_bm in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_ry： and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_order：cbdw_bm ]    [p_pageindex：1]    [p_pagesize：50]    [p_count：null]    [p_cursor：null]    [p_errmsg：null]    }
+
+
+日志时间：2016/12/07 17:12:04
+发起路径：http://localhost:83/Pages/Report/ProductionVolume.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-06550: 第 1 行, 第 23 列: 
+PLS-00302: 必须声明 'PROC_REPORT_GETZZL_FY' 组件
+ORA-06550: 第 1 行, 第 7 列: 
+PL/SQL: Statement ignored
+
+所在方法：public DataSet GetYJTJ(string strWhere,string strWhereAj, string orderby, int startIndex, int endIndex, out int count, params object[] objValues)
+所在类库：EDRS.OracleDAL.DataStatistics
+SQL语句：pkg_dzjz_report.proc_report_getzzl_fy
+参数列表：{  [p_where： and JZCZSJ >= to_date('2015/12/26','yyyy-mm-dd') and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_aj： and JZSCSJ >= to_date('2015/12/26','yyyy-mm-dd') and cbdw_bm in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_ry： and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_order：cbdw_bm ]    [p_pageindex：1]    [p_pagesize：50]    [p_count：null]    [p_cursor：null]    [p_errmsg：null]    }
+
+
+日志时间：2016/12/07 17:13:02
+发起路径：http://localhost:83/Pages/Report/ProductionVolume.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-06550: 第 1 行, 第 23 列: 
+PLS-00302: 必须声明 'PROC_REPORT_GETZZL_FY' 组件
+ORA-06550: 第 1 行, 第 7 列: 
+PL/SQL: Statement ignored
+
+所在方法：public DataSet GetYJTJ(string strWhere,string strWhereAj, string orderby, int startIndex, int endIndex, out int count, params object[] objValues)
+所在类库：EDRS.OracleDAL.DataStatistics
+SQL语句：pkg_dzjz_report.proc_report_getzzl_fy
+参数列表：{  [p_where： and JZCZSJ >= to_date('2015/12/26','yyyy-mm-dd') and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_aj： and JZSCSJ >= to_date('2015/12/26','yyyy-mm-dd') and cbdw_bm in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_ry： and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_order：cbdw_bm ]    [p_pageindex：1]    [p_pagesize：50]    [p_count：null]    [p_cursor：null]    [p_errmsg：null]    }
+
+
+日志时间：2016/12/07 17:21:30
+发起路径：http://localhost:83/Pages/Report/ProductionVolume.aspx
+客户端浏览器：Firefox50
+错误类型：Exception
+错误信息：ORA-06550: 第 1 行, 第 23 列: 
+PLS-00302: 必须声明 'PROC_REPORT_GETZZL_FY' 组件
+ORA-06550: 第 1 行, 第 7 列: 
+PL/SQL: Statement ignored
+
+所在方法：public DataSet GetYJTJ(string strWhere,string strWhereAj, string orderby, int startIndex, int endIndex, out int count, params object[] objValues)
+所在类库：EDRS.OracleDAL.DataStatistics
+SQL语句：pkg_dzjz_report.proc_report_getzzl_fy
+参数列表：{  [p_where： and JZCZSJ >= to_date('2015/12/26','yyyy-mm-dd') and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_aj： and JZSCSJ >= to_date('2015/12/26','yyyy-mm-dd') and cbdw_bm in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_ry： and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_order：cbdw_bm ]    [p_pageindex：1]    [p_pagesize：50]    [p_count：null]    [p_cursor：null]    [p_errmsg：null]    }
+
+

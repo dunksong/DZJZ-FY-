@@ -1,0 +1,169 @@
+日志时间：2016/12/09 13:12:36
+发起路径：http://localhost:82/Pages/Business/CaseInfoManage.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-03135: 连接失去联系
+进程 ID: 4344
+会话 ID: 196 序列号: 821
+
+所在方法：public DataSet GetListByPageUnite(string strWhere, string orderby, int startIndex, int endIndex, params object[] objValues)
+所在类库：EDRS.OracleDAL.TYYW_GG_AJJBXX_Ex
+SQL语句：SELECT Ro,JZSCRXM,JZSCRGH,CJSJ,GGCJSJ,AJBH,WSBH,WSMC,ZZZT,IsRegard,AJMC,BMSAH,AJLB_MC,CBDW_MC,CBBM_MC,CBR,DQJD,SLRQ,AJZT,DQRQ,BJRQ,WCRQ,GDRQ,AJLB_BM,CBDW_BM,XYR,SFZH,TARYXX,SHR,ZJS,DJJ,ZYS,JZPZ,JZSHRBH,JZSHR,JZSHSJ,JZBH  FROM (  SELECT ROW_NUMBER() OVER (order by T.GGCJSJ DESC )AS Ro,JZSCRXM,JZSCRGH,CJSJ,GGCJSJ,AJBH,WSBH,WSMC,ZZZT,IsRegard,T.AJMC,T.BMSAH,T.AJLB_MC,T.CBDW_MC,T.CBBM_MC,T.CBR,T.DQJD,T.SLRQ,T.AJZT,T.DQRQ,T.BJRQ,T.WCRQ,T.GDRQ,T.AJLB_BM,T.CBDW_BM,T.SFSC,T.XYR,T.SFZH,T.TARYXX,T.SHR,T.ZJS,T.DJJ,T.ZYS,T.JZPZ,T.JZSHRBH,T.JZSHR,T.JZSHSJ,T.JZBH  from (select JZ.JZSCRXM,JZ.JZSCRGH,JZ.CJSJ,d.CJSJ GGCJSJ,JZ.AJBH,JZ.WSBH,JZ.WSMC,JZ.ZZZT,(select count(1) from yx_dzjz_jzjbxx y where (to_char(y.jzxgh) <> '0' and y.jzxgh is not null ) and y.Bmsah=d.Bmsah and y.sfsc='N') IsRegard,AJMC,d.BMSAH,AJLB_MC,CBDW_MC,CBBM_MC,CBR,DQJD,SLRQ,AJZT,DQRQ,BJRQ,WCRQ,GDRQ,AJLB_BM,CBDW_BM,d.SFSC,XYR,SFZH,TARYXX,SHR,ZJS,DJJ,ZYS,JZPZ,JZSHRBH,JZSHR,JZSHSJ,JZBH  from TYYW_GG_AJJBXX d  LEFT JOIN yx_dzjz_jzjbxx JZ ON (d.bmsah = JZ.BMSAH) where d.SFSC='N' and JZ.SFSC = 'N') T  WHERE 1=1  and CJSJ >= :CJSJ and SFSC='N' and trim(CBDW_BM) in(select distinct trim(QXBM) from xt_dm_qx a join XT_QX_RYJSFP b on trim(a.jsbm) = b.jsbm and trim(a.bmbm)=b.bmbm and trim(a.dwbm)=b.dwbm and gh=:GH1 and b.dwbm=:DWBM1 and a.qxlx=0)  and trim(AJLB_BM) in ( select distinct trim(QXBM) from xt_dm_qx a join XT_QX_RYJSFP b on trim(a.jsbm) = b.jsbm and trim(a.bmbm)=b.bmbm and trim(a.dwbm)=b.dwbm and gh=:GH2 and b.dwbm=:DWBM2 and a.qxlx=1)  ) TT WHERE TT.Ro between 1 and 50
+参数列表：{  [:CJSJ：2015/12/26 0:00:00]    [:GH1：0000]    [:DWBM1：440300000000]    [:GH2：0000]    [:DWBM2：440300000000]    }
+
+
+日志时间：2016/12/09 13:12:37
+发起路径：http://localhost:82/Pages/Business/FileBRowse.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-03114: 未连接到 ORACLE
+
+所在方法：public DataSet GetListByPageUnite(string strWhere, string orderby, int startIndex, int endIndex, params object[] objValues)
+所在类库：EDRS.OracleDAL.TYYW_GG_AJJBXX_Ex
+SQL语句：SELECT Ro,JZSCRXM,JZSCRGH,CJSJ,GGCJSJ,AJBH,WSBH,WSMC,ZZZT,IsRegard,AJMC,BMSAH,AJLB_MC,CBDW_MC,CBBM_MC,CBR,DQJD,SLRQ,AJZT,DQRQ,BJRQ,WCRQ,GDRQ,AJLB_BM,CBDW_BM,XYR,SFZH,TARYXX,SHR,ZJS,DJJ,ZYS,JZPZ,JZSHRBH,JZSHR,JZSHSJ,JZBH  FROM (  SELECT ROW_NUMBER() OVER (order by T. CJSJ DESC )AS Ro,JZSCRXM,JZSCRGH,CJSJ,GGCJSJ,AJBH,WSBH,WSMC,ZZZT,IsRegard,T.AJMC,T.BMSAH,T.AJLB_MC,T.CBDW_MC,T.CBBM_MC,T.CBR,T.DQJD,T.SLRQ,T.AJZT,T.DQRQ,T.BJRQ,T.WCRQ,T.GDRQ,T.AJLB_BM,T.CBDW_BM,T.SFSC,T.XYR,T.SFZH,T.TARYXX,T.SHR,T.ZJS,T.DJJ,T.ZYS,T.JZPZ,T.JZSHRBH,T.JZSHR,T.JZSHSJ,T.JZBH  from (select JZ.JZSCRXM,JZ.JZSCRGH,JZ.CJSJ,d.CJSJ GGCJSJ,JZ.AJBH,JZ.WSBH,JZ.WSMC,JZ.ZZZT,(select count(1) from yx_dzjz_jzjbxx y where (to_char(y.jzxgh) <> '0' and y.jzxgh is not null ) and y.Bmsah=d.Bmsah and y.sfsc='N') IsRegard,AJMC,d.BMSAH,AJLB_MC,CBDW_MC,CBBM_MC,CBR,DQJD,SLRQ,AJZT,DQRQ,BJRQ,WCRQ,GDRQ,AJLB_BM,CBDW_BM,d.SFSC,XYR,SFZH,TARYXX,SHR,ZJS,DJJ,ZYS,JZPZ,JZSHRBH,JZSHR,JZSHSJ,JZBH  from TYYW_GG_AJJBXX d  LEFT JOIN yx_dzjz_jzjbxx JZ ON (d.bmsah = JZ.BMSAH) where d.SFSC='N' and JZ.SFSC = 'N') T  WHERE 1=1  and ZZZT in (2,3,4,5,6) and SLRQ >= :SLRQ and SFSC='N' and trim(CBDW_BM) in(select distinct trim(QXBM) from xt_dm_qx a join XT_QX_RYJSFP b on trim(a.jsbm) = b.jsbm and trim(a.bmbm)=b.bmbm and trim(a.dwbm)=b.dwbm and gh=:GH1 and b.dwbm=:DWBM1 and a.qxlx=0)  and trim(AJLB_BM) in ( select distinct trim(QXBM) from xt_dm_qx a join XT_QX_RYJSFP b on trim(a.jsbm) = b.jsbm and trim(a.bmbm)=b.bmbm and trim(a.dwbm)=b.dwbm and gh=:GH2 and b.dwbm=:DWBM2 and a.qxlx=1)  ) TT WHERE TT.Ro between 1 and 50
+参数列表：{  [:SLRQ：2015/12/26 0:00:00]    [:GH1：0000]    [:DWBM1：440300000000]    [:GH2：0000]    [:DWBM2：440300000000]    }
+
+
+日志时间：2016/12/09 13:12:58
+发起路径：http://localhost:82/Pages/Business/FileBRowse.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public DataSet GetQxListByType(string dwbm,string bmbm,string gh,int type)
+所在类库：EDRS.OracleDAL.XT_DM_QX
+SQL语句：
+参数列表：{}
+
+
+
+
+日志时间：2016/12/09 13:13:20
+发起路径：http://localhost:82/Pages/Business/CaseInfoManage.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public DataSet GetListByPageUnite(string strWhere, string orderby, int startIndex, int endIndex, params object[] objValues)
+所在类库：EDRS.OracleDAL.TYYW_GG_AJJBXX_Ex
+SQL语句：SELECT Ro,JZSCRXM,JZSCRGH,CJSJ,GGCJSJ,AJBH,WSBH,WSMC,ZZZT,IsRegard,AJMC,BMSAH,AJLB_MC,CBDW_MC,CBBM_MC,CBR,DQJD,SLRQ,AJZT,DQRQ,BJRQ,WCRQ,GDRQ,AJLB_BM,CBDW_BM,XYR,SFZH,TARYXX,SHR,ZJS,DJJ,ZYS,JZPZ,JZSHRBH,JZSHR,JZSHSJ,JZBH  FROM (  SELECT ROW_NUMBER() OVER (order by T.GGCJSJ DESC )AS Ro,JZSCRXM,JZSCRGH,CJSJ,GGCJSJ,AJBH,WSBH,WSMC,ZZZT,IsRegard,T.AJMC,T.BMSAH,T.AJLB_MC,T.CBDW_MC,T.CBBM_MC,T.CBR,T.DQJD,T.SLRQ,T.AJZT,T.DQRQ,T.BJRQ,T.WCRQ,T.GDRQ,T.AJLB_BM,T.CBDW_BM,T.SFSC,T.XYR,T.SFZH,T.TARYXX,T.SHR,T.ZJS,T.DJJ,T.ZYS,T.JZPZ,T.JZSHRBH,T.JZSHR,T.JZSHSJ,T.JZBH  from (select JZ.JZSCRXM,JZ.JZSCRGH,JZ.CJSJ,d.CJSJ GGCJSJ,JZ.AJBH,JZ.WSBH,JZ.WSMC,JZ.ZZZT,(select count(1) from yx_dzjz_jzjbxx y where (to_char(y.jzxgh) <> '0' and y.jzxgh is not null ) and y.Bmsah=d.Bmsah and y.sfsc='N') IsRegard,AJMC,d.BMSAH,AJLB_MC,CBDW_MC,CBBM_MC,CBR,DQJD,SLRQ,AJZT,DQRQ,BJRQ,WCRQ,GDRQ,AJLB_BM,CBDW_BM,d.SFSC,XYR,SFZH,TARYXX,SHR,ZJS,DJJ,ZYS,JZPZ,JZSHRBH,JZSHR,JZSHSJ,JZBH  from TYYW_GG_AJJBXX d  LEFT JOIN yx_dzjz_jzjbxx JZ ON (d.bmsah = JZ.BMSAH) where d.SFSC='N' and JZ.SFSC = 'N') T  WHERE 1=1  and CJSJ >= :CJSJ and SFSC='N' and trim(CBDW_BM) in(select distinct trim(QXBM) from xt_dm_qx a join XT_QX_RYJSFP b on trim(a.jsbm) = b.jsbm and trim(a.bmbm)=b.bmbm and trim(a.dwbm)=b.dwbm and gh=:GH1 and b.dwbm=:DWBM1 and a.qxlx=0)  and trim(AJLB_BM) in ( select distinct trim(QXBM) from xt_dm_qx a join XT_QX_RYJSFP b on trim(a.jsbm) = b.jsbm and trim(a.bmbm)=b.bmbm and trim(a.dwbm)=b.dwbm and gh=:GH2 and b.dwbm=:DWBM2 and a.qxlx=1)  ) TT WHERE TT.Ro between 1 and 50
+参数列表：{  [:CJSJ：2015/12/26 0:00:00]    [:GH1：0000]    [:DWBM1：440300000000]    [:GH2：0000]    [:DWBM2：440300000000]    }
+
+
+日志时间：2016/12/09 13:13:34
+发起路径：http://localhost:82/Pages/Business/CaseInfoManage.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12541: TNS: 无监听程序
+
+所在方法：public DataSet GetListByPageUnite(string strWhere, string orderby, int startIndex, int endIndex, params object[] objValues)
+所在类库：EDRS.OracleDAL.TYYW_GG_AJJBXX_Ex
+SQL语句：SELECT Ro,JZSCRXM,JZSCRGH,CJSJ,GGCJSJ,AJBH,WSBH,WSMC,ZZZT,IsRegard,AJMC,BMSAH,AJLB_MC,CBDW_MC,CBBM_MC,CBR,DQJD,SLRQ,AJZT,DQRQ,BJRQ,WCRQ,GDRQ,AJLB_BM,CBDW_BM,XYR,SFZH,TARYXX,SHR,ZJS,DJJ,ZYS,JZPZ,JZSHRBH,JZSHR,JZSHSJ,JZBH  FROM (  SELECT ROW_NUMBER() OVER (order by T.GGCJSJ DESC )AS Ro,JZSCRXM,JZSCRGH,CJSJ,GGCJSJ,AJBH,WSBH,WSMC,ZZZT,IsRegard,T.AJMC,T.BMSAH,T.AJLB_MC,T.CBDW_MC,T.CBBM_MC,T.CBR,T.DQJD,T.SLRQ,T.AJZT,T.DQRQ,T.BJRQ,T.WCRQ,T.GDRQ,T.AJLB_BM,T.CBDW_BM,T.SFSC,T.XYR,T.SFZH,T.TARYXX,T.SHR,T.ZJS,T.DJJ,T.ZYS,T.JZPZ,T.JZSHRBH,T.JZSHR,T.JZSHSJ,T.JZBH  from (select JZ.JZSCRXM,JZ.JZSCRGH,JZ.CJSJ,d.CJSJ GGCJSJ,JZ.AJBH,JZ.WSBH,JZ.WSMC,JZ.ZZZT,(select count(1) from yx_dzjz_jzjbxx y where (to_char(y.jzxgh) <> '0' and y.jzxgh is not null ) and y.Bmsah=d.Bmsah and y.sfsc='N') IsRegard,AJMC,d.BMSAH,AJLB_MC,CBDW_MC,CBBM_MC,CBR,DQJD,SLRQ,AJZT,DQRQ,BJRQ,WCRQ,GDRQ,AJLB_BM,CBDW_BM,d.SFSC,XYR,SFZH,TARYXX,SHR,ZJS,DJJ,ZYS,JZPZ,JZSHRBH,JZSHR,JZSHSJ,JZBH  from TYYW_GG_AJJBXX d  LEFT JOIN yx_dzjz_jzjbxx JZ ON (d.bmsah = JZ.BMSAH) where d.SFSC='N' and JZ.SFSC = 'N') T  WHERE 1=1  and CJSJ >= :CJSJ and SFSC='N' and trim(CBDW_BM) in(select distinct trim(QXBM) from xt_dm_qx a join XT_QX_RYJSFP b on trim(a.jsbm) = b.jsbm and trim(a.bmbm)=b.bmbm and trim(a.dwbm)=b.dwbm and gh=:GH1 and b.dwbm=:DWBM1 and a.qxlx=0)  and trim(AJLB_BM) in ( select distinct trim(QXBM) from xt_dm_qx a join XT_QX_RYJSFP b on trim(a.jsbm) = b.jsbm and trim(a.bmbm)=b.bmbm and trim(a.dwbm)=b.dwbm and gh=:GH2 and b.dwbm=:DWBM2 and a.qxlx=1)  ) TT WHERE TT.Ro between 1 and 50
+参数列表：{  [:CJSJ：2015/12/26 0:00:00]    [:GH1：0000]    [:DWBM1：440300000000]    [:GH2：0000]    [:DWBM2：440300000000]    }
+
+
+日志时间：2016/12/09 13:14:08
+发起路径：http://localhost:82/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/09 13:14:08
+发起路径：http://localhost:82/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+
+所在方法：public EDRS.Model.XT_ZZJG_DWBM GetModel(string DWBM)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select DWBM,DWMC,DWJC,DWJB,FDWBM,SFSC from XT_ZZJG_DWBM  where DWBM=:DWBM 
+参数列表：{  [:DWBM：440300000000]    }
+
+
+日志时间：2016/12/09 13:14:13
+发起路径：http://localhost:82/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/09 13:14:13
+发起路径：http://localhost:82/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/09 14:04:44
+发起路径：http://localhost:82/Pages/GNGL/GnManager.aspx?_dwbm=440300000000&_bmbm=a0001&_jsbm=a001
+客户端浏览器：Firefox50
+错误类型：Exception
+错误信息：ORA-12899: 列 "DZJZ"."YX_DZJZ_JZRZJL_20161208"."RZNR" 的值太大 (实际值: 324, 最大值: 300)
+
+所在方法：public bool Add(EDRS.Model.YX_DZJZ_JZRZJL model)
+所在类库：EDRS.OracleDAL.YX_DZJZ_JZRZJL
+SQL语句：insert into YX_DZJZ_JZRZJL_20161208(DWBM,DWMC,BMBM,BMMC,CZRGH,CZR,CZSJ,CZIP,CZLX,RZNR,CZAJBMSAH,FQL) values (:DWBM,:DWMC,:BMBM,:BMMC,:CZRGH,:CZR,:CZSJ,:CZIP,:CZLX,:RZNR,:CZAJBMSAH,:FQL)
+参数列表：{  [:DWBM：440300000000]    [:DWMC：深圳市公安局]    [:BMBM：0000]    [:BMMC：管理部门]    [:CZRGH：0000]    [:CZR：管理员]    [:CZSJ：2016/12/9 14:04:44]    [:CZIP：::1]    [:CZLX：31]    [:RZNR：查询角色已分配的功能列表失败：获取角色权限失败。SELECT dy.gnmc,dy.gnsm,dy.gnct,dy.gnxh,fp.gncs,dy.gnxsmc,dy.gnbm,dy.flbm gnfl
+                  FROM xt_qx_gndy dy
+                 JOIN xt_qx_jsgnfp fp
+                  on fp.GNBM = dy.gnbm
+                  WHERE  1=1  and fp.dwbm=undefined AND fp.bmbm=ndefined AND fp.jsbm= ndefined
+ORA-06512: 在 "DZJZ.PKG_ZZJG_MANAGE", line 975
+
+ORA-00904: "NDEFINED": 标识符无效]    [:CZAJBMSAH：]    [:FQL：2016]    }
+
+
+日志时间：2016/12/09 14:06:47
+发起路径：http://localhost:82/Pages/GNGL/GnManager.aspx?_dwbm=440300000000&_bmbm=a0001&_jsbm=a001
+客户端浏览器：Firefox50
+错误类型：Exception
+错误信息：ORA-12899: 列 "DZJZ"."YX_DZJZ_JZRZJL_20161208"."RZNR" 的值太大 (实际值: 324, 最大值: 300)
+
+所在方法：public bool Add(EDRS.Model.YX_DZJZ_JZRZJL model)
+所在类库：EDRS.OracleDAL.YX_DZJZ_JZRZJL
+SQL语句：insert into YX_DZJZ_JZRZJL_20161208(DWBM,DWMC,BMBM,BMMC,CZRGH,CZR,CZSJ,CZIP,CZLX,RZNR,CZAJBMSAH,FQL) values (:DWBM,:DWMC,:BMBM,:BMMC,:CZRGH,:CZR,:CZSJ,:CZIP,:CZLX,:RZNR,:CZAJBMSAH,:FQL)
+参数列表：{  [:DWBM：440300000000]    [:DWMC：深圳市公安局]    [:BMBM：0000]    [:BMMC：管理部门]    [:CZRGH：0000]    [:CZR：管理员]    [:CZSJ：2016/12/9 14:06:47]    [:CZIP：::1]    [:CZLX：31]    [:RZNR：查询角色已分配的功能列表失败：获取角色权限失败。SELECT dy.gnmc,dy.gnsm,dy.gnct,dy.gnxh,fp.gncs,dy.gnxsmc,dy.gnbm,dy.flbm gnfl
+                  FROM xt_qx_gndy dy
+                 JOIN xt_qx_jsgnfp fp
+                  on fp.GNBM = dy.gnbm
+                  WHERE  1=1  and fp.dwbm=undefined AND fp.bmbm=ndefined AND fp.jsbm= ndefined
+ORA-06512: 在 "DZJZ.PKG_ZZJG_MANAGE", line 975
+
+ORA-00904: "NDEFINED": 标识符无效]    [:CZAJBMSAH：]    [:FQL：2016]    }
+
+
+日志时间：2016/12/09 14:06:48
+发起路径：http://localhost:82/Pages/GNGL/GnManager.aspx?_dwbm=440300000000&_bmbm=a0001&_jsbm=a001
+客户端浏览器：Firefox50
+错误类型：Exception
+错误信息：ORA-12899: 列 "DZJZ"."YX_DZJZ_JZRZJL_20161208"."RZNR" 的值太大 (实际值: 324, 最大值: 300)
+
+所在方法：public bool Add(EDRS.Model.YX_DZJZ_JZRZJL model)
+所在类库：EDRS.OracleDAL.YX_DZJZ_JZRZJL
+SQL语句：insert into YX_DZJZ_JZRZJL_20161208(DWBM,DWMC,BMBM,BMMC,CZRGH,CZR,CZSJ,CZIP,CZLX,RZNR,CZAJBMSAH,FQL) values (:DWBM,:DWMC,:BMBM,:BMMC,:CZRGH,:CZR,:CZSJ,:CZIP,:CZLX,:RZNR,:CZAJBMSAH,:FQL)
+参数列表：{  [:DWBM：440300000000]    [:DWMC：深圳市公安局]    [:BMBM：0000]    [:BMMC：管理部门]    [:CZRGH：0000]    [:CZR：管理员]    [:CZSJ：2016/12/9 14:06:48]    [:CZIP：::1]    [:CZLX：31]    [:RZNR：查询角色已分配的功能列表失败：获取角色权限失败。SELECT dy.gnmc,dy.gnsm,dy.gnct,dy.gnxh,fp.gncs,dy.gnxsmc,dy.gnbm,dy.flbm gnfl
+                  FROM xt_qx_gndy dy
+                 JOIN xt_qx_jsgnfp fp
+                  on fp.GNBM = dy.gnbm
+                  WHERE  1=1  and fp.dwbm=undefined AND fp.bmbm=ndefined AND fp.jsbm= ndefined
+ORA-06512: 在 "DZJZ.PKG_ZZJG_MANAGE", line 975
+
+ORA-00904: "NDEFINED": 标识符无效]    [:CZAJBMSAH：]    [:FQL：2016]    }
+
+

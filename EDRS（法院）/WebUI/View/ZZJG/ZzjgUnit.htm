@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="/ligerUI/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/LigerUI/lib/LigerUI/skins/ligerui-icons.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/tools/easyui/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/LigerUI/lib/LigerUI/js/ligerui.all.js"></script>
+    <script src="/LigerUI/lib/Jvalidate.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //$("#inBmxh_ZzjgSelectDw").ligerSpinner({ type: 'int', isNegative: false, width: 150 });
+            var manager = $('#btn_cannel').ligerButton({
+                click: cannel,
+                text: '取消',
+                width: 70,
+                icon: '../../LigerUI/lib/LigerUI/skins/icons/candle.gif'
+            });
+            //setEnabled
+            manager = $('#btn_saveDept').ligerButton({
+                click: saveDept,
+                text: '保存',
+                width: 70,
+                icon: '../../LigerUI/lib/LigerUI/skins/icons/save.gif'
+            }); //setEnabled
+            manager = $('#btn_addDept').ligerButton({
+                click: addDept,
+                text: '添加部门',
+                width: 70,
+                icon: '../../LigerUI/lib/LigerUI/skins/icons/add.gif'
+            }); //setEnabled
+            $('#btn_cannel').ligerButton().setDisabled(); //setEnabled
+            $('#btn_saveDept').ligerButton().setDisabled(); //setEnabled
+            $('#btn_addDept').ligerButton().setEnabled(); //setEnabled
+
+            initContrl_ZzjgSelectDw();
+        });
+
+        function addDept() {
+            $('#btn_cannel').ligerButton().setEnabled(); //setEnabled
+            $('#btn_saveDept').ligerButton().setEnabled(); //setEnabled
+            $('#btn_addDept').ligerButton().setDisabled(); //setEnabled
+            $("#pDwInfo_ZzjgSelectDw").hide();
+            $("#div_dept").show();
+        }
+
+        function saveDept() {
+            var bmmc = $('#inBmmc_ZzjgSelectDw').val();
+            var bmjc = $('#inBmjc_ZzjgSelectDw').val();
+            var bmxh = "0"; //$('#inBmxh_ZzjgSelectDw').val();
+            var bz = $('#inBz_ZzjgSelectDw').val();
+            /*
+            * 判断输入是否为空值
+            */
+            bmmc = trim(bmmc);
+            bmjc = trim(bmjc);
+            bmxh = trim(bmxh);
+            if (isNull(bmmc) || isNull(bmjc) || isNull(bmxh)) {
+                parent.Alert('部门名称或者部门简称或者部门序号不能为空');
+                return;
+            }
+
+            if (isNull(parent.G_ZzjgNode)) {
+                fbm = '';
+            }
+            else {
+                var fbm = parent.G_ZzjgNode.data.id;
+                //如果选择的是单位编码则去掉单位编码
+                if (fbm == "1" + parent.G_ZzjgDwbm) {
+                    fbm = "";
+                }
+            }
+            $.post("/Handler/ZZJG/ZZJGHandler.ashx?action=AddBmInfo", { dwbm: parent.G_ZzjgDwbm, bmmc: bmmc, bmjc: bmjc, bmxh: bmxh, bz: bz, fbm: fbm },
+                    function (result) {
+                        /*
+                        * 重新加载树形控件数据
+                        */
+                        parent.Alert(result);
+                        $("#pDwInfo_ZzjgSelectDw").show();
+                        $("#div_dept").hide();
+                        $('#btn_cannel').ligerButton().setDisabled(); //setEnabled
+                        $('#btn_saveDept').ligerButton().setDisabled(); //setEnabled
+                        $('#btn_addDept').ligerButton().setEnabled(); //setEnabled
+                        parent.LoadLeftTree();
+                    });
+        }
+        function cannel() {
+            $('#btn_cannel').ligerButton().setDisabled(); //setEnabled
+            $('#btn_saveDept').ligerButton().setDisabled(); //setEnabled
+            $('#btn_addDept').ligerButton().setEnabled(); //setEnabled
+            $("#pDwInfo_ZzjgSelectDw").show();
+            $("#div_dept").hide();
+        }
+
+        //初始化控件
+        function initContrl_ZzjgSelectDw() {
+            $.post("/Handler/ZZJG/ZZJGHandler.ashx", { action: "GetDwInfo", dwbm: parent.G_ZzjgDwbm },
+            function (data) {
+                if (!isNull(data)) {
+                    var dw = eval(data);
+                    $('#showDwmc_ZzjgSelectDw').val(dw[0].dwmc);
+                    $('#showDwjc_ZzjgSelectDw').val(dw[0].dwjc);
+                    $('#showDwjb_ZzjgSelectDw').val(dw[0].dwjb);
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div style="margin: 10px;">
+        <form id="add_form" method="post">
+        <div style="margin: 10px;">
+            <div id="btn_addDept" style="float: left;">
+            </div>
+            &nbsp;&nbsp;
+            <div id="btn_saveDept" style="float: left; margin-left: 10px;">
+            </div>
+            &nbsp;&nbsp;
+            <div id="btn_cannel" style="float: left; margin-left: 10px;">
+            </div>
+        </div>
+        <div id="pDwInfo_ZzjgSelectDw" style="padding: 10px;">
+            <ul style="display: table; line-height: 28px;">
+                <li style="float: left; padding-left: 10px;"><span>单位名称：</span><div style="display: inline-table;">
+                    <input readonly="readonly" id="showDwmc_ZzjgSelectDw" class="liger-textbox" style="display: inline-table;" /></div>
+                </li>
+                <li style="float: left; padding-left: 10px;"><span>单位简称：</span><div style="display: inline-table;">
+                    <input readonly="readonly" id="showDwjc_ZzjgSelectDw" class="liger-textbox" /></div>
+                </li>
+                <li style="float: left; padding-left: 10px;"><span>单位级别：</span><div style="display: inline-table;">
+                    <input readonly="readonly" id="showDwjb_ZzjgSelectDw" class="liger-textbox" /></div>
+                </li>
+            </ul>
+        </div>
+        <div id="div_dept" style="padding: 10px; display: none;">
+            <ul style="display: table; line-height: 28px;">
+                <li style="float: left; padding-left: 10px;"><span>部门名称： </span>
+                    <div style="display: inline-table;">
+                        <input type="text" name="inBmmc_ZzjgSelectDw" id="inBmmc_ZzjgSelectDw" class="liger-textbox"
+                            ligerui="width:150" /></div>
+                </li>
+                <li style="float: left; padding-left: 10px;"><span>部门简称： </span>
+                    <div style="display: inline-table;">
+                        <input type="text" name="inBmjc_ZzjgSelectDw" id="inBmjc_ZzjgSelectDw" class="liger-textbox"
+                            ligerui="width:150" /></div>
+                </li>
+                <!--<li style="float: left; padding-left: 10px;"><span>部门序号： </span>
+                    <div style="display: inline-table;">
+                        <input type="text" name="inBmxh_ZzjgSelectDw" id="inBmxh_ZzjgSelectDw" /></div>
+                </li>-->
+            </ul>
+            <ul style="display: table; line-height: 28px;">
+                <li style="float: left; padding-left: 10px;"><span>备注信息： </span>
+                    <div style="display: inline-table;">
+                        <input type="text" id="inBz_ZzjgSelectDw" class="liger-textbox" ligerui="width:400" />
+                        <!--<textarea class="l-textarea" id="inBz_ZzjgSelectDw" rows="6" cols="80"></textarea>-->
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

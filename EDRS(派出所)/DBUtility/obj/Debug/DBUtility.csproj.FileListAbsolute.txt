@@ -1,0 +1,44 @@
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\DBUtility\bin\Debug\EDRS.DBUtility.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\DBUtility\bin\Debug\EDRS.DBUtility.pdb
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\DBUtility\bin\Debug\MySql.Data.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.Unity.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\DBUtility\obj\Debug\EDRS.DBUtility.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\DBUtility\obj\Debug\EDRS.DBUtility.pdb
+E:\GA\EDRS(派出所)\DBUtility\bin\Debug\EDRS.DBUtility.dll
+E:\GA\EDRS(派出所)\DBUtility\bin\Debug\EDRS.DBUtility.pdb
+E:\GA\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\GA\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\GA\EDRS(派出所)\DBUtility\bin\Debug\MySql.Data.dll
+E:\GA\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.Unity.dll
+E:\GA\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\GA\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\GA\EDRS(派出所)\DBUtility\obj\Debug\EDRS.DBUtility.dll
+E:\GA\EDRS(派出所)\DBUtility\obj\Debug\EDRS.DBUtility.pdb
+E:\GA\EDRS(派出所)\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+D:\DZJZ Work\GA\EDRS(派出所)\DBUtility\bin\Debug\EDRS.DBUtility.dll
+D:\DZJZ Work\GA\EDRS(派出所)\DBUtility\bin\Debug\EDRS.DBUtility.pdb
+D:\DZJZ Work\GA\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DZJZ Work\GA\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DZJZ Work\GA\EDRS(派出所)\DBUtility\bin\Debug\MySql.Data.dll
+D:\DZJZ Work\GA\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.Unity.dll
+D:\DZJZ Work\GA\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\DZJZ Work\GA\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\DZJZ Work\GA\EDRS(派出所)\DBUtility\obj\Debug\EDRS.DBUtility.dll
+D:\DZJZ Work\GA\EDRS(派出所)\DBUtility\obj\Debug\EDRS.DBUtility.pdb
+D:\DZJZ Work\GA\EDRS(派出所)\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+D:\DZJZ\EDRS(派出所)\DBUtility\bin\Debug\EDRS.DBUtility.dll
+D:\DZJZ\EDRS(派出所)\DBUtility\bin\Debug\EDRS.DBUtility.pdb
+D:\DZJZ\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DZJZ\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DZJZ\EDRS(派出所)\DBUtility\bin\Debug\MySql.Data.dll
+D:\DZJZ\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.Unity.dll
+D:\DZJZ\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\DZJZ\EDRS(派出所)\DBUtility\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\DZJZ\EDRS(派出所)\DBUtility\obj\Debug\EDRS.DBUtility.dll
+D:\DZJZ\EDRS(派出所)\DBUtility\obj\Debug\EDRS.DBUtility.pdb
+D:\DZJZ\EDRS(派出所)\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache

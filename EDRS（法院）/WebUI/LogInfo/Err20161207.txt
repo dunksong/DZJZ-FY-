@@ -1,0 +1,44 @@
+***********************[2016-12-07 16:01:12:000]***********************
+
+错误地址：http://localhost:83/Main.aspx
+错误信息：文件“D:\DZJZ\EDRS（法院）\WebUI\LogInfo\20161207.txt”正由另一进程使用，因此该进程无法访问此文件。
+Stack Trace：System.IO.IOException: 文件“D:\DZJZ\EDRS（法院）\WebUI\LogInfo\20161207.txt”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode)
+   在 EDRS.Common.LogHelper.LogError(HttpRequest Request, String errorClass, String errorMsg, String function, String className, String sqlStr, OracleParameter[] param)
+   在 EDRS.OracleDAL.YX_DZJZ_LSYJSQ.GetRecordCount(String strWhere, Object[] objValues)
+   在 EDRS.BLL.YX_DZJZ_LSYJSQ.GetRecordCount(String strWhere, Object[] objValues)
+   在 WebUI.Main.GetMessge()
+   在 WebUI.Main.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-07 16:02:04:272]***********************
+
+错误地址：http://localhost:83/Main.aspx
+错误信息：文件“D:\DZJZ\EDRS（法院）\WebUI\LogInfo\20161207.txt”正由另一进程使用，因此该进程无法访问此文件。
+Stack Trace：System.IO.IOException: 文件“D:\DZJZ\EDRS（法院）\WebUI\LogInfo\20161207.txt”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode)
+   在 EDRS.Common.LogHelper.LogError(HttpRequest Request, String errorClass, String errorMsg, String function, String className, String sqlStr, OracleParameter[] param)
+   在 EDRS.OracleDAL.YX_DZJZ_LSYJSQ.GetRecordCount(String strWhere, Object[] objValues)
+   在 EDRS.BLL.YX_DZJZ_LSYJSQ.GetRecordCount(String strWhere, Object[] objValues)
+   在 WebUI.Main.GetMessge()
+   在 WebUI.Main.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+

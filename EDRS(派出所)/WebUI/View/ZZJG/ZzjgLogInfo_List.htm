@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>日志查询</title>
+    <link href="/ligerUI/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/LigerUI/lib/LigerUI/skins/ligerui-icons.css" rel="stylesheet" type="text/css" />
+    <!--<link href="/ligerUI/lib/ligerUI/skins/Gray/css/all.css" rel="stylesheet" type="text/css"/>-->
+    <script src="/Scripts/tools/easyui/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/LigerUI/lib/LigerUI/js/ligerui.all.js"></script>
+   <!-- <script src="/LigerUI/lib/ligerUI/js/plugins/ligerGrid.js" type="text/javascript"></script>-->
+    <script src="/Scripts/unit.juris.tree.js" type="text/javascript"></script>
+    <style type="text/css">
+        /*右边框背景颜色*/
+        body
+        {
+            background: #eef2f5;
+            }
+         .l-panel-bwarp {
+            background: white;
+        }
+        
+        .l-panel-topbar
+        {
+            padding: 5px 0;
+            border-bottom: 1px solid #ccc;
+            display: inline-block;
+            width: 100%;
+             background: white;
+        }
+        
+        .l-box-select-inner
+        {
+            max-height: 300px;
+            min-height: 300px;
+        }
+        .l-box-select-inner .l-tree
+        {
+            min-width: 400px !important;
+        }
+        .l-tree-icon
+        {
+            background: url('/images/icons/3.png') no-repeat !important;
+            background-position: center center !important;
+        }
+        
+        div#btn_search {
+            color: white;
+            background: #ed6d4a;
+        }
+        
+         /* 内容区 */
+       div#searchbar {
+            margin-bottom: 5px;
+            overflow-x: auto;
+            border: 1px solid #ccc;
+            border-top: 4px solid #129bbc;
+            border-radius: 10px;
+            background:white;
+        }
+    </style>
+</head>
+<body style="padding:15px;">
+    <iframe src="/BaseClass/LoginValidate.aspx" style="display: none;"></iframe>
+    <div id="searchbar" style="padding:10px;">
+        <table style="line-height: 28px">
+            <tr>
+                <td style="text-align: right; width: 60px;">
+                    单位名称：
+                </td>
+                <td>
+                    <input type="text" name="_dwmc" id="_dwmc" />
+                </td>
+                <td style="text-align: right; padding-left: 10px;">
+                    操作类型：
+                </td>
+                <td>
+                    <select id="_czlx">
+                        <!--<option value="2">删除卷宗</option>-->
+                        <!--<option value="3">修改卷宗</option>-->
+                        <!--<option value="7">律师阅卷日志</option>-->
+                        <!--<option value="10">登陆系统</option>-->
+                        <!--<option value="" selected="selected">--全部--</option>
+                        <option value="1">卷宗制作</option>
+                        <option value="4">登录系统</option>
+                        <option value="5">卷宗查询</option>
+                        <option value="6">用户管理</option>
+                        <option value="11">单位管理</option>
+                        <option value="12">部门管理</option>
+                        <option value="13">人员角色分配</option>
+                        <option value="14">功能权限管理</option>
+                        <option value="15">单位权限管理</option>
+                        <option value="16">案件类别权限管理</option>
+                        <option value="17">功能模块管理</option>
+                        <option value="18">参数配置</option>
+                        <option value="19">卷宗模板配置</option>
+                        <option value="20">案件卷宗制作</option>
+                        <option value="21">卷宗统计报表</option>
+                        <option value="22">单位案件查询</option>
+                        <option value="23">单位卷宗制作情况查询</option>
+                        <option value="24">卷宗业务情况</option>
+                        <option value="25">单位卷宗统计</option>
+                        <option value="26">卷宗制作工作量统计</option>
+                        <option value="27">卷宗数量统计</option>
+                        <option value="28">卷宗月统计图</option>
+                        <option value="29">卷宗业务情况统计</option>
+                        <option value="30">人员管理</option>
+                        <option value="31">角色权限管理</option>
+                        <option value="32">功能分类管理</option>
+                        <option value="33">阅卷</option>
+                        <option value="34">设备登记</option>
+                        <option value="8">其它</option>-->
+                        <option value="" selected="selected">--全部--</option>
+                        <option value="1">系统登录</option>
+                        <option value="2">卷宗制作</option>
+                        <option value="3">统计查询</option>
+                        <option value="4">系统配置</option>
+                        <option value="99">卷宗OCR及打包状态</option>
+                    </select>
+                </td>
+                <!--<td style="text-align:right;  width:100px;">
+                    部门名称：
+                </td>
+                <td>
+                    <input type="text" name="_bmmc" id="_bmmc"/>
+                </td>-->
+                <td style="text-align: right; padding-left: 10px;">
+                    操作人姓名：
+                </td>
+                <td>
+                    <input type="text" name="_rygh" id="_rygh" />
+                </td>
+             
+
+
+                <td style="text-align: right;">
+                    开始日期：
+                </td>
+                <td>
+                    <input type="text" name="_czsj_start" id="_czsj_start" />
+                </td>
+                <td style="text-align: right; padding-left: 10px;">
+                    截止日期：
+                </td>
+                <td>
+                    <input type="text" name="_czsj_end" id="_czsj_end" />
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td colspan="2" style="text-align: right; width: 100px; line-height: 18px;">
+                    <div id="btn_search" style="margin-left: 10px;">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="maingrid" style="margin: 0px; padding: 0px; margin-top: 5px;">
+    </div>
+    <script type="text/javascript">
+
+        var dwbm_tree;
+
+        $(document).ready(function () {
+
+
+            var enddate = new Date();
+            var endtime = enddate.getFullYear() + '-' + (enddate.getMonth() + 1) + '-' + enddate.getDate(); // +' ' + enddate.getHours() + ':' + enddate.getMinutes() + ':' + enddate.getSeconds();
+
+            enddate.setMonth(enddate.getMonth() - 3);
+            var strtime = enddate.getFullYear() + '-' + (enddate.getMonth() + 1) + '-' + enddate.getDate(); // +' ' + enddate.getHours() + ':' + enddate.getMinutes() + ':' + enddate.getSeconds();
+
+            $("#_czsj_start").ligerDateEditor({ format: "yyyy-MM-dd", labelWidth: 100, labelAlign: 'center', cancelable: true, showTime: true, initValue: strtime, onChangeDate: function (value) {
+                var d1 = new Date(value.replace(/\-/g, "\/"));
+                var d2 = new Date($("#_czsj_end").val().replace(/\-/g, "\/"));
+                if (d1 >= d2) {
+                    $("#_czsj_end").val("");
+                }
+            }
+            });
+            $("#_czsj_end").ligerDateEditor({ format: "yyyy-MM-dd", labelWidth: 100, labelAlign: 'center', cancelable: true, showTime: true, initValue: endtime, onChangeDate: function (value) {
+                var d1 = new Date($("#_czsj_start").val().replace(/\-/g, "\/"));
+                var d2 = new Date(value.replace(/\-/g, "\/"));
+                if (d1 > d2) {
+                    $("#_czsj_end").val("");
+                    $.ligerDialog.warn('开始日期不能大于截止日期');
+                }
+            }
+            });
+
+
+
+
+            $('#_czlx').ligerComboBox();
+            //$('#_dwmc').ligerTextBox();
+            //$('#_bmmc').ligerTextBox();
+            $('#_rygh').ligerTextBox();
+
+            var tree_node;
+            var menu = $.ligerMenu({ top: 100, left: 100, width: 120, items:
+            [
+            { text: '全选/反选', click: function itemclick() {
+                var sNode = tree_node;
+                if (sNode == null) {
+                    $.messager.alert('提示', '未选择任何节点，操作失败！', 'error');
+                    return;
+                }
+
+                $(".l-expandable-close", sNode.target).click();
+                if ($(".l-checkbox-checked", sNode.target).length == 0) {//未选中
+                    $(".l-checkbox", sNode).removeClass("l-checkbox-checked").addClass("l-checkbox-unchecked");
+                    $(".l-checkbox-unchecked", sNode.target).click();
+                }
+                else {
+                    $(".l-checkbox", sNode).removeClass("l-checkbox-unchecked").addClass("l-checkbox-checked");
+                    $(".l-checkbox-checked", sNode.target).click();
+                }
+            }
+            }
+            ]
+            });
+
+            //单位编码
+            dwbm_tree = $("#_dwmc").unitJuris({ width: 130, checkbox: true });
+
+
+            //加载日志信息
+            loadLogGrid();
+            $('#btn_search').ligerButton({
+                click: function () {
+                    loadLogGrid();
+                },
+                text: '查询',
+                icon: '../../images/cx.png'
+            });
+
+
+        });
+
+        var ryGrid;
+        function loadLogGrid() {
+            if (ryGrid)
+                ryGrid.changePage("first"); //重置到第一页
+            var queryData = { action: 'GetLogList', dwmc: dwbm_tree.getValue(), bmmc: '', rygh: $('#_rygh').val(), czlx: $('#_czlx').val(), czsj_start: $('#_czsj_start').val(), czsj_end: $('#_czsj_end').val() };
+            var time = new Date();
+            ryGrid = $("#maingrid").ligerGrid({
+                columns: [
+                { display: '序号', name: 'xh', width: 50, hide: 'none' },
+                //                { display: '单位编码', name: 'dwbm', width: 60 },
+                {display: '单位名称', name: 'dwmc', width: 180 },
+                //                { display: '部门编码', name: 'bmbm', width: 60 },
+                {display: '部门名称', name: 'bmmc', width: 180 },
+                //                { display: '操作人工号', name: 'czrgh', width: 70 },
+                {display: '操作人', name: 'czr', width: 150 },
+                { display: '操作时间', name: 'czsj', width: 180, format: 'yyyy/MM/dd HH:mm:ss' },
+                { display: '操作IP', name: 'czip', width: 180 },
+                //                { display: '操作类型', name: 'czlx', width: 150, render: function (row, index) {
+                //                    if (row.czlx == 1) {
+                //                        return "卷宗制作";
+                //                    }
+                //                    else if (row.czlx == 2) {
+                //                        return "卷宗制作";
+                //                    }
+                //                    else if (row.czlx == 3) {
+                //                        return "卷宗制作";
+                //                    }
+                //                    else if (row.czlx == 4 || row.czlx == 10) {
+                //                        return "登录系统";
+                //                    }
+                //                    else if (row.czlx == 5) {
+                //                        return "卷宗查询";
+                //                    }
+                //                    else if (row.czlx == 6) {
+                //                        return "用户管理";
+                //                    }
+                //                    //                    else if (row.czlx == 7) {
+                //                    //                        return "律师阅卷日志";
+                //                    //                    }
+                //                    else if (row.czlx == 8) {
+                //                        return "其它";
+                //                    }
+                //                    //                    else if (row.czlx == 10) {
+                //                    //                        return "登陆系统";
+                //                    //                    }
+                //                    else if (row.czlx == 11) {
+                //                        return "单位管理";
+                //                    }
+                //                    else if (row.czlx == 12) {
+                //                        return "部门管理";
+                //                    }
+                //                    else if (row.czlx == 13) {
+                //                        return "人员角色分配";
+                //                    }
+                //                    else if (row.czlx == 14) {
+                //                        return "功能权限管理";
+                //                    }
+                //                    else if (row.czlx == 15) {
+                //                        return "单位权限管理";
+                //                    }
+                //                    else if (row.czlx == 16) {
+                //                        return "案件类别权限管理";
+                //                    }
+                //                    else if (row.czlx == 17) {
+                //                        return "功能模块管理";
+                //                    }
+                //                    else if (row.czlx == 18) {
+                //                        return "参数配置";
+                //                    }
+                //                    else if (row.czlx == 19) {
+                //                        return "卷宗模板配置";
+                //                    }
+                //                    else if (row.czlx == 20) {
+                //                        return "案件卷宗制作";
+                //                    }
+                //                    else if (row.czlx == 21) {
+                //                        return "卷宗统计报表";
+                //                    }
+                //                    else if (row.czlx == 22) {
+                //                        return "单位案件查询";
+                //                    }
+                //                    else if (row.czlx == 23) {
+                //                        return "单位卷宗制作情况查询";
+                //                    }
+                //                    else if (row.czlx == 24) {
+                //                        return "卷宗业务情况";
+                //                    }
+                //                    else if (row.czlx == 25) {
+                //                        return "单位卷宗统计";
+                //                    }
+                //                    else if (row.czlx == 26) {
+                //                        return "卷宗制作工作量统计";
+                //                    }
+                //                    else if (row.czlx == 27) {
+                //                        return "卷宗数量统计";
+                //                    }
+                //                    else if (row.czlx == 28) {
+                //                        return "卷宗月统计图";
+                //                    }
+                //                    else if (row.czlx == 29) {
+                //                        return "卷宗业务情况统计";
+                //                    }
+                //                    else if (row.czlx == 30) {
+                //                        return "人员管理";
+                //                    }
+                //                    else if (row.czlx == 31) {
+                //                        return "角色权限管理";
+                //                    }
+                //                    else if (row.czlx == 32) {
+                //                        return "功能分类管理";
+                //                    }
+                //                    else if (row.czlx == 33) {
+                //                        return "阅卷";
+                //                    }
+                //                    else if (row.czlx == 34) {
+                //                        return "设备登记";
+                //                    }
+                //                    else {
+                //                        return "无";
+                //                    }
+                //                }
+                //                },
+                {display: '日志内容', name: 'rznr', width: 320,
+                render: function (row, index) {
+                    return '<a href="javascript:" onclick="OpenDiv(\'' + row.rznr + '\')">' + row.rznr + '</a>';
+                }
+            }
+            //                { display: '操作案件部门受案号/单据标识', name: 'czajbmsah', width: 260,
+            //                    render: function (row, index) {
+            //                        return '<a href="javascript:" onclick="OpenDiv(\'' + row.czajbmsah + '\')">' + row.czajbmsah + '</a>';
+            //                    }
+            //                },
+            //                { display: '分区列', name: 'fql', width: 100 }
+                ], rownumbers: true
+                , width: '100%', height: '100%',       //服务器分页
+            url: '/Handler/ZZJG/ZZJGHandler.ashx?t=' + time.getMilliseconds(),
+            usePager: true,
+            pageSizeOptions: [20, 50, 100, 500],
+            pageSize: 50,
+            dataAction: "server",
+            parms: queryData,
+            onSuccess: function (data) {
+                if (data.t) {
+                    $.ligerDialog.warn(data.v);
+
+                    return false;
+                }
+            }
+        });
+    }
+    function OpenDiv(obj) {
+
+        $.ligerDialog.open({ title: '日志内容', height: 200, width: 300, content: obj });
+
+    }
+    $(function () {
+        $("#btn_search img").attr("src", "../../images/cx.png");
+    })
+    </script>
+</body>
+<script src="/LigerUI/lib/LigerUI/JScript1.js" type="text/javascript"></script>
+</html>

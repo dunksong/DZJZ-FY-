@@ -1,0 +1,899 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IceStorm</name>
+    </assembly>
+    <members>
+        <member name="T:IceStorm.LinkExists">
+            <summary>
+            This exception indicates that an attempt was made to create a link
+            that already exists.
+            </summary>
+        </member>
+        <member name="T:IceStorm.NoSuchLink">
+            <summary>
+            This exception indicates that an attempt was made to remove a
+            link that does not exist.
+            </summary>
+        </member>
+        <member name="T:IceStorm.AlreadySubscribed">
+            <summary>
+            This exception indicates that an attempt was made to subscribe
+            a proxy for which a subscription already exists.
+            </summary>
+        </member>
+        <member name="T:IceStorm.BadQoS">
+            <summary>
+            This exception indicates that a subscription failed due to an
+            invalid QoS.
+            </summary>
+        </member>
+        <member name="T:IceStorm.TopicOperations_">
+            <summary>
+            Publishers publish information on a particular topic.
+            A topic
+            logically represents a type.
+            
+            </summary>
+        </member>
+        <member name="M:IceStorm.TopicOperations_.getName(Ice.Current)">
+            <summary>
+            Get the name of this topic.
+            </summary>
+            <returns>The name of the topic.
+            
+            </returns>
+            <param name="current__">The Current object for the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicOperations_.getPublisher(Ice.Current)">
+            <summary>
+            Get a proxy to a publisher object for this topic.
+            To publish
+            data to a topic, the publisher calls getPublisher and then
+            casts to the topic type. An unchecked cast must be used on this
+            proxy. If a replicated IceStorm deployment is used this call
+            may return a replicated proxy.
+            
+            </summary>
+            <returns>A proxy to publish data on this topic.</returns>
+            <param name="current__">The Current object for the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicOperations_.getNonReplicatedPublisher(Ice.Current)">
+            <summary>
+            Get a non-replicated proxy to a publisher object for this
+            topic.
+            To publish data to a topic, the publisher calls
+            getPublisher and then casts to the topic type. An unchecked
+            cast must be used on this proxy.
+            
+            </summary>
+            <returns>A proxy to publish data on this topic.</returns>
+            <param name="current__">The Current object for the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicOperations_.subscribe(System.Collections.Generic.Dictionary{System.String,System.String},Ice.ObjectPrx,Ice.Current)">
+             <summary>
+             Subscribe with the given qos to this topic.
+            
+             <para>subscribe is deprecated, use subscribeAndGetPublisher instead</para>
+            
+             If the given
+             subscriber proxy has already been registered, it will be
+             replaced. Note that this can cause a loss of events to the
+             subscribed object.
+             
+             This operation is deprecated as of version 3.2.
+             
+             </summary>
+             <param name="theQoS">The quality of service parameters for this
+             subscription.
+             
+             </param>
+             <param name="subscriber">The subscriber's proxy.
+             
+             </param>
+             <returns>The per-subscriber publisher object.
+             
+             </returns>
+             <param name="current__">The Current object for the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicOperations_.subscribeAndGetPublisher(System.Collections.Generic.Dictionary{System.String,System.String},Ice.ObjectPrx,Ice.Current)">
+            <summary>
+            Subscribe with the given qos to this topic.
+            A
+            per-subscriber publisher object is returned.
+            
+            </summary>
+            <param name="theQoS">The quality of service parameters for this
+            subscription.
+            
+            </param>
+            <param name="subscriber">The subscriber's proxy.
+            
+            </param>
+            <returns>The per-subscriber publisher object.
+            
+            </returns>
+            <exception name="AlreadySubscribed">Raised if the subscriber object is
+            already subscribed.
+            
+            </exception>
+            <exception name="BadQoS">Raised if the requested quality of service
+            is unavailable or invalid.
+            
+            </exception>
+            <param name="current__">The Current object for the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicOperations_.unsubscribe(Ice.ObjectPrx,Ice.Current)">
+            <summary>
+            Unsubscribe the given subscriber.
+            </summary>
+            <param name="subscriber">The proxy of an existing subscriber.
+            
+            </param>
+            <param name="current__">The Current object for the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicOperations_.link(IceStorm.TopicPrx,System.Int32,Ice.Current)">
+            <summary>
+            Create a link to the given topic.
+            All events originating
+            on this topic will also be sent to linkTo.
+            
+            </summary>
+            <param name="linkTo">The topic to link to.
+            
+            </param>
+            <param name="cost">The cost to the linked topic.
+            
+            </param>
+            <exception name="LinkExists">Raised if a link to the same topic already
+            exists.</exception>
+            <param name="current__">The Current object for the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicOperations_.unlink(IceStorm.TopicPrx,Ice.Current)">
+            <summary>
+            Destroy the link from this topic to the given topic linkTo.
+            </summary>
+            <param name="linkTo">The topic to destroy the link to.
+            
+            </param>
+            <exception name="NoSuchLink">Raised if a link to the topic does not exist.</exception>
+            <param name="current__">The Current object for the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicOperations_.getLinkInfoSeq(Ice.Current)">
+            <summary>
+            Retrieve information on the current links.
+            </summary>
+            <returns>A sequence of LinkInfo objects.</returns>
+            <param name="current__">The Current object for the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicOperations_.destroy(Ice.Current)">
+            <summary>
+            Destroy the topic.
+            </summary>
+            <param name="current__">The Current object for the invocation.</param>
+        </member>
+        <member name="T:IceStorm.TopicOperationsNC_">
+            <summary>
+            Publishers publish information on a particular topic.
+            A topic
+            logically represents a type.
+            
+            </summary>
+        </member>
+        <member name="M:IceStorm.TopicOperationsNC_.getName">
+            <summary>
+            Get the name of this topic.
+            </summary>
+            <returns>The name of the topic.
+            
+            </returns>
+        </member>
+        <member name="M:IceStorm.TopicOperationsNC_.getPublisher">
+            <summary>
+            Get a proxy to a publisher object for this topic.
+            To publish
+            data to a topic, the publisher calls getPublisher and then
+            casts to the topic type. An unchecked cast must be used on this
+            proxy. If a replicated IceStorm deployment is used this call
+            may return a replicated proxy.
+            
+            </summary>
+            <returns>A proxy to publish data on this topic.</returns>
+        </member>
+        <member name="M:IceStorm.TopicOperationsNC_.getNonReplicatedPublisher">
+            <summary>
+            Get a non-replicated proxy to a publisher object for this
+            topic.
+            To publish data to a topic, the publisher calls
+            getPublisher and then casts to the topic type. An unchecked
+            cast must be used on this proxy.
+            
+            </summary>
+            <returns>A proxy to publish data on this topic.</returns>
+        </member>
+        <member name="M:IceStorm.TopicOperationsNC_.subscribe(System.Collections.Generic.Dictionary{System.String,System.String},Ice.ObjectPrx)">
+             <summary>
+             Subscribe with the given qos to this topic.
+            
+             <para>subscribe is deprecated, use subscribeAndGetPublisher instead</para>
+            
+             If the given
+             subscriber proxy has already been registered, it will be
+             replaced. Note that this can cause a loss of events to the
+             subscribed object.
+             
+             This operation is deprecated as of version 3.2.
+             
+             </summary>
+             <param name="theQoS">The quality of service parameters for this
+             subscription.
+             
+             </param>
+             <param name="subscriber">The subscriber's proxy.
+             
+             </param>
+             <returns>The per-subscriber publisher object.
+             
+             </returns>
+        </member>
+        <member name="M:IceStorm.TopicOperationsNC_.subscribeAndGetPublisher(System.Collections.Generic.Dictionary{System.String,System.String},Ice.ObjectPrx)">
+            <summary>
+            Subscribe with the given qos to this topic.
+            A
+            per-subscriber publisher object is returned.
+            
+            </summary>
+            <param name="theQoS">The quality of service parameters for this
+            subscription.
+            
+            </param>
+            <param name="subscriber">The subscriber's proxy.
+            
+            </param>
+            <returns>The per-subscriber publisher object.
+            
+            </returns>
+            <exception name="AlreadySubscribed">Raised if the subscriber object is
+            already subscribed.
+            
+            </exception>
+            <exception name="BadQoS">Raised if the requested quality of service
+            is unavailable or invalid.
+            
+            </exception>
+        </member>
+        <member name="M:IceStorm.TopicOperationsNC_.unsubscribe(Ice.ObjectPrx)">
+            <summary>
+            Unsubscribe the given subscriber.
+            </summary>
+            <param name="subscriber">The proxy of an existing subscriber.
+            
+            </param>
+        </member>
+        <member name="M:IceStorm.TopicOperationsNC_.link(IceStorm.TopicPrx,System.Int32)">
+            <summary>
+            Create a link to the given topic.
+            All events originating
+            on this topic will also be sent to linkTo.
+            
+            </summary>
+            <param name="linkTo">The topic to link to.
+            
+            </param>
+            <param name="cost">The cost to the linked topic.
+            
+            </param>
+            <exception name="LinkExists">Raised if a link to the same topic already
+            exists.</exception>
+        </member>
+        <member name="M:IceStorm.TopicOperationsNC_.unlink(IceStorm.TopicPrx)">
+            <summary>
+            Destroy the link from this topic to the given topic linkTo.
+            </summary>
+            <param name="linkTo">The topic to destroy the link to.
+            
+            </param>
+            <exception name="NoSuchLink">Raised if a link to the topic does not exist.</exception>
+        </member>
+        <member name="M:IceStorm.TopicOperationsNC_.getLinkInfoSeq">
+            <summary>
+            Retrieve information on the current links.
+            </summary>
+            <returns>A sequence of LinkInfo objects.</returns>
+        </member>
+        <member name="M:IceStorm.TopicOperationsNC_.destroy">
+            <summary>
+            Destroy the topic.
+            </summary>
+        </member>
+        <member name="T:IceStorm.TopicExists">
+            <summary>
+            This exception indicates that an attempt was made to create a topic
+            that already exists.
+            </summary>
+        </member>
+        <member name="T:IceStorm.NoSuchTopic">
+            <summary>
+            This exception indicates that an attempt was made to retrieve a
+            topic that does not exist.
+            </summary>
+        </member>
+        <member name="T:IceStorm.TopicManagerOperations_">
+            <summary>
+            A topic manager manages topics, and subscribers to topics.
+            </summary>
+        </member>
+        <member name="M:IceStorm.TopicManagerOperations_.create(System.String,Ice.Current)">
+            <summary>
+            Create a new topic.
+            The topic name must be unique, otherwise
+            TopicExists is raised.
+            
+            </summary>
+            <param name="name">The name of the topic.
+            
+            </param>
+            <returns>A proxy to the topic instance.
+            
+            </returns>
+            <exception name="TopicExists">Raised if a topic with the same name already
+            exists.</exception>
+            <param name="current__">The Current object for the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicManagerOperations_.retrieve(System.String,Ice.Current)">
+            <summary>
+            Retrieve a topic by name.
+            </summary>
+            <param name="name">The name of the topic.
+            
+            </param>
+            <returns>A proxy to the topic instance.
+            
+            </returns>
+            <exception name="NoSuchTopic">Raised if the topic does not exist.</exception>
+            <param name="current__">The Current object for the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicManagerOperations_.retrieveAll(Ice.Current)">
+            <summary>
+            Retrieve all topics managed by this topic manager.
+            </summary>
+            <returns>A dictionary of string, topic proxy pairs.</returns>
+            <param name="current__">The Current object for the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicManagerOperations_.getSliceChecksums(Ice.Current)">
+            <summary>
+            Returns the checksums for the IceStorm Slice definitions.
+            </summary>
+            <returns>A dictionary mapping Slice type ids to their checksums.</returns>
+            <param name="current__">The Current object for the invocation.</param>
+        </member>
+        <member name="T:IceStorm.TopicManagerOperationsNC_">
+            <summary>
+            A topic manager manages topics, and subscribers to topics.
+            </summary>
+        </member>
+        <member name="M:IceStorm.TopicManagerOperationsNC_.create(System.String)">
+            <summary>
+            Create a new topic.
+            The topic name must be unique, otherwise
+            TopicExists is raised.
+            
+            </summary>
+            <param name="name">The name of the topic.
+            
+            </param>
+            <returns>A proxy to the topic instance.
+            
+            </returns>
+            <exception name="TopicExists">Raised if a topic with the same name already
+            exists.</exception>
+        </member>
+        <member name="M:IceStorm.TopicManagerOperationsNC_.retrieve(System.String)">
+            <summary>
+            Retrieve a topic by name.
+            </summary>
+            <param name="name">The name of the topic.
+            
+            </param>
+            <returns>A proxy to the topic instance.
+            
+            </returns>
+            <exception name="NoSuchTopic">Raised if the topic does not exist.</exception>
+        </member>
+        <member name="M:IceStorm.TopicManagerOperationsNC_.retrieveAll">
+            <summary>
+            Retrieve all topics managed by this topic manager.
+            </summary>
+            <returns>A dictionary of string, topic proxy pairs.</returns>
+        </member>
+        <member name="M:IceStorm.TopicManagerOperationsNC_.getSliceChecksums">
+            <summary>
+            Returns the checksums for the IceStorm Slice definitions.
+            </summary>
+            <returns>A dictionary mapping Slice type ids to their checksums.</returns>
+        </member>
+        <member name="T:IceStorm.TopicPrxHelper">
+            <summary>
+            Publishers publish information on a particular topic.
+            A topic
+            logically represents a type.
+            
+            </summary>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.destroy">
+            <summary>
+            Destroy the topic.
+            </summary>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.destroy(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Destroy the topic.
+            </summary>
+            <param name="context__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.getLinkInfoSeq">
+            <summary>
+            Retrieve information on the current links.
+            </summary>
+            <returns>A sequence of LinkInfo objects.</returns>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.getLinkInfoSeq(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Retrieve information on the current links.
+            </summary>
+            <returns>A sequence of LinkInfo objects.</returns>
+            <param name="context__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.getName">
+            <summary>
+            Get the name of this topic.
+            </summary>
+            <returns>The name of the topic.
+            
+            </returns>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.getName(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Get the name of this topic.
+            </summary>
+            <returns>The name of the topic.
+            
+            </returns>
+            <param name="context__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.getNonReplicatedPublisher">
+            <summary>
+            Get a non-replicated proxy to a publisher object for this
+            topic.
+            To publish data to a topic, the publisher calls
+            getPublisher and then casts to the topic type. An unchecked
+            cast must be used on this proxy.
+            
+            </summary>
+            <returns>A proxy to publish data on this topic.</returns>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.getNonReplicatedPublisher(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Get a non-replicated proxy to a publisher object for this
+            topic.
+            To publish data to a topic, the publisher calls
+            getPublisher and then casts to the topic type. An unchecked
+            cast must be used on this proxy.
+            
+            </summary>
+            <returns>A proxy to publish data on this topic.</returns>
+            <param name="context__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.getPublisher">
+            <summary>
+            Get a proxy to a publisher object for this topic.
+            To publish
+            data to a topic, the publisher calls getPublisher and then
+            casts to the topic type. An unchecked cast must be used on this
+            proxy. If a replicated IceStorm deployment is used this call
+            may return a replicated proxy.
+            
+            </summary>
+            <returns>A proxy to publish data on this topic.</returns>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.getPublisher(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Get a proxy to a publisher object for this topic.
+            To publish
+            data to a topic, the publisher calls getPublisher and then
+            casts to the topic type. An unchecked cast must be used on this
+            proxy. If a replicated IceStorm deployment is used this call
+            may return a replicated proxy.
+            
+            </summary>
+            <returns>A proxy to publish data on this topic.</returns>
+            <param name="context__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.link(IceStorm.TopicPrx,System.Int32)">
+            <summary>
+            Create a link to the given topic.
+            All events originating
+            on this topic will also be sent to linkTo.
+            
+            </summary>
+            <param name="linkTo">The topic to link to.
+            
+            </param>
+            <param name="cost">The cost to the linked topic.
+            
+            </param>
+            <exception name="LinkExists">Raised if a link to the same topic already
+            exists.</exception>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.link(IceStorm.TopicPrx,System.Int32,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Create a link to the given topic.
+            All events originating
+            on this topic will also be sent to linkTo.
+            
+            </summary>
+            <param name="linkTo">The topic to link to.
+            
+            </param>
+            <param name="cost">The cost to the linked topic.
+            
+            </param>
+            <exception name="LinkExists">Raised if a link to the same topic already
+            exists.</exception>
+            <param name="context__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.subscribe(System.Collections.Generic.Dictionary{System.String,System.String},Ice.ObjectPrx)">
+             <summary>
+             Subscribe with the given qos to this topic.
+            
+             <para>subscribe is deprecated, use subscribeAndGetPublisher instead</para>
+            
+             If the given
+             subscriber proxy has already been registered, it will be
+             replaced. Note that this can cause a loss of events to the
+             subscribed object.
+             
+             This operation is deprecated as of version 3.2.
+             
+             </summary>
+             <param name="theQoS">The quality of service parameters for this
+             subscription.
+             
+             </param>
+             <param name="subscriber">The subscriber's proxy.
+             
+             </param>
+             <returns>The per-subscriber publisher object.
+             
+             </returns>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.subscribe(System.Collections.Generic.Dictionary{System.String,System.String},Ice.ObjectPrx,System.Collections.Generic.Dictionary{System.String,System.String})">
+             <summary>
+             Subscribe with the given qos to this topic.
+            
+             <para>subscribe is deprecated, use subscribeAndGetPublisher instead</para>
+            
+             If the given
+             subscriber proxy has already been registered, it will be
+             replaced. Note that this can cause a loss of events to the
+             subscribed object.
+             
+             This operation is deprecated as of version 3.2.
+             
+             </summary>
+             <param name="theQoS">The quality of service parameters for this
+             subscription.
+             
+             </param>
+             <param name="subscriber">The subscriber's proxy.
+             
+             </param>
+             <returns>The per-subscriber publisher object.
+             
+             </returns>
+             <param name="context__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.subscribeAndGetPublisher(System.Collections.Generic.Dictionary{System.String,System.String},Ice.ObjectPrx)">
+            <summary>
+            Subscribe with the given qos to this topic.
+            A
+            per-subscriber publisher object is returned.
+            
+            </summary>
+            <param name="theQoS">The quality of service parameters for this
+            subscription.
+            
+            </param>
+            <param name="subscriber">The subscriber's proxy.
+            
+            </param>
+            <returns>The per-subscriber publisher object.
+            
+            </returns>
+            <exception name="AlreadySubscribed">Raised if the subscriber object is
+            already subscribed.
+            
+            </exception>
+            <exception name="BadQoS">Raised if the requested quality of service
+            is unavailable or invalid.
+            
+            </exception>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.subscribeAndGetPublisher(System.Collections.Generic.Dictionary{System.String,System.String},Ice.ObjectPrx,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Subscribe with the given qos to this topic.
+            A
+            per-subscriber publisher object is returned.
+            
+            </summary>
+            <param name="theQoS">The quality of service parameters for this
+            subscription.
+            
+            </param>
+            <param name="subscriber">The subscriber's proxy.
+            
+            </param>
+            <returns>The per-subscriber publisher object.
+            
+            </returns>
+            <exception name="AlreadySubscribed">Raised if the subscriber object is
+            already subscribed.
+            
+            </exception>
+            <exception name="BadQoS">Raised if the requested quality of service
+            is unavailable or invalid.
+            
+            </exception>
+            <param name="context__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.unlink(IceStorm.TopicPrx)">
+            <summary>
+            Destroy the link from this topic to the given topic linkTo.
+            </summary>
+            <param name="linkTo">The topic to destroy the link to.
+            
+            </param>
+            <exception name="NoSuchLink">Raised if a link to the topic does not exist.</exception>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.unlink(IceStorm.TopicPrx,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Destroy the link from this topic to the given topic linkTo.
+            </summary>
+            <param name="linkTo">The topic to destroy the link to.
+            
+            </param>
+            <exception name="NoSuchLink">Raised if a link to the topic does not exist.</exception>
+            <param name="context__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.unsubscribe(Ice.ObjectPrx)">
+            <summary>
+            Unsubscribe the given subscriber.
+            </summary>
+            <param name="subscriber">The proxy of an existing subscriber.
+            
+            </param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.unsubscribe(Ice.ObjectPrx,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Unsubscribe the given subscriber.
+            </summary>
+            <param name="subscriber">The proxy of an existing subscriber.
+            
+            </param>
+            <param name="context__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.begin_destroy(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Destroy the topic.
+            </summary>
+            <param name="ctx__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.begin_getLinkInfoSeq(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Retrieve information on the current links.
+            </summary>
+            <param name="ctx__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.begin_getName(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Get the name of this topic.
+            </summary>
+            <param name="ctx__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.begin_getNonReplicatedPublisher(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Get a non-replicated proxy to a publisher object for this
+            topic.
+            To publish data to a topic, the publisher calls
+            </summary>
+            <param name="ctx__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.begin_getPublisher(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Get a proxy to a publisher object for this topic.
+            To publish
+            </summary>
+            <param name="ctx__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.begin_link(IceStorm.TopicPrx,System.Int32,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Create a link to the given topic.
+            All events originating
+            </summary>
+            <param name="linkTo">The topic to link to.
+            
+            </param>
+            <param name="cost">The cost to the linked topic.
+            
+            </param>
+            <param name="ctx__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.begin_subscribe(System.Collections.Generic.Dictionary{System.String,System.String},Ice.ObjectPrx,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Subscribe with the given qos to this topic.
+            If the given
+            </summary>
+            <param name="theQoS">The quality of service parameters for this
+            subscription.
+            
+            </param>
+            <param name="subscriber">The subscriber's proxy.
+            
+            </param>
+            <param name="ctx__">The Context map to send with the invocation.</param>
+            <para>subscribe is deprecated, use subscribeAndGetPublisher instead</para>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.begin_subscribeAndGetPublisher(System.Collections.Generic.Dictionary{System.String,System.String},Ice.ObjectPrx,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Subscribe with the given qos to this topic.
+            A
+            </summary>
+            <param name="theQoS">The quality of service parameters for this
+            subscription.
+            
+            </param>
+            <param name="subscriber">The subscriber's proxy.
+            
+            </param>
+            <param name="ctx__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.begin_unlink(IceStorm.TopicPrx,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Destroy the link from this topic to the given topic linkTo.
+            </summary>
+            <param name="linkTo">The topic to destroy the link to.
+            
+            </param>
+            <param name="ctx__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicPrxHelper.begin_unsubscribe(Ice.ObjectPrx,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Unsubscribe the given subscriber.
+            </summary>
+            <param name="subscriber">The proxy of an existing subscriber.
+            
+            </param>
+            <param name="ctx__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="T:IceStorm.TopicManagerPrxHelper">
+            <summary>
+            A topic manager manages topics, and subscribers to topics.
+            </summary>
+        </member>
+        <member name="M:IceStorm.TopicManagerPrxHelper.create(System.String)">
+            <summary>
+            Create a new topic.
+            The topic name must be unique, otherwise
+            TopicExists is raised.
+            
+            </summary>
+            <param name="name">The name of the topic.
+            
+            </param>
+            <returns>A proxy to the topic instance.
+            
+            </returns>
+            <exception name="TopicExists">Raised if a topic with the same name already
+            exists.</exception>
+        </member>
+        <member name="M:IceStorm.TopicManagerPrxHelper.create(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Create a new topic.
+            The topic name must be unique, otherwise
+            TopicExists is raised.
+            
+            </summary>
+            <param name="name">The name of the topic.
+            
+            </param>
+            <returns>A proxy to the topic instance.
+            
+            </returns>
+            <exception name="TopicExists">Raised if a topic with the same name already
+            exists.</exception>
+            <param name="context__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicManagerPrxHelper.getSliceChecksums">
+            <summary>
+            Returns the checksums for the IceStorm Slice definitions.
+            </summary>
+            <returns>A dictionary mapping Slice type ids to their checksums.</returns>
+        </member>
+        <member name="M:IceStorm.TopicManagerPrxHelper.getSliceChecksums(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Returns the checksums for the IceStorm Slice definitions.
+            </summary>
+            <returns>A dictionary mapping Slice type ids to their checksums.</returns>
+            <param name="context__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicManagerPrxHelper.retrieve(System.String)">
+            <summary>
+            Retrieve a topic by name.
+            </summary>
+            <param name="name">The name of the topic.
+            
+            </param>
+            <returns>A proxy to the topic instance.
+            
+            </returns>
+            <exception name="NoSuchTopic">Raised if the topic does not exist.</exception>
+        </member>
+        <member name="M:IceStorm.TopicManagerPrxHelper.retrieve(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Retrieve a topic by name.
+            </summary>
+            <param name="name">The name of the topic.
+            
+            </param>
+            <returns>A proxy to the topic instance.
+            
+            </returns>
+            <exception name="NoSuchTopic">Raised if the topic does not exist.</exception>
+            <param name="context__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicManagerPrxHelper.retrieveAll">
+            <summary>
+            Retrieve all topics managed by this topic manager.
+            </summary>
+            <returns>A dictionary of string, topic proxy pairs.</returns>
+        </member>
+        <member name="M:IceStorm.TopicManagerPrxHelper.retrieveAll(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Retrieve all topics managed by this topic manager.
+            </summary>
+            <returns>A dictionary of string, topic proxy pairs.</returns>
+            <param name="context__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicManagerPrxHelper.begin_create(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Create a new topic.
+            The topic name must be unique, otherwise
+            </summary>
+            <param name="name">The name of the topic.
+            
+            </param>
+            <param name="ctx__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicManagerPrxHelper.begin_getSliceChecksums(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Returns the checksums for the IceStorm Slice definitions.
+            </summary>
+            <param name="ctx__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicManagerPrxHelper.begin_retrieve(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Retrieve a topic by name.
+            </summary>
+            <param name="name">The name of the topic.
+            
+            </param>
+            <param name="ctx__">The Context map to send with the invocation.</param>
+        </member>
+        <member name="M:IceStorm.TopicManagerPrxHelper.begin_retrieveAll(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Retrieve all topics managed by this topic manager.
+            </summary>
+            <param name="ctx__">The Context map to send with the invocation.</param>
+        </member>
+    </members>
+</doc>

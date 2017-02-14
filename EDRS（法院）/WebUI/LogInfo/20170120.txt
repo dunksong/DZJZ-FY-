@@ -1,0 +1,294 @@
+日志时间：2017/01/20 09:13:43
+发起路径：http://localhost:83/
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2017/01/20 09:14:54
+发起路径：http://localhost:83/
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public EDRS.Model.XT_ZZJG_DWBM GetModel(string DWBM)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select DWBM,DWMC,DWJC,DWJB,FDWBM,SFSC from XT_ZZJG_DWBM  where DWBM=:DWBM 
+参数列表：{  [:DWBM：440300000000]    }
+
+
+日志时间：2017/01/20 17:34:50
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-03135: 连接失去联系
+进程 ID: 4116
+会话 ID: 191 序列号: 391
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSYJSQ
+SQL语句：select count(1) FROM YX_DZJZ_LSYJSQ  where 1=1  and SHRGH=:SHRGH and SQDZT='T' and SFSC='N'
+参数列表：{  [:SHRGH：0000]    }
+
+
+日志时间：2017/01/20 17:34:50
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-03114: 未连接到 ORACLE
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSAJBD
+SQL语句：SELECT count(1) from YX_DZJZ_LSYJSQ q left join  YX_DZJZ_LSAJBD T on q.yjsqdh=t.yjsqdh   where 1=1  and JDRGH=:JDRGH and JDDWBM=:JDDWBM and q.SFSC='N' and t.SFSC='N' and SQDZT='Y'
+参数列表：{  [:JDRGH：0000]    [:JDDWBM：440300000000]    }
+
+
+日志时间：2017/01/20 17:35:20
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSYJSQ
+SQL语句：select count(1) FROM YX_DZJZ_LSYJSQ  where 1=1  and SHRGH=:SHRGH and SQDZT='T' and SFSC='N'
+参数列表：{  [:SHRGH：0000]    }
+
+
+日志时间：2017/01/20 17:35:20
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSAJBD
+SQL语句：SELECT count(1) from YX_DZJZ_LSYJSQ q left join  YX_DZJZ_LSAJBD T on q.yjsqdh=t.yjsqdh   where 1=1  and JDRGH=:JDRGH and JDDWBM=:JDDWBM and q.SFSC='N' and t.SFSC='N' and SQDZT='Y'
+参数列表：{  [:JDRGH：0000]    [:JDDWBM：440300000000]    }
+
+
+日志时间：2017/01/20 17:36:11
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSYJSQ
+SQL语句：select count(1) FROM YX_DZJZ_LSYJSQ  where 1=1  and SHRGH=:SHRGH and SQDZT='T' and SFSC='N'
+参数列表：{  [:SHRGH：0000]    }
+
+
+日志时间：2017/01/20 17:36:11
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSAJBD
+SQL语句：SELECT count(1) from YX_DZJZ_LSYJSQ q left join  YX_DZJZ_LSAJBD T on q.yjsqdh=t.yjsqdh   where 1=1  and JDRGH=:JDRGH and JDDWBM=:JDDWBM and q.SFSC='N' and t.SFSC='N' and SQDZT='Y'
+参数列表：{  [:JDRGH：0000]    [:JDDWBM：440300000000]    }
+
+
+日志时间：2017/01/20 17:36:41
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSYJSQ
+SQL语句：select count(1) FROM YX_DZJZ_LSYJSQ  where 1=1  and SHRGH=:SHRGH and SQDZT='T' and SFSC='N'
+参数列表：{  [:SHRGH：0000]    }
+
+
+日志时间：2017/01/20 17:36:41
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSAJBD
+SQL语句：SELECT count(1) from YX_DZJZ_LSYJSQ q left join  YX_DZJZ_LSAJBD T on q.yjsqdh=t.yjsqdh   where 1=1  and JDRGH=:JDRGH and JDDWBM=:JDDWBM and q.SFSC='N' and t.SFSC='N' and SQDZT='Y'
+参数列表：{  [:JDRGH：0000]    [:JDDWBM：440300000000]    }
+
+
+日志时间：2017/01/20 17:36:50
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSYJSQ
+SQL语句：select count(1) FROM YX_DZJZ_LSYJSQ  where 1=1  and SHRGH=:SHRGH and SQDZT='T' and SFSC='N'
+参数列表：{  [:SHRGH：0000]    }
+
+
+日志时间：2017/01/20 17:36:50
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSAJBD
+SQL语句：SELECT count(1) from YX_DZJZ_LSYJSQ q left join  YX_DZJZ_LSAJBD T on q.yjsqdh=t.yjsqdh   where 1=1  and JDRGH=:JDRGH and JDDWBM=:JDDWBM and q.SFSC='N' and t.SFSC='N' and SQDZT='Y'
+参数列表：{  [:JDRGH：0000]    [:JDDWBM：440300000000]    }
+
+
+日志时间：2017/01/20 17:37:41
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSYJSQ
+SQL语句：select count(1) FROM YX_DZJZ_LSYJSQ  where 1=1  and SHRGH=:SHRGH and SQDZT='T' and SFSC='N'
+参数列表：{  [:SHRGH：0000]    }
+
+
+日志时间：2017/01/20 17:37:41
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSAJBD
+SQL语句：SELECT count(1) from YX_DZJZ_LSYJSQ q left join  YX_DZJZ_LSAJBD T on q.yjsqdh=t.yjsqdh   where 1=1  and JDRGH=:JDRGH and JDDWBM=:JDDWBM and q.SFSC='N' and t.SFSC='N' and SQDZT='Y'
+参数列表：{  [:JDRGH：0000]    [:JDDWBM：440300000000]    }
+
+
+日志时间：2017/01/20 17:38:11
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSYJSQ
+SQL语句：select count(1) FROM YX_DZJZ_LSYJSQ  where 1=1  and SHRGH=:SHRGH and SQDZT='T' and SFSC='N'
+参数列表：{  [:SHRGH：0000]    }
+
+
+日志时间：2017/01/20 17:38:11
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSAJBD
+SQL语句：SELECT count(1) from YX_DZJZ_LSYJSQ q left join  YX_DZJZ_LSAJBD T on q.yjsqdh=t.yjsqdh   where 1=1  and JDRGH=:JDRGH and JDDWBM=:JDDWBM and q.SFSC='N' and t.SFSC='N' and SQDZT='Y'
+参数列表：{  [:JDRGH：0000]    [:JDDWBM：440300000000]    }
+
+
+日志时间：2017/01/20 17:38:12
+发起路径：http://localhost:83/Pages/LSYJ/ReadingApply.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public DataSet GetListByPage(string strWhere, string orderby, int startIndex, int endIndex, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_WJSQDY
+SQL语句：SELECT * FROM (  SELECT ROW_NUMBER() OVER (order by T.SQSJ desc)AS Ro, T.*  from (select distinct a.lszh,a.bmsah,a.yjxh,a.sqsj,a.sqfs,a.sfsc,a.dysqdh,a.xh,aj.ajmc,
+jz.ajbh,jz.wsbh,jz.wsmc,l.LSXM,l.LSDW,l.LSDWDZ,l.LSLXDH,l.DELXR from yx_dzjz_wjsqdy a 
+left join tyyw_gg_ajjbxx aj on a.bmsah = aj.bmsah
+left join yx_dzjz_jzjbxx jz on a.bmsah = jz.bmsah
+left join YX_DZJZ_LSGL l on a.lszh = l.lszh) T  WHERE 1=1  and T.SFSC='N' ) TT WHERE TT.Ro between 1 and 50
+参数列表：{  }
+
+
+日志时间：2017/01/20 17:38:12
+发起路径：http://localhost:83/Pages/LSYJ/ReadingApply.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：private void LogClearTable()
+所在类库：EDRS.OracleDAL.YX_DZJZ_JZRZJL
+SQL语句：PKG_ZZJG_MANAGE.proc_delete_jzrzjl
+参数列表：{  [p_time：2016/7/20 17:38:12]    [p_errmsg：null]    }
+
+
+日志时间：2017/01/20 17:38:20
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSYJSQ
+SQL语句：select count(1) FROM YX_DZJZ_LSYJSQ  where 1=1  and SHRGH=:SHRGH and SQDZT='T' and SFSC='N'
+参数列表：{  [:SHRGH：0000]    }
+
+
+日志时间：2017/01/20 17:38:20
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSAJBD
+SQL语句：SELECT count(1) from YX_DZJZ_LSYJSQ q left join  YX_DZJZ_LSAJBD T on q.yjsqdh=t.yjsqdh   where 1=1  and JDRGH=:JDRGH and JDDWBM=:JDDWBM and q.SFSC='N' and t.SFSC='N' and SQDZT='Y'
+参数列表：{  [:JDRGH：0000]    [:JDDWBM：440300000000]    }
+
+
+日志时间：2017/01/20 17:39:11
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSYJSQ
+SQL语句：select count(1) FROM YX_DZJZ_LSYJSQ  where 1=1  and SHRGH=:SHRGH and SQDZT='T' and SFSC='N'
+参数列表：{  [:SHRGH：0000]    }
+
+
+日志时间：2017/01/20 17:39:11
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSAJBD
+SQL语句：SELECT count(1) from YX_DZJZ_LSYJSQ q left join  YX_DZJZ_LSAJBD T on q.yjsqdh=t.yjsqdh   where 1=1  and JDRGH=:JDRGH and JDDWBM=:JDDWBM and q.SFSC='N' and t.SFSC='N' and SQDZT='Y'
+参数列表：{  [:JDRGH：0000]    [:JDDWBM：440300000000]    }
+
+
+日志时间：2017/01/20 17:39:41
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSYJSQ
+SQL语句：select count(1) FROM YX_DZJZ_LSYJSQ  where 1=1  and SHRGH=:SHRGH and SQDZT='T' and SFSC='N'
+参数列表：{  [:SHRGH：0000]    }
+
+
+日志时间：2017/01/20 17:39:41
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSAJBD
+SQL语句：SELECT count(1) from YX_DZJZ_LSYJSQ q left join  YX_DZJZ_LSAJBD T on q.yjsqdh=t.yjsqdh   where 1=1  and JDRGH=:JDRGH and JDDWBM=:JDDWBM and q.SFSC='N' and t.SFSC='N' and SQDZT='Y'
+参数列表：{  [:JDRGH：0000]    [:JDDWBM：440300000000]    }
+
+

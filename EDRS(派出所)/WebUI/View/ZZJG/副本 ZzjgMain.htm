@@ -1,0 +1,569 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>角色权限管理</title>
+    <link href="/ligerUI/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/LigerUI/lib/LigerUI/skins/ligerui-icons.css" rel="stylesheet" type="text/css" />
+    <!--<link href="/ligerUI/lib/ligerUI/skins/Gray/css/all.css" rel="stylesheet" type="text/css"/>-->
+    <script src="/Scripts/tools/easyui/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/LigerUI/lib/LigerUI/js/ligerui.all.js"></script>
+    <script src="/LigerUI/lib/Jvalidate.js"></script>
+    <script src="../../LigerUI/lib/json2.js" type="text/javascript"></script>
+    <style>
+        .l-button-hasicon img
+        {
+            top: 2px;
+        }
+        /* 按钮 */
+        div .l-button
+        {
+            float: left;
+            margin-left: 10px;
+            margin-top: 3px;
+        }
+        .l-button
+        {
+            height: 20px;
+            line-height: 20px;
+            color: white;
+        }
+        
+        div#btnSearchRy1_zzjgMain
+        {
+            background: #ed6d4a;
+        }
+        div#btnOpenRy_zzjgMain
+        {
+            background: #87458b;
+        }
+        div#btnDelPerson
+        {
+            background: #339bca;
+        }
+        
+        
+        /*左右边框*/
+        div .l-layout-left
+        {
+            border: 1px solid #dde0e3;
+            border-top: 4px solid #129bbc;
+            border-radius: 10px;
+        }
+        .l-layout-center
+        {
+            border: 1px solid #dde0e3;
+            border-top: 4px solid #129bbc;
+            border-radius: 10px;
+        }
+        .l-panel
+        {
+            overflow: hidden;
+            border-top: 1px solid #ccc;
+            border-radius: 0;
+        }
+    </style>
+    <script type="text/javascript">
+
+
+        $(function () {
+
+            //    alert($(this).height());
+
+            var lay = $("#layout1").ligerLayout({
+                heightDiff: -2,
+                leftWidth: 200,
+                centerBottomHeight: 100,
+                allowBottomResize: false,
+                allowTopResize: false,
+                onEndResize: function () {
+                    $("#dwbmdiv").height($("#layout1").height() - 26);
+                }, onHeightChanged: function () {
+                    $("#dwbmdiv").height($("#layout1").height() - 26);
+                }
+            });
+            window.onload = function () {
+                $("#dwbmdiv").height($("#layout1").height() - 26);
+            }
+            $("#ryRole").ligerPanel({
+                title: '人员信息',
+                width: '100%',
+                showToggle: false
+            });
+        });
+        var G_ZzjgDwbm; //全局变量  单位编码v
+        var __js; //角色编码
+        var __bm; //部门编码
+        var G_ZzjgNode; //选中的节点
+        var G_ZzjgFNodeId; //选中节点的父级ID
+        var G_ZzjgFNodeName; //选中节点的父级名称
+        var gridRy;
+
+        var dwbm_t = '/images/icons/3.png';
+        var bmbm_t = '/images/icons/bm.png';
+        var jsbm_t = '/images/icons/4.png';
+        $(document).ready(function () {
+
+            //初始化控件
+            initControl();
+
+            //注册控件事件
+            RegistEvent();
+
+        });
+        function RegistEvent() {
+            $("#btnDelPerson").ligerButton({
+                click: function () {
+                    RemoveJob();
+                },
+                text: '解除',
+                icon: '../../images/sc.png'
+            });
+
+            $("#btnSearchRy1_zzjgMain").ligerButton({
+                click: function () {
+                    var node = $("#dWBmJs").ligerTree().getSelected();
+                    if (node == null) {
+                        Alert('当前未选择任何组织机构，查询失败！');
+                    }
+                    else {
+                        SearchPersonData(node);
+                    }
+                },
+                text: '查询',
+                icon: '../../images/cx.png'
+            });
+            //            $("#btnSearchListPerson").ligerButton({
+            //                click: function () {
+
+            //                }
+            //            });
+            //添加人员角色界面  查询按钮
+            $("#btnSearchListPerson").ligerButton({
+                click: function () {
+                    if (gridRy.options.page > 1) {
+
+                        gridRy.changePage("first"); //重置到第一页         
+                    }
+                    loadPersonGrid();
+                },
+                text: '查询',
+                img: '../../images/cx.png'
+            });
+            //绑定添加角色人员按钮
+            $('#btnOpenRy_zzjgMain').ligerButton({
+                text: '添加人员',
+                width: 80,
+                icon: '../../images/add.png',
+                click: function () {
+
+                    var node = $("#dWBmJs").ligerTree().getSelected();
+                    if (node == null) {
+                        Alert('未选择有效角色，无法添加！');
+                        return false;
+                    }
+                    loadPersonGrid();
+                    $.ligerDialog.open({
+                        title: '添加角色人员信息',
+                        target: $('#div_PersonInfo'),
+                        width: 740,
+                        height: 510,
+                        buttons: [{ text: '确定', onclick: function (item, dialog) {
+                            AddPersonJs(dialog);
+                        }, cls: 'l-dialog-btn-highlight'
+                        },
+                    { text: '取消', onclick: function (item, dialog) {
+                        var node = $("#dWBmJs").ligerTree().getSelected();
+                        SearchPersonData(node);
+                        dialog.hidden();
+                    }
+                    }], isResize: true
+                    });
+                }
+            });
+        }
+        //初始化控件
+        function initControl() {
+            //组织机构面板
+            //dWbmPn
+            $("#dWbmPn").ligerPanel({
+                title: '组织机构',
+                showClose: false,
+                showToggle: false,
+                width: 300,
+                height: 200
+            });
+            LoadLeftTree('');
+
+        }
+        function OpenSjQxWindow() {
+            $.ligerDialog.open({
+                title: '数据权限管理',
+                width: 960,
+                height: 510,
+                url: "../../Pages/QXGL/RoleManager.aspx?_dwbm=" + G_ZzjgDwbm + "&_bmbm=" + __bm + "&_jsbm=" + __js
+            });
+        }
+        function OpenGnQxWindow() {
+            $.ligerDialog.open({
+                title: '功能权限管理',
+                width: 960,
+                height: 510,
+                url: "../../Pages/GNGL/GnManager.aspx?_dwbm=" + G_ZzjgDwbm + "&_bmbm=" + __bm + "&_jsbm=" + __js
+            });
+        }
+        function OpenAnQxWindow() {
+            $.ligerDialog.open({
+                title: '按钮权限管理',
+                width: 960,
+                height: 510,
+                url: "../../Pages/GNGL/AnManager.aspx?_dwbm=" + G_ZzjgDwbm + "&_bmbm=" + __bm + "&_jsbm=" + __js
+            });
+        }
+        //selectedId  默认选中的节点ID
+        function LoadLeftTree(selectedId) {
+            //组织机构
+            var trees = $("#dWBmJs").ligerTree({
+                url: '/Handler/ZZJG/ZZJGHandler.ashx?action=GetDwBmJsByDwbm',
+                method: 'post',
+                checkbox: false,
+                delay: 2,
+                nodeWidth: 130,
+                idFieldName: "id",
+                parentIDFieldName: "pid",
+                iconFieldName: "icon",
+                //parentIcon: "folder1",
+                onSuccess: function (data) {
+                    console.log(JSON.stringify(data));
+                    //                    if (selectedId != null && selectedId != "") {
+                    //                        this.selectNode('a' + selectedId); //选择顶级节点
+                    //                    }else if (G_ZzjgNode == null) {                  
+
+
+                    var dwbm = parent.userInfo.DWBM;
+                    this.selectNode('a' + dwbm); //选择顶级节点
+
+
+                    //                    }
+                    //                    else {
+                    //                        this.selectNode(G_ZzjgNode);
+                    //                    }
+                    //$('#rNorth').panel('refresh', '/View/ZZJG/ZzjgSelectDw.htm');
+                },
+                onSelect: function (node) {
+                    SearchPersonData(node);
+                }
+            });
+        }
+        function AddPersonJs(dialog) {
+            var ghj = '';
+            var data = $('#dgPersonInfo').ligerGrid().getSelectedRows();
+            for (var i = 0; i < data.length; i++) {
+                ghj = ghj + ',' + data[i].gh;
+            }
+            if (ghj == '') {
+                return;
+            }
+            var node = $("#dWBmJs").ligerTree().getSelected();
+            var pNode = $(node.target).parent().parent()[0];
+            var bmbm = pNode.id;
+            var jsbm = node.data.id;
+            $.post("/Handler/ZZJG/ZZJGHandler.ashx", { action: "AddRYJSFP", dwbm: G_ZzjgDwbm, ghj: ghj, bmbm: bmbm, jsbm: jsbm
+            },
+            function (result) {
+                dialog.hidden();
+                //刷新数据
+                $('#dgRyInfo').ligerGrid().reload();
+            }).error(function (vv) {
+
+            }).complete(function (data) {
+
+            });
+        }
+        function SearchPersonData(node) {
+            G_ZzjgNode = node;
+            G_ZzjgFNodeId = $(node.target).parent().parent()[0].id;
+            G_ZzjgFNodeName = $("#dWBmJs").ligerTree().getTextByID(G_ZzjgFNodeId);
+            if (node.data == null) {
+                return;
+            }
+            var xm = $('#xm').val();
+            var gh = $('#gh').val();
+            var gzzh = $('#gzzh').val();
+            var bm = node.data.id;
+            var mc = node.data.text;
+            var bits = getLength(bm);
+            G_ZzjgDwbm = parent.userInfo.DWBM;
+
+            $("#rNorth iframe").remove();
+            if (bits == 4) {
+                $('#btnOpenRy_zzjgMain').ligerButton().setEnabled(); //setEnabled                
+                jsNode = node;
+                //加载角色页面
+                $("#rNorth").ligerPanel({
+                    title: '角色信息',
+                    width: '100%',
+                    showToggle: false,
+                    url: '/View/ZZJG/ZzjgRole.htm'
+                });
+                //刷新人员信息
+                __js = bm;
+                __bm = $(node.target).parent().parent()[0].id;
+                loadGrid(__bm, bm, xm, gh, gzzh);
+            }
+            else if (bits == 5) {
+                $('#btnOpenRy_zzjgMain').ligerButton().setDisabled(); //setEnabled
+                //加载单位页面
+                $("#rNorth").ligerPanel({
+                    title: '部门信息',
+                    width: '100%',
+                    showToggle: false,
+                    url: '/View/ZZJG/ZzjgDepartment.htm'
+                });
+                //刷新人员信息
+                __bm = bm;
+                loadGrid(bm, '', xm, gh, gzzh);
+            }
+            else if (bits == 7) {
+                $('#btnOpenRy_zzjgMain').ligerButton().setDisabled(); //setEnabled
+                //加载单位页面
+                $("#rNorth").ligerPanel({
+                    title: '单位信息',
+                    width: '100%',
+                    showToggle: false,
+                    url: '/View/ZZJG/ZzjgUnit.htm'
+                });
+                //刷新人员信息            
+                loadGrid('', '', xm, gh, gzzh);
+            }
+        }
+
+
+        /*
+        *   载入grid数据
+        */
+        function loadPersonGrid() {
+
+            //判断未获取编号不执行
+            if (!G_ZzjgDwbm)
+                return false;
+
+            var cloumns =
+            [
+                { display: '名称', name: 'mc', width: 120 },
+            // { display: '登录别名', name: 'dlbm', width: 120 },
+                {display: '工作证号', name: 'gzzh', width: 120 },
+            //{ display: '工号', name: 'gh', width: 120 },
+                {display: '职务', name: 'zw', width: 120 },
+            //{ display: '角色名称', name: 'jsmc', width: 120 },
+                {display: '性别', name: 'xb', width: 120, render: function (row, index) {
+                    if (row.xb == '1') {
+                        return '男';
+                    }
+                    else {
+                        return '女';
+                    }
+                }
+            },
+                { display: '联系电话', name: 'yddhhm', width: 120 },
+            ];
+
+            var xm = $('#person_name').val();
+            var gh = $('#person_number').val();
+            var gzzh = '';
+
+            var node = $("#dWBmJs").ligerTree().getSelected();
+            if (node == null) {
+                Alert('当前未选择任何组织机构，查询失败！');
+                return;
+            }
+            var pNode = $(node.target).parent().parent()[0];
+            var bmbm = pNode.id;
+            var jsbm = node.data.id;
+            var queryData = { action: 'GetWfpRyInfo', dwbm: G_ZzjgDwbm, xm: xm, gh: gh, jsbm: jsbm, bmbm: bmbm, gzzh: gzzh };
+            gridRy = $('#dgPersonInfo').ligerGrid({
+                columns: cloumns,
+                width: '99%',
+                height: '400px',
+                checkbox: true,
+                dataAction: 'server',
+                method: 'post',
+                parms: queryData,
+                url: '/Handler/ZZJG/ZZJGHandler.ashx',
+                rownumbers: true,
+                pageSizeOptions: [20, 50, 100, 500],
+                pageSize: 50
+            });
+        }
+
+
+        /*
+        *   载入grid数据
+        */
+        function loadGrid(bmbm, jsbm, xm, gh, gzzh) {
+            //判断未获取编号不执行
+            if (!G_ZzjgDwbm)
+                return false;
+            var cloumns =
+            [
+                { display: '名称', name: 'Mc', width: 120 },
+                { display: '登录别名', name: 'Dlbm', width: 120 },
+                { display: '工作证号', name: 'Gzzh', width: 120 },
+                { display: '工号', name: 'Gh', width: 120 },
+                { display: '角色名称', name: 'Jsmc', width: 120 },
+                { display: '性别', name: 'Xb', width: 120 },
+                { display: '联系电话', name: 'Yddhhm', width: 120 },
+                { display: '是否停职', name: 'Sftz', width: 120, render: function (row, index) {
+                    if (row.Sftz == 'Y') {
+                        return '是';
+                    }
+                    else {
+                        return '否';
+                    }
+                }
+                }
+            ];
+            $('#dgRyInfo').ligerGrid({
+                columns: cloumns,
+                height: '100%',
+                checkbox: true,
+                dataAction: 'local',
+                url: '/Handler/ZZJG/ZZJGHandler.ashx?action=GetRyInfo&dwbm=' + G_ZzjgDwbm + '&xm=' + encodeURI(xm) + '&gh=' + gh + '&gzzh=' + gzzh
+                + '&bmbm=' + bmbm + '&jsbm=' + jsbm,
+                rownumbers: true,
+                onSelectRow: function (rowdata, rowid, rowobj) {
+                    if (rowdata.Gh == "0000") {
+                        this.unselect(rowid);
+                        $.ligerDialog.warn("<br/>系统设置账号不能被选中操作，确认操作其它账号！");
+                    }
+                }
+            });
+        }
+
+        /*
+        * 解除人员岗位
+        */
+        function RemoveJob() {
+            var rowDatas = $('#dgRyInfo').ligerGrid().getSelectedRows();
+            if (rowDatas == null || rowDatas.length == 0) {
+                Alert('未选择要调岗的人员信息，请选中后再操作！');
+                return;
+            }
+            $.ligerDialog.confirm('请确认是否删除？', function (yes) {
+                if (yes) {
+                    var ghs = "";
+                    var bmbms = "";
+                    var jsbms = "";
+                    for (var i = 0; i < rowDatas.length; i++) {
+                        if (i == 0) {
+                            ghs = '' + rowDatas[i].Gh;
+                            bmbms = '1' + rowDatas[i].Bmbm;
+                            jsbms = '1' + rowDatas[i].Jsbm;
+                        }
+                        else {
+                            ghs += "," + rowDatas[i].Gh;
+                            bmbms += ",1" + rowDatas[i].Bmbm;
+                            jsbms += ",1" + rowDatas[i].Jsbm;
+                        }
+                    }
+                    //            var gh = rowDatas[index].Gh;
+                    //            var bmbm = rowDatas[index].Bmbm;
+                    //            var jsbm = rowDatas[index].Jsbm;
+                    $.post("/Handler/ZZJG/ZZJGHandler.ashx?action=RemoveJob", { dwbm: G_ZzjgDwbm, gh: ghs, bmbm: bmbms, jsbm: jsbms },
+                function (data) {
+                    var result = eval(data);
+                    if (result[0].isTrue == 'true') {
+                        $.ligerDialog.success(result[0].errorMsg);
+                        //刷新数据
+                        $('#dgRyInfo').ligerGrid().reload();
+                    }
+                    else {
+                        $.ligerDialog.warn(result[0].errorMsg);
+                    }
+                });
+                }
+            });
+
+        }
+    </script>
+</head>
+<body id="searchbar" style="padding: 15px;">
+    <iframe frameborder="0" src="/BaseClass/LoginValidate.aspx" style="display: none;">
+    </iframe>
+    <div id="layout1" style="margin: 0px; padding: 1px;">
+        <div position="left" title="组织机构">
+            <div id="dwbmdiv" style="height: 100%; overflow: auto; position: relative;">
+                <ul id="dWBmJs">
+                </ul>
+            </div>
+        </div>
+        <div title="组织机构管理" position="center">
+            <div id="rNorth" style="width: 100%; height: 40%;">
+            </div>
+            <!--人员信息-->
+            <div id="ryRole" style="width: 100%; height: 60%;">
+                <table style="display: table; line-height: 28px; padding: 5px 0;">
+                    <tr>
+                        <td style="padding-left: 10px;">
+                            <span>姓名：</span><div style="display: inline-table;">
+                                <input id="xm" class="liger-textbox" /></div>
+                        </td>
+                        <td style="padding-left: 10px;">
+                            <span>工号：</span><div style="display: inline-table;">
+                                <input id="gh" class="liger-textbox" /></div>
+                        </td>
+                        <td style="padding-left: 10px;">
+                            <span>工作证号：</span><div style="display: inline-table;">
+                                <input id="gzzh" class="liger-textbox" /></div>
+                            </li>
+                            <td style="padding-left: 10px;" rowspan="4">
+                                <div id="btnSearchRy1_zzjgMain">
+                                </div>
+                            </td>
+                            <td>
+                                <div id="btnOpenRy_zzjgMain">
+                                </div>
+                            </td>
+                            <td>
+                                <div id="btnDelPerson">
+                                </div>
+                            </td>
+                    </tr>
+                </table>
+                <div id="dgRyInfo">
+                </div>
+            </div>
+        </div>
+        <!-- <div id="downdiv" title="人员信息" position="centerbottom" style="height: 400px; ">
+           
+        </div>-->
+    </div>
+    <div id="div_PersonInfo" title="增加人员角色信息" style="height: 400px; display: none;">
+        <div style="height: 30px;">
+            <table>
+                <tr>
+                    <td>
+                        &nbsp;&nbsp;姓名：
+                    </td>
+                    <td>
+                        <input id="person_name" class="liger-textbox" ligerui="width: 200;" />
+                    </td>
+                    <td>
+                        &nbsp;&nbsp;工号：
+                    </td>
+                    <td>
+                        <input id="person_number" class="liger-textbox" ligerui="width: 200;" />
+                    </td>
+                    <td style="width: 300px; text-align: left;">
+                        &nbsp;&nbsp;<div id="btnSearchListPerson">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="dgPersonInfo">
+        </div>
+    </div>
+</body>
+<script src="/LigerUI/lib/LigerUI/JScript1.js" type="text/javascript"></script>
+</html>

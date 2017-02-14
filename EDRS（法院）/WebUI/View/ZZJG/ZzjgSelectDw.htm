@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="/Scripts/tools/easyui/themes/default/easyui.css" rel="stylesheet" type="text/css" />
+    <link href="/Scripts/tools/easyui/themes/icon.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/tools/easyui/jquery.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.easyui.js" type="text/javascript"></script>
+    <script src="/Scripts/tools/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
+    <script src="/Scripts/Main.js" type="text/javascript"></script>
+    <script src="/Scripts/Common/GlobalVar.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="easyui-panel" data-options="fit:'true'">
+        <script type="text/javascript">
+            AddScript("text/javascript", "/Scripts/ZZJG/ZzjgSelectDw.js");
+        </script>
+        <div>
+            <a id="btnAddBm_ZzjgSelectDw" href="#" class="easyui-linkbutton">添加部门</a> <a href="#"
+                class="easyui-linkbutton" disabled="disabled">添加角色</a> <a href="#" class="easyui-linkbutton"
+                    disabled="disabled">删除角色</a>
+        </div>
+        <div class="easyui-panel" data-options="fit:'true'" style="height: 250px;">
+            <div id="pDwInfo_ZzjgSelectDw" class="easyui-panel" title="单位信息" style="width: 100%;
+                padding: 10px;">
+                <div>
+                    单位名称:<input id="showDwmc_ZzjgSelectDw" />
+                    单位简称:<input id="showDwjc_ZzjgSelectDw" />
+                    单位级别:<input id="showDwjb_ZzjgSelectDw" />
+                </div>
+            </div>
+            <div id="pBm_ZzjgSelectDw" class="easyui-panel" title="添加部门" style="width: 100%;
+                padding: 10px;" data-options="closed:true">
+                <div>
+                    部门名称:<input id="inBmmc_ZzjgSelectDw" class="easyui-textbox" style="width: 200px;
+                        height: 22px"/>
+                    部门简称:<input id="inBmjc_ZzjgSelectDw" class="easyui-textbox" style="width: 200px;
+                        height: 22px"/>
+                    部门序号:<input id="inBmxh_ZzjgSelectDw" class="easyui-textbox" style="width: 200px;
+                        height: 22px"/>
+                </div>
+                <div style="margin-top: 10px;">
+                    输入备注:<input id="inBz_ZzjgSelectDw" class="easyui-textbox" data-options="multiline:true"
+                        style="width: 300px; height: 100px" />
+                    <input id="btnSave_ZzjgSelectDw" class="easyui-textbox" data-options="buttonText:'保存',buttonIcon:'icon-save'"
+                        style="width: 50px; height: 22px;" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

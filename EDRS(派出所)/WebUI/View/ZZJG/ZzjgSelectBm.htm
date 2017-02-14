@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="/Scripts/tools/easyui/themes/default/easyui.css" rel="stylesheet" type="text/css" />
+    <link href="/Scripts/tools/easyui/themes/icon.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/jquery.easyui.js" type="text/javascript"></script>
+    <script src="/Scripts/tools/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
+    <script src="/Scripts/Main.js" type="text/javascript"></script>
+    <script src="/Scripts/Common/GlobalVar.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="easyui-panel" data-options="fit:'true'">
+        <script type="text/javascript">            
+//            AddScript("text/javascript", "/Scripts/Common/Zzjg/ZzjgCommon.js");
+            AddScript("text/javascript", "/Scripts/Zzjg/ZzjgSelectBm.js");
+        </script>
+        <div>
+            <a href="#" class="easyui-linkbutton" onclick="addBm_ZzjgSelectBm()">添加部门</a> 
+            <a href="#" class="easyui-linkbutton" onclick="addJs_ZzjgSelectBm()">添加角色</a> 
+            <a href="#" class="easyui-linkbutton" onclick="javascript:$('#p').panel('close')"disabled="disabled">删除角色</a>
+        </div>
+        <div class="easyui-panel" data-options="fit:'true'" style="height: 260px;">
+            <div id="pBm_ZzjgSelectBm" class="easyui-panel" title="部门信息" style="width: 100%; padding: 10px;"
+                data-options="closed:false">
+                <div>
+                    部门名称:<input id="inBmmc_ZzjgSelectBm" />
+                    部门简称:<input id="inBmjc_ZzjgSelectBm" />
+                    部门序号:<input id="inBmxh_ZzjgSelectBm" />
+                </div>
+                <div style="margin-top: 10px">
+                    输入备注:<input id="inBz_ZzjgSelectBm"  />
+                    <a id="btnEdit_ZzjgSelectBm" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-edit'">编辑</a>
+                </div>
+            </div>
+            <div id="pJs_ZzjgSelectBm" class="easyui-panel" title="添加角色" style="width: 100%; padding: 10px;"
+                data-options="closed:true">
+                <div>
+                    角色名称:<input id="inJsMc_ZzjgSelectBm" class="easyui-textbox" style="width: 200px; height: 22px" />
+                    角色序号:<input id="inJsXh_ZzjgSelectBm" class="easyui-textbox" style="width: 200px; height: 22px" />
+                    所属部门:<input id="ShSsBm_ZzjgSelectBm"  />
+                </div>
+                <div style="margin-top: 40px">
+                    <input id="btnAddJs_ZzjgSelectBm" class="easyui-textbox" data-options="buttonText:'保存',buttonIcon:'icon-save'"
+                        style="width: 50px; height: 22px;" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

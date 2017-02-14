@@ -1,0 +1,118 @@
+﻿
+div.MainCaption
+{
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+    font-family: 微软雅黑;
+    font-size: 30px;
+    padding-left: 20px;
+    text-align: left;
+}
+div.index-foot
+{
+    height: 22px;
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+    padding-top: 8px;
+}
+ul.rightTools
+{
+    float: right;
+    display: block;
+}
+ul.rightTools li
+{
+    float: left;
+    display: block;
+    margin-left: 5px;
+}
+
+.edit_title_frist td
+{
+    font-family: 微软雅黑;
+    color: #333333;
+    font-weight: 600;
+}
+.edit_title
+{
+    height: 36px;
+}
+.edit_title td
+{
+    font-family: 微软雅黑;
+    vertical-align: bottom;
+    color: #333333;
+    font-weight: 600;
+}
+.a_btn
+{
+    background-color: #3bb3e0;
+    padding: 5px 15px 5px 15px;
+    position: relative;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    border: solid 1px #186f8f;
+    -webkit-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+    -moz-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+    box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.a_btn:active
+{
+    padding: 6px 15px 5px 15px;
+    top: 1px;
+}
+.a_btn2
+{
+    background-color: #3bb3e0;
+    padding: 1px 10px 1px 10px;
+    position: relative;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    border: solid 1px #186f8f;
+    -webkit-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+    -moz-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+    box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.a_btn2:active
+{
+    padding: 2px 11px 1px 11px;
+    top: 1px;
+}
+.a_btn3
+{
+    background-color: #3bb3e0;
+    padding: 3px 13px 3px 13px;
+    position: relative;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    border: solid 1px #186f8f;
+    -webkit-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+    -moz-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+    box-shadow: inset 0px 1px 0px #7fd2f1, 0px 1px 0px #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.a_btn3:active
+{
+    padding: 4px 13px 3px 13px;
+    top: 1px;
+}

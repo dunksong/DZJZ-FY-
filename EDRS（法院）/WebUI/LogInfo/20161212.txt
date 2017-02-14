@@ -1,0 +1,306 @@
+日志时间：2016/12/12 09:20:56
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:22:14
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public EDRS.Model.XT_ZZJG_DWBM GetModel(string DWBM)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select DWBM,DWMC,DWJC,DWJB,FDWBM,SFSC from XT_ZZJG_DWBM  where DWBM=:DWBM 
+参数列表：{  [:DWBM：440300000000]    }
+
+
+日志时间：2016/12/12 09:23:10
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:23:10
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12170: TNS: 连接超时
+
+所在方法：public EDRS.Model.XT_ZZJG_DWBM GetModel(string DWBM)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select DWBM,DWMC,DWJC,DWJB,FDWBM,SFSC from XT_ZZJG_DWBM  where DWBM=:DWBM 
+参数列表：{  [:DWBM：440300000000]    }
+
+
+日志时间：2016/12/12 09:28:46
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:28:46
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:28:47
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:28:47
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:28:49
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public EDRS.Model.XT_ZZJG_DWBM GetModel(string DWBM)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select DWBM,DWMC,DWJC,DWJB,FDWBM,SFSC from XT_ZZJG_DWBM  where DWBM=:DWBM 
+参数列表：{  [:DWBM：440300000000]    }
+
+
+日志时间：2016/12/12 09:29:39
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:29:40
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:29:41
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:29:41
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:29:41
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:29:41
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:29:41
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:29:41
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:29:42
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:29:47
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:29:49
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:29:49
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:29:49
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:29:50
+发起路径：http://localhost:83/Login.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-01033: ORACLE initialization or shutdown in progress
+
+所在方法：public DataSet GetTreeList(string strWhere,string withWhere,bool direction, params object[] objValues)
+所在类库：EDRS.OracleDAL.XT_ZZJG_DWBM
+SQL语句：select distinct CONNECT_BY_ISLEAF ISLEAF,DWBM,DWMC,FDWBM,DWJB,SFSC,DWJC,DWSX from XT_ZZJG_DWBM  where 1=1  and SFSC=:SFSC and level < 3  start with  FDWBM is null  connect by  FDWBM= prior DWBM  and SFSC='N' order by DWBM
+参数列表：{  [:SFSC：N]    }
+
+
+日志时间：2016/12/12 09:43:33
+发起路径：http://localhost:83/Pages/Report/ProductionVolume.aspx
+客户端浏览器：Firefox50
+错误类型：Exception
+错误信息：ORA-06550: 第 1 行, 第 23 列: 
+PLS-00302: 必须声明 'PROC_REPORT_GETZZL_FY' 组件
+ORA-06550: 第 1 行, 第 7 列: 
+PL/SQL: Statement ignored
+
+所在方法：public DataSet GetYJTJ(string strWhere,string strWhereAj, string orderby, int startIndex, int endIndex, out int count, params object[] objValues)
+所在类库：EDRS.OracleDAL.DataStatistics
+SQL语句：pkg_dzjz_report.proc_report_getzzl_fy
+参数列表：{  [p_where： and JZCZSJ >= to_date('2015/12/26','yyyy-mm-dd') and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_aj： and JZSCSJ >= to_date('2015/12/26','yyyy-mm-dd') and cbdw_bm in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_ry： and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_order：cbdw_bm ]    [p_pageindex：1]    [p_pagesize：50]    [p_count：null]    [p_cursor：null]    [p_errmsg：null]    }
+
+
+日志时间：2016/12/12 09:43:36
+发起路径：http://localhost:83/Pages/Report/ProductionVolume.aspx
+客户端浏览器：Firefox50
+错误类型：Exception
+错误信息：ORA-06550: 第 1 行, 第 23 列: 
+PLS-00302: 必须声明 'PROC_REPORT_GETZZL_FY' 组件
+ORA-06550: 第 1 行, 第 7 列: 
+PL/SQL: Statement ignored
+
+所在方法：public DataSet GetYJTJ(string strWhere,string strWhereAj, string orderby, int startIndex, int endIndex, out int count, params object[] objValues)
+所在类库：EDRS.OracleDAL.DataStatistics
+SQL语句：pkg_dzjz_report.proc_report_getzzl_fy
+参数列表：{  [p_where： and JZCZSJ >= to_date('2015/12/26','yyyy-mm-dd') and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_aj： and JZSCSJ >= to_date('2015/12/26','yyyy-mm-dd') and cbdw_bm in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_ry： and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_order：cbdw_bm ]    [p_pageindex：1]    [p_pagesize：50]    [p_count：null]    [p_cursor：null]    [p_errmsg：null]    }
+
+

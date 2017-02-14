@@ -1,0 +1,554 @@
+***********************[2016-12-08 09:37:22:947]***********************
+
+错误地址：http://localhost:83/Pages/LSYJ/ReadingFile.aspx?wjmc=3D852294548446D58DF22C388DEC2866&wjlj=%255C440300000000%255C2016%255C002%255C(2017)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%2588%2591%25E6%2589%25A7%25E5%25AD%2597%25E7%25AC%25AC2%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2016-12-08 09:37:41:139]***********************
+
+错误地址：http://localhost:83/Pages/LSYJ/ReadingFile.aspx?wjmc=3D852294548446D58DF22C388DEC2866&wjlj=%255C440300000000%255C2016%255C002%255C(2017)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%2588%2591%25E6%2589%25A7%25E5%25AD%2597%25E7%25AC%25AC2%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2016-12-08 09:49:59:690]***********************
+
+错误地址：http://localhost:83/Pages/LSYJ/ReadingFile.aspx?wjmc=3D852294548446D58DF22C388DEC2866&wjlj=%255C440300000000%255C2016%255C002%255C(2017)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%2588%2591%25E6%2589%25A7%25E5%25AD%2597%25E7%25AC%25AC2%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2016-12-08 10:14:46:222]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 10:20:59:669]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 10:22:39:709]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 10:22:50:993]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 10:23:03:975]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 10:23:44:644]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 10:23:52:709]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 10:24:03:401]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 10:24:14:284]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 10:24:29:160]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 10:27:04:142]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 10:27:42:560]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 10:27:54:445]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 10:28:39:601]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 10:28:47:190]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 11:11:17:718]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 11:12:25:025]***********************
+
+错误地址：http://localhost:83/Pages/SystemMgr/PageButManager.aspx?page=1
+错误信息：未将对象引用设置到对象的实例。
+Stack Trace：System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 EDRS.BLL.XT_QX_ANDY..ctor(HttpRequest _context)
+   在 WebUI.PageButManager.ListBind()
+   在 WebUI.PageButManager.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 13:58:25:544]***********************
+
+错误地址：http://localhost:83/Pages/LSYJ/ReadingFile.aspx?wjmc=4A81D86386D34D08B0B49D17B39E73BE&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2016-12-08 13:59:23:967]***********************
+
+错误地址：http://localhost:83/Pages/LSYJ/ReadingFile.aspx?wjmc=4A81D86386D34D08B0B49D17B39E73BE&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2016-12-08 13:59:48:737]***********************
+
+错误地址：http://localhost:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2016-12-08 14:00:51:972]***********************
+
+错误地址：http://localhost:83/Pages/LSYJ/ReadingFile.aspx?wjmc=A4AA26E825EA49A59567C558D652BFFB&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2016-12-08 14:03:16:714]***********************
+
+错误地址：http://localhost:83/Pages/LSYJ/ReadingFile.aspx?wjmc=D53B87D7CC40434D8C0860E9D1AF8683&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2016-12-08 14:03:32:847]***********************
+
+错误地址：http://localhost:83/Pages/LSYJ/ReadingFile.aspx?wjmc=01361808A4DC4F189C8FF892A3833DD3&wjlj=%255C440300000000%255C2016%255C020111%255C(2016)%25E6%25B7%25B1%25E5%2585%25AC%25E5%25AE%2589%25E5%25A4%25B1%25E7%2581%25AB%25E6%25A1%2588%25E5%25AD%2597%25E7%25AC%25AC1%25E5%258F%25B7
+错误信息：
+Stack Trace：Ice.ConnectionRefusedException
+    error = 0
+   在 IceInternal.ProxyFactory.checkRetryAfterException(LocalException ex, Reference ref, Boolean sleep, Int32& cnt)
+   在 Ice.ObjectPrxHelperBase.handleException__(ObjectDel_ delegate, LocalException ex, Boolean sleep, Int32& cnt)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes, Dictionary`2 context__, Boolean explicitContext__)
+   在 Yy.SliceTransferInterface.TransferPrxHelper.GetElectroniceFile(YyDownFileInfo fileInfo, Byte[]& fileBytes)
+   在 EDRS.Common.IceServicePrx.DownFile(String iceUrl, String filePath, String fileName, String md5, Byte[]& bytes, String& msg)
+   在 WebUI.Pages.LSYJ.ReadingFile.GetFile()
+   在 WebUI.Pages.LSYJ.ReadingFile.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Caused by: System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 10.1.1.23:13102
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IceInternal.Network.doFinishConnectAsync(Socket fd, IAsyncResult result)
+
+
+
+***********************[2016-12-08 17:43:29:930]***********************
+
+错误地址：http://localhost:83/Main.aspx
+错误信息：文件“D:\DZJZ\EDRS（法院）\WebUI\LogInfo\20161208.txt”正由另一进程使用，因此该进程无法访问此文件。
+Stack Trace：System.IO.IOException: 文件“D:\DZJZ\EDRS（法院）\WebUI\LogInfo\20161208.txt”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode)
+   在 EDRS.Common.LogHelper.LogError(HttpRequest Request, String errorClass, String errorMsg, String function, String className, String sqlStr, OracleParameter[] param)
+   在 EDRS.OracleDAL.YX_DZJZ_LSAJBD.GetRecordCount(String strWhere, Object[] objValues)
+   在 EDRS.BLL.YX_DZJZ_LSAJBD.GetRecordCount(String strWhere, Object[] objValues)
+   在 WebUI.Main.GetMessge()
+   在 WebUI.Main.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 17:43:59:887]***********************
+
+错误地址：http://localhost:83/Main.aspx
+错误信息：文件“D:\DZJZ\EDRS（法院）\WebUI\LogInfo\20161208.txt”正由另一进程使用，因此该进程无法访问此文件。
+Stack Trace：System.IO.IOException: 文件“D:\DZJZ\EDRS（法院）\WebUI\LogInfo\20161208.txt”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode)
+   在 EDRS.Common.LogHelper.LogError(HttpRequest Request, String errorClass, String errorMsg, String function, String className, String sqlStr, OracleParameter[] param)
+   在 EDRS.OracleDAL.YX_DZJZ_LSYJSQ.GetRecordCount(String strWhere, Object[] objValues)
+   在 EDRS.BLL.YX_DZJZ_LSYJSQ.GetRecordCount(String strWhere, Object[] objValues)
+   在 WebUI.Main.GetMessge()
+   在 WebUI.Main.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+***********************[2016-12-08 17:44:59:897]***********************
+
+错误地址：http://localhost:83/Main.aspx
+错误信息：文件“D:\DZJZ\EDRS（法院）\WebUI\LogInfo\20161208.txt”正由另一进程使用，因此该进程无法访问此文件。
+Stack Trace：System.IO.IOException: 文件“D:\DZJZ\EDRS（法院）\WebUI\LogInfo\20161208.txt”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode)
+   在 EDRS.Common.LogHelper.LogError(HttpRequest Request, String errorClass, String errorMsg, String function, String className, String sqlStr, OracleParameter[] param)
+   在 EDRS.OracleDAL.YX_DZJZ_LSAJBD.GetRecordCount(String strWhere, Object[] objValues)
+   在 EDRS.BLL.YX_DZJZ_LSAJBD.GetRecordCount(String strWhere, Object[] objValues)
+   在 WebUI.Main.GetMessge()
+   在 WebUI.Main.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+

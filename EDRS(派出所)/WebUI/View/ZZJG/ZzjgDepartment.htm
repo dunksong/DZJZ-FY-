@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="background: #FFF;">
+<head>
+    <title></title>
+    <link href="/LigerUI/lib/LigerUI/skins/ligerui-icons.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/tools/easyui/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/LigerUI/lib/LigerUI/js/ligerui.all.js"></script>
+    <script src="/LigerUI/lib/Jvalidate.js"></script>
+    <link href="/LigerUI/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet"
+        type="text/css" />
+        <style>
+    
+        .l-button {
+            color: white;
+            border:none;
+        }
+        
+        div#btn_addDept{
+            background: #80b75d;
+        }
+        div#btn_addRole{
+            background: #339bca;
+        }
+        div#btn_saveDept{
+            background: #618bc9;
+        }
+        div#btn_editDept{
+            background: #04a093;
+        }
+        div#btn_cannel{
+            background: #8BC34A;
+        }
+    </style>
+    <script type="text/javascript">
+        var bmbm = '';
+        var bmmc = '';
+        var bmInfo;
+        var fbmbm = "";
+        $(function () {
+
+            //$("#inBmxh_ZzjgSelectBm").ligerSpinner({ type: 'int', isNegative: false, width: 150 });
+            $("#inJsXh_ZzjgSelectBm").ligerSpinner({ type: 'int', isNegative: false, width: 150 });
+            $('#btn_addDept').ligerButton({
+                click: addDept,
+                text: '添加部门',
+                width: 70,
+                icon: '../../images/addBm.png'
+            });
+            $('#btn_addRole').ligerButton({
+                click: addRole,
+                text: '添加角色',
+                width: 70,
+                icon: '../../images/add.png'
+            });
+            $('#btn_editDept').ligerButton({
+                click: editDept,
+                text: '编辑部门',
+                width: 70,
+                icon: '../../images/bjbm.png'
+            });
+            $('#btn_cannel').ligerButton({
+                click: cannel,
+                text: '取消',
+                icon: '../../images/qx.png'
+            });
+            $('#btn_saveDept').ligerButton({
+                text: '保存',
+                icon: '../../images/bc.png'
+            });
+
+            $("#r_gr,#r_bm").click(function () {
+                var ck = $(this).is(':checked');
+                $("#r_gr").prop("checked", false);
+                $("#r_bm").prop("checked", false);
+                if (ck)
+                    $(this).prop("checked", true);
+            });
+
+            initFrom();
+        });
+        //按钮禁止状态
+        function background() {
+            var cc = ["#B537B7", "#49A5A6", "#8C9E42", "#561BB6", "#4F7D7B", "#427979", "#9D256D", "#60AEAD", "#417C90", "#B33E49", "#2B9F50", "#286CAA", "#9C9095", "#6A9B93", "#457983", "#24A091", "#3D9991", "#8A8A8F", "#5EA052", "#709430"];
+            $("#searchbar .l-button").each(function (index) {
+                $(this).addClass("l-button-" + index);
+                for (var k = 0; k <= index; k++) {
+                    $(".l-button-" + k).css({ background: cc[k], color: "white", borderRadius: "5px", height: "25px", lineHeight: "25px", border: "none" });
+                }
+            });
+            $("#searchbar .l-button-disabled").css({ background: "#ccc", color: "#9D9D9E" });
+        }
+
+        //
+        function initFrom() {
+
+            $('#btn_addDept').ligerButton().setEnabled(); //setEnabled
+            $('#btn_addRole').ligerButton().setEnabled(); //setEnabled
+            $('#btn_editDept').ligerButton().setEnabled(); //setEnabled
+            $('#btn_cannel').ligerButton().setDisabled(); //setEnabled
+            $('#btn_saveDept').ligerButton().setDisabled(); //setEnabled
+
+            $('#inBmmc_ZzjgSelectBm').ligerTextBox().setDisabled(); //setDisabled
+            $('#inBmjc_ZzjgSelectBm').ligerTextBox().setDisabled(); //setEnabled
+            //$('#inBmxh_ZzjgSelectBm').ligerTextBox().setDisabled();
+            $('#inBz_ZzjgSelectBm').ligerTextBox().setDisabled();
+
+            bmbm = parent.G_ZzjgNode.data.id;
+            bmmc = parent.G_ZzjgNode.data.text;
+
+            $("#pJs_ZzjgSelectBm").hide();
+            $("#div_dept").show();
+
+            $.ajax({
+                async: false,
+                url: "/Handler/ZZJG/ZZJGHandler.ashx",
+                data: "action=GetBmInfo&bmbm=" + escape(bmbm) + "&bmmc=" + escape(bmmc) + "&dwbm=" + parent.G_ZzjgDwbm,
+                dataType: "json",
+                success: function (data) {
+                    if (data) {
+                        bmInfo = data;
+                        /*
+                        * 设置部门信息
+                        */
+                        $('#inBmmc_ZzjgSelectBm').val(bmmc);
+                        $('#inBmjc_ZzjgSelectBm').val(bmInfo.BMJC);
+                        //$('#inBmxh_ZzjgSelectBm').val(bmInfo.BMXH);
+                        $('#inBz_ZzjgSelectBm').val(bmInfo.BZ);
+                        fbmbm = bmInfo.FBMBM;
+                    }
+                }
+            });
+        }
+        function claarBox() {
+            bmbm = "";
+            fbmbm = "";
+            $('#inBmmc_ZzjgSelectBm').val('');
+            $('#inBmjc_ZzjgSelectBm').val('');
+            //$('#inBmxh_ZzjgSelectBm').val('');
+            $('#inBz_ZzjgSelectBm').val('');
+
+            $('#inBmmc_ZzjgSelectBm').ligerTextBox().setDisabled(); //setDisabled
+            $('#inBmjc_ZzjgSelectBm').ligerTextBox().setDisabled(); //setEnabled
+           // $('#inBmxh_ZzjgSelectBm').ligerTextBox().setDisabled();
+            $('#inBz_ZzjgSelectBm').ligerTextBox().setDisabled();
+
+        }
+        function saveDept() {
+            var bmmc = $('#inBmmc_ZzjgSelectBm').val();
+            var bmjc = $('#inBmjc_ZzjgSelectBm').val();
+            var bmxh = "0";//  $('#inBmxh_ZzjgSelectBm').val();
+            var bz = $('#inBz_ZzjgSelectBm').val();
+            bmmc = trim(bmmc);
+            bmjc = trim(bmjc);
+            bmxh = trim(bmxh);
+            bz = trim(bz);
+            if (isNull(bmmc) || isNull(bmjc) || isNull(bmxh)) {
+                parent.Alert("部门名称或者部门简称或者部门序号不能为空");
+                return;
+            }
+            if (bmbm == "") {
+                fbmbm = parent.G_ZzjgNode.data.id;
+            }
+            $.post("/Handler/ZZJG/ZZJGHandler.ashx?action=AddBmInfo", { dwbm: parent.G_ZzjgDwbm, bmmc: bmmc, bmjc: bmjc, bmxh: bmxh, bz: bz, bmbm: bmbm, fbm: fbmbm },
+            function (result) {
+                $('#btn_saveDept').unbind('click');
+                parent.Alert(result);
+                parent.LoadLeftTree(bmbm);
+                initFrom();
+                //选中刚才编辑的部门
+                //sExpandNode = bmmc;
+            });
+
+            background();
+        }
+
+
+        function saveRole() {
+
+            var qxzt = $("#ul_qxzt").find("input[type='checkbox']:checked").val();
+            var jsmc = $('#inJsMc_ZzjgSelectBm').val();
+            var jsxh = $('#inJsXh_ZzjgSelectBm').val();
+            jsmc = trim(jsmc);
+            jsxh = trim(jsxh);
+            
+            if (isNull(jsmc) || isNull(jsxh)) {                
+                parent.Alert("角色名称或者角色序号不能为空");
+                return;
+            }
+            $.post("/Handler/ZZJG/ZZJGHandler.ashx?action=AddJsInfo", { dwbm: parent.G_ZzjgDwbm, bmbm: bmbm, jsmc: jsmc, jsxh: jsxh,qxzt:qxzt },
+                function (result) {
+                    $('#btn_saveDept').unbind('click');
+                    parent.Alert(result);
+                    parent.LoadLeftTree(bmbm);
+                    initFrom();
+                });
+
+                background();
+        }
+        function addRole() {
+            $("#pJs_ZzjgSelectBm").show();
+            $("#div_dept").hide();
+            //按钮状态
+            $('#btn_addDept').ligerButton().setDisabled(); //setEnabled
+            $('#btn_addRole').ligerButton().setDisabled(); //setEnabled
+            $('#btn_editDept').ligerButton().setDisabled(); //setEnabled
+            $('#btn_cannel').ligerButton().setEnabled(); //setEnabled
+            $('#btn_saveDept').ligerButton().setEnabled(); //setEnabled
+            //清空文本框
+            $('#inJsMc_ZzjgSelectBm').val(''); //setDisabled
+            $('#inJsXh_ZzjgSelectBm').val(''); //setEnabled
+
+            $('#ShSsBm_ZzjgSelectBm').ligerGetTextBoxManager().setDisabled();
+            $('#ShSsBm_ZzjgSelectBm').val(bmmc);
+
+
+
+            //绑定保存事件
+            $('#btn_saveDept').bind('click', function () {
+                saveRole();
+            });
+
+            background();
+        }
+        function addDept() {
+            claarBox();
+            $("#pJs_ZzjgSelectBm").hide();
+            $("#div_dept").show();
+            $('#btn_addDept').ligerButton().setDisabled(); //setEnabled
+            $('#btn_addRole').ligerButton().setDisabled(); //setEnabled
+            $('#btn_editDept').ligerButton().setDisabled(); //setEnabled
+            $('#btn_cannel').ligerButton().setEnabled(); //setEnabled
+            $('#btn_saveDept').ligerButton().setEnabled(); //setEnabled
+
+            //改变按钮状态
+            $('#inBmmc_ZzjgSelectBm').ligerTextBox().setEnabled(); //setDisabled
+            $('#inBmjc_ZzjgSelectBm').ligerTextBox().setEnabled(); //setEnabled
+            //$('#inBmxh_ZzjgSelectBm').ligerTextBox().setEnabled();
+            $('#inBz_ZzjgSelectBm').ligerTextBox().setEnabled();
+            //绑定保存事件
+            $('#btn_saveDept').bind('click', function () {
+                saveDept();
+            });
+
+            background();
+        }
+        function editDept() {
+            $("#pJs_ZzjgSelectBm").hide();
+            $("#div_dept").show();
+            $('#btn_addDept').ligerButton().setDisabled(); //setEnabled
+            $('#btn_addRole').ligerButton().setDisabled(); //setEnabled
+            $('#btn_editDept').ligerButton().setDisabled(); //setEnabled
+            $('#btn_cannel').ligerButton().setEnabled(); //setEnabled
+            $('#btn_saveDept').ligerButton().setEnabled(); //setEnabled
+
+            $('#inBmmc_ZzjgSelectBm').ligerTextBox().setEnabled(); //setDisabled
+            $('#inBmjc_ZzjgSelectBm').ligerTextBox().setEnabled(); //setEnabled
+            //$('#inBmxh_ZzjgSelectBm').ligerTextBox().setEnabled();
+            $('#inBz_ZzjgSelectBm').ligerTextBox().setEnabled();
+            //绑定保存事件
+            $('#btn_saveDept').bind('click', function () {
+                saveDept();
+            });
+
+            background();
+        }
+        function cannel() {
+            $('#btn_saveDept').unbind('click');
+            initFrom();
+
+            background();
+        }
+    </script>
+</head>
+<body style="margin: 10px;" id="searchbar">
+    <div style="padding-left: 20px;">
+        <div id="btn_addDept" style="float: left;">
+        </div>
+        &nbsp;&nbsp;
+        <div id="btn_addRole" style="float: left; margin-left: 10px;">
+        </div>
+        &nbsp;&nbsp;
+        <div id="btn_editDept" style="float: left; margin-left: 10px;">
+        </div>
+        &nbsp;&nbsp;
+        <div id="btn_saveDept" style="float: left; margin-left: 10px;">
+        </div>
+        &nbsp;&nbsp;
+        <div id="btn_cannel" style="float: left; margin-left: 10px;">
+        </div>
+    </div>
+    <div style="clear: both; line-height: 1px">
+    </div>
+    <div id="div_dept" style="padding: 10px; display: block;">
+        <!-- <table style="line-height: 40px; width: 100%;">
+            <tr>
+                <td>
+                    部门名称：
+                </td>
+                <td>
+                    <input type="text" name="inBmmc_ZzjgSelectBm" id="inBmmc_ZzjgSelectBm"
+                        value="" />
+                </td>
+                <td>
+                    部门简称：
+                </td>
+                <td>
+                    <input type="text" name="inBmjc_ZzjgSelectBm" id="inBmjc_ZzjgSelectBm" class="liger-textbox"
+                        ligerui="width:150" />
+                </td>
+                <td>
+                    部门序号：
+                </td>
+                <td>
+                    <input type="text" name="inBmxh_ZzjgSelectBm" id="inBmxh_ZzjgSelectBm" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    备注信息：
+                </td>
+                <td colspan="4">
+                    <input type="text" id="inBz_ZzjgSelectBm" class="liger-textbox" ligerui="width:400" />
+                </td>
+            </tr>
+        </table>-->
+        <ul style="display: table; line-height: 28px;">
+            <li style="float: left; padding-left: 10px;"><span>部门名称： </span>
+                <div style="display: inline-table;">
+                    <input type="text" name="inBmmc_ZzjgSelectBm" id="inBmmc_ZzjgSelectBm" value="" />
+                </div>
+            </li>
+            <li style="float: left; padding-left: 10px;"><span>部门简称： </span>
+                <div style="display: inline-table;">
+                    <input type="text" name="inBmjc_ZzjgSelectBm" id="inBmjc_ZzjgSelectBm" class="liger-textbox"
+                        ligerui="width:150" />
+                </div>
+            </li>
+            <!--<li style="float: left; padding-left: 10px;"><span>部门序号： </span>
+                <div style="display: inline-table;">
+                    <input type="text" name="inBmxh_ZzjgSelectBm" id="inBmxh_ZzjgSelectBm" />
+                </div>
+            </li>-->
+        </ul>
+        <ul style="display: table; line-height: 28px;">
+            <li style="float: left; padding-left: 10px;"><span>备注信息： </span>
+                <div style="display: inline-table;">
+                    <input type="text" id="inBz_ZzjgSelectBm" class="liger-textbox" ligerui="width:400" />
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="pJs_ZzjgSelectBm" style="padding: 10px; display: block;">
+        <!--<table style="line-height: 40px; width: 100%;">
+            <tr>
+                <td>
+                    角色名称：
+                </td>
+                <td>
+                    <input id="inJsMc_ZzjgSelectBm" class="liger-textbox" ligerui="width:150" />
+                </td>
+                <td>
+                    角色序号：
+                </td>
+                <td>
+                    <input id="inJsXh_ZzjgSelectBm" />
+                </td>
+                <td>
+                    所属部门：
+                </td>
+                <td>
+                    <input id="ShSsBm_ZzjgSelectBm" class="liger-textbox" ligerui="width:150" />
+                </td>
+            </tr>
+        </table>-->
+        <ul style="display: table; line-height: 28px;">
+            <li style="float: left; padding-left: 10px;"><span>角色名称： </span>
+                <div style="display: inline-table;">
+                    <input id="inJsMc_ZzjgSelectBm" class="liger-textbox" ligerui="width:150" />
+                </div>
+            </li>
+            <li style="float: left; padding-left: 10px;"><span>角色序号： </span>
+                <div style="display: inline-table;">
+                    <input id="inJsXh_ZzjgSelectBm" />
+                </div>
+            </li>
+            <li style="float: left; padding-left: 10px;"><span>所属部门： </span>
+                <div style="display: inline-table;">
+                    <input id="ShSsBm_ZzjgSelectBm" class="liger-textbox" ligerui="width:150" />
+                </div>
+            </li>
+        </ul>
+         <ul id="ul_qxzt" style="display: table; line-height: 52px;">
+            <li style="float: left; padding-left: 10px;">
+                <div style="display: inline-table;">
+                <input type="checkbox" id="r_gr" name="r_gr" value="G" /><label for="r_gr">个人数据权限</label> 
+                </div>
+            </li>
+            <li style="float: left; padding-left: 26px;">
+                <div style="display: inline-table;">
+                <input type="checkbox" id="r_bm" name="r_bm" value="B" /><label for="r_bm">部门数据权限</label> 
+                </div>
+            </li>
+            <li style="float: left; padding-left: 26px;"><span style=" color:Red;">*</span><span style=" color:Gray;">默认不选为所有数据权限</span>
+            </li>
+         </ul>
+    </div>
+    <script type="text/javascript">
+    </script>
+</body>
+<script src="/LigerUI/lib/LigerUI/JScript1.js" type="text/javascript"></script>
+</html>

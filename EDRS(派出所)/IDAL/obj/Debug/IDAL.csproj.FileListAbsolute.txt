@@ -1,0 +1,28 @@
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\IDAL\bin\Debug\EDRS.IDAL.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\IDAL\bin\Debug\EDRS.IDAL.pdb
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\IDAL\bin\Debug\EDRS.Model.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\IDAL\bin\Debug\EDRS.Model.pdb
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\IDAL\obj\Debug\EDRS.IDAL.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\IDAL\obj\Debug\EDRS.IDAL.pdb
+E:\GA\EDRS(派出所)\IDAL\bin\Debug\EDRS.IDAL.dll
+E:\GA\EDRS(派出所)\IDAL\bin\Debug\EDRS.IDAL.pdb
+E:\GA\EDRS(派出所)\IDAL\bin\Debug\EDRS.Model.dll
+E:\GA\EDRS(派出所)\IDAL\bin\Debug\EDRS.Model.pdb
+E:\GA\EDRS(派出所)\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+E:\GA\EDRS(派出所)\IDAL\obj\Debug\EDRS.IDAL.dll
+E:\GA\EDRS(派出所)\IDAL\obj\Debug\EDRS.IDAL.pdb
+D:\DZJZ Work\GA\EDRS(派出所)\IDAL\bin\Debug\EDRS.IDAL.dll
+D:\DZJZ Work\GA\EDRS(派出所)\IDAL\bin\Debug\EDRS.IDAL.pdb
+D:\DZJZ Work\GA\EDRS(派出所)\IDAL\bin\Debug\EDRS.Model.dll
+D:\DZJZ Work\GA\EDRS(派出所)\IDAL\bin\Debug\EDRS.Model.pdb
+D:\DZJZ Work\GA\EDRS(派出所)\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+D:\DZJZ Work\GA\EDRS(派出所)\IDAL\obj\Debug\EDRS.IDAL.dll
+D:\DZJZ Work\GA\EDRS(派出所)\IDAL\obj\Debug\EDRS.IDAL.pdb
+D:\DZJZ\EDRS(派出所)\IDAL\bin\Debug\EDRS.IDAL.dll
+D:\DZJZ\EDRS(派出所)\IDAL\bin\Debug\EDRS.IDAL.pdb
+D:\DZJZ\EDRS(派出所)\IDAL\bin\Debug\EDRS.Model.dll
+D:\DZJZ\EDRS(派出所)\IDAL\bin\Debug\EDRS.Model.pdb
+D:\DZJZ\EDRS(派出所)\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+D:\DZJZ\EDRS(派出所)\IDAL\obj\Debug\EDRS.IDAL.dll
+D:\DZJZ\EDRS(派出所)\IDAL\obj\Debug\EDRS.IDAL.pdb

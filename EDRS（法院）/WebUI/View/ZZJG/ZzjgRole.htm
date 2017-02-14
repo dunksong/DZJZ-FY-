@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="/ligerUI/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/LigerUI/lib/LigerUI/skins/ligerui-icons.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/tools/easyui/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/LigerUI/lib/LigerUI/js/ligerui.all.js"></script>
+    <script src="/LigerUI/lib/Jvalidate.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $("#inJsXh_ZzjgSelectBm").ligerSpinner({ type: 'int', isNegative: false, width: 150 });
+            $('#btn_Role1').ligerButton({
+                width: 100,
+                click: RoleManager1,
+                text: '功能权限管理',
+                icon: '../../LigerUI/lib/LigerUI/skins/icons/role.gif'
+            });
+            $('#btn_Role2').ligerButton({
+                width: 100,
+                click: RoleManager2,
+                text: '数据权限管理',
+                icon: '../../LigerUI/lib/LigerUI/skins/icons/role.gif'
+            });
+            //            $('#btn_Role3').ligerButton({
+            //                width: 100,
+            //                click: RoleManager3,
+            //                text: '案件限管理',
+            //                icon: '../../LigerUI/lib/LigerUI/skins/icons/role.gif'
+            //            });
+            $('#btn_editRole').ligerButton({
+                click: editRole,
+                text: '编辑角色',
+                width: 70,
+                icon: '../../images/NewAdd/xg.png'
+            });
+            $('#btn_delRole').ligerButton({
+                click: DelRole,
+                text: '删除角色',
+                width: 70,
+                icon: '../../images/NewAdd/sc.png'
+            });
+            $('#btn_Save').ligerButton({
+                click: SaveRole,
+                text: '保存角色',
+                width: 70,
+                icon: '../../images/NewAdd/bc.png'
+            });
+            $('#btn_Cennel').ligerButton({
+                click: cannel,
+                text: '取消',
+                icon: '../../images/NewAdd/qx.png'
+            });
+            loadFrom();
+        });
+        //按钮禁止状态
+        function background() {
+            var cc = ["#B537B7", "#49A5A6", "#8C9E42", "#561BB6", "#4F7D7B", "#427979", "#9D256D", "#60AEAD", "#417C90", "#B33E49", "#2B9F50", "#286CAA", "#9C9095", "#6A9B93", "#457983", "#24A091", "#3D9991", "#8A8A8F", "#5EA052", "#709430"];
+            $("#searchbar .l-button").each(function (index) {
+                $(this).addClass("l-button-" + index);
+                for (var k = 0; k <= index; k++) {
+                    $(".l-button-" + k).css({ background: cc[k], color: "white", borderRadius: "5px", height: "25px", lineHeight: "25px", border: "none" });
+                }
+            });
+            $("#searchbar .l-button-disabled").css({ background: "#ccc", color: "#9D9D9E" });
+        }
+
+        //
+
+        var bmbm_ZzjgSelectJs = '';
+        var bmmc_ZzjgSelectJs = '';
+        var jsbm_ZzjgSelectJs = '';
+        var jsmc_ZzjgSelectJs = '';
+        var jsxh_ZzjgSelectJs = '';
+        function loadFrom() {
+
+            var node = parent.G_ZzjgNode;
+            var pNode = parent.G_ZzjgFNode;
+            jsbm_ZzjgSelectJs = node.data.id;
+            jsmc_ZzjgSelectJs = node.data.text;
+            bmbm_ZzjgSelectJs = parent.G_ZzjgFNodeId;
+            bmmc_ZzjgSelectJs = parent.G_ZzjgFNodeName;
+            
+            $('#inJsMc_ZzjgSelectBm').ligerTextBox().setDisabled(); //setEnabled
+            $('#inJsXh_ZzjgSelectBm').ligerTextBox().setDisabled();
+            $('#ShSsBm_ZzjgSelectBm').ligerTextBox().setDisabled();
+            $('#btn_editRole').ligerButton().setEnabled(); //setEnabled
+            if (jsbm_ZzjgSelectJs == "a000")
+                $('#btn_delRole').ligerButton().setDisabled(); //setDisabled
+            else
+                $('#btn_delRole').ligerButton().setEnabled(); //setDisabled
+            $('#btn_Save').ligerButton().setDisabled(); //
+            $('#btn_Cennel').ligerButton().setDisabled(); //
+            $('#btn_Role1').ligerButton().setEnabled(); //
+            $('#btn_Role2').ligerButton().setEnabled(); //
+
+            //加载角色档案
+            $.ajax({
+                async: false,
+                url: "/Handler/ZZJG/ZZJGHandler.ashx?action=GetJsxh&bmbm=" + bmbm_ZzjgSelectJs + "&jsbm=" + jsbm_ZzjgSelectJs + "&dwbm=" + parent.G_ZzjgDwbm,
+                dataType: "json",
+                success: function (data) {
+                    jsxh_ZzjgSelectJs = data;
+                    //赋值
+                    $('#inJsMc_ZzjgSelectBm').val(jsmc_ZzjgSelectJs);
+                    $('#inJsXh_ZzjgSelectBm').val(jsxh_ZzjgSelectJs);
+                    $('#ShSsBm_ZzjgSelectBm').val(bmmc_ZzjgSelectJs);
+                }
+            });
+
+        }
+        function editRole() {
+            $('#inJsMc_ZzjgSelectBm').ligerTextBox().setEnabled(); //setEnabled
+            $('#inJsXh_ZzjgSelectBm').ligerTextBox().setEnabled();
+            $('#ShSsBm_ZzjgSelectBm').ligerTextBox().setDisabled();
+            $('#btn_editRole').ligerButton().setDisabled(); //setEnabled
+            $('#btn_delRole').ligerButton().setDisabled(); //setDisabled
+            $('#btn_Save').ligerButton().setEnabled(); //
+            $('#btn_Cennel').ligerButton().setEnabled(); //
+            $('#btn_Role1').ligerButton().setDisabled(); //
+            $('#btn_Role2').ligerButton().setDisabled(); //
+
+
+            background();
+        }
+
+        function DelRole() {
+            $.ligerDialog.confirm('您确定要删除当前角色信息？', function (yes) {
+                if (yes) {
+                    $.post("/Handler/ZZJG/ZZJGHandler.ashx?action=DeleteJsInfo", { dwbm: parent.G_ZzjgDwbm, bmbm: bmbm_ZzjgSelectJs, jsbm: jsbm_ZzjgSelectJs },
+                    function (result) {
+                        parent.Alert(result);
+                        loadFrom();
+                        parent.LoadLeftTree(bmbm_ZzjgSelectJs);
+                    });
+                }
+            });
+            background();
+        }
+        function SaveRole() {
+
+            var jsmc = $('#inJsMc_ZzjgSelectBm').val();
+            var jsxh = $('#inJsXh_ZzjgSelectBm').val();
+            jsmc = trim(jsmc);
+            jsxh = trim(jsxh);
+            if (isNull(jsmc) || isNull(jsxh)) {
+                parent.Alert("角色名称或者角色序号不能为空");
+                return;
+            }
+            if (jsmc.indexOf('\\') != -1) {
+                parent.Alert("角色名称不能包含特殊符号“\\”");
+                return;
+            }
+            var jsbm = jsbm_ZzjgSelectJs;
+            $.post("/Handler/ZZJG/ZZJGHandler.ashx?action=AddJsInfo", { dwbm: parent.G_ZzjgDwbm, jsmc: jsmc, jsxh: jsxh, jsbm: jsbm, bmbm: bmbm_ZzjgSelectJs },
+                    function (result) {
+                        parent.Alert(result);
+                        loadFrom();
+                        parent.LoadLeftTree(jsbm);
+                    });
+                    background();
+        }
+        function cannel() {
+            loadFrom();
+            background();
+        }
+        //功能权限
+        function RoleManager1() {
+            parent.OpenGnQxWindow();
+            background();
+        }
+        //数据权限
+        function RoleManager2() {
+            parent.OpenSjQxWindow();
+            background();
+        }
+    </script>
+</head>
+<body>
+    <div style="margin: 10px;" id="searchbar">
+        <div id="btn_editRole" style="float: left;">
+        </div>
+        &nbsp;&nbsp;
+        <div id="btn_delRole" style="float: left; margin-left: 10px;">
+        </div>
+        &nbsp;&nbsp;
+        <div id="btn_Save" style="float: left; margin-left: 10px;">
+        </div>
+        &nbsp;&nbsp;
+        <div id="btn_Cennel" style="float: left; margin-left: 10px;">
+        </div>
+        &nbsp;&nbsp;
+        <div id="btn_Role1" style="float: left; margin-left: 10px;">
+        </div>
+        &nbsp;&nbsp;
+        <div id="btn_Role2" style="float: left; margin-left: 10px;">
+        </div>
+        &nbsp;&nbsp;
+        <!--<div id="btn_Role3" style="float:left; margin-left:10px;"></div>&nbsp;&nbsp;-->
+    </div>
+    <div id="pJs_ZzjgSelectBm" style="display: block; padding: 10px;">
+        <ul style="display: table; line-height: 28px;">
+            <li style="float: left; padding-left: 10px;"><span>角色名称：</span><div style="display: inline-table;">
+                <input id="inJsMc_ZzjgSelectBm" class="liger-textbox" ligerui="width:150" /></div>
+            </li>
+            <li style="float: left; padding-left: 10px;"><span>角色序号：</span><div style="display: inline-table;">
+                <input id="inJsXh_ZzjgSelectBm" /></div>
+            </li>
+            <li style="float: left; padding-left: 10px;"><span>所属部门：</span><div style="display: inline-table;">
+                <input id="ShSsBm_ZzjgSelectBm" class="liger-textbox" ligerui="width:150" /></div>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="/LigerUI/lib/LigerUI/JScript1.js" type="text/javascript"></script>
+</html>

@@ -1,0 +1,415 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="/ligerUI/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/LigerUI/lib/LigerUI/skins/ligerui-icons.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/tools/easyui/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/LigerUI/lib/LigerUI/js/ligerui.all.js"></script>
+    <script src="/LigerUI/lib/LigerUI/js/plugins/ligerGrid.js" type="text/javascript"></script>
+    <script src="/LigerUI/lib/Jvalidate.js"></script>
+    <script src="../../LigerUI/lib/json2.js" type="text/javascript"></script>
+    <style type="text/css">
+        .l-panel-topbar
+        {
+            padding: 5px 0;
+            border-bottom: 1px solid #a3c0e8;
+            display: inline-block;
+            width: 100%;
+        }
+        .l-text-wrapper
+        {
+            display: inline-block;
+        }
+        .l-text-field
+        {
+            position: inherit;
+        }
+        div#searchbar {
+            margin-bottom: 10px;
+            overflow-x: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            background: white;
+            line-height: 30px;
+        }
+    </style>
+    <script type="text/javascript">
+        var gnmcManager;
+        var ajlbManager;
+        var grid;
+        $(function () {
+
+            $("#gnxh").ligerSpinner({ type: 'int' });
+
+
+            //加载查询列表功能类别
+           // var bombo;
+            ajlbManager = $('#inSslb_ZzjgQxgl').ligerComboBox({
+                url: '/Handler/ZZJG/ZZJGHandler.ashx',
+                parms: { "action": "GetGnflByDwbm" },
+                valueField: 'id',
+                textField: 'text',
+                width: 133,
+                cancelable: true,
+                onSuccess: function (data) {
+              
+                    $('#gnfl').ligerComboBox({
+                        data: data,
+                        valueField: 'id',
+                        textField: 'text',
+                        width: 130,
+                        cancelable: true
+                    });
+                }
+            });
+
+            gnmcManager = $("#inMc").ligerTextBox({ currency: false });
+
+            $("#btnQuery_ZzjgQxGl").ligerButton({
+                click: function () {
+                    loadDate();
+                },
+                text: '查询',
+                img: '../../images/NewAdd/cx.png'
+            });
+
+
+            loadDate();
+
+        });
+
+        function Add() {
+            clearQxData(); //打开前先清空
+            var m = $.ligerDialog.open({
+                target: $("#gn_detail"),
+                height: 'auto',
+                width: 680,
+
+                isResize: true,
+                title: "添加功能",
+                buttons:
+                    [
+                    { text: '确定', onclick: function (item, dialog) {
+                        if (item.text == '确定') {
+                            SaveAddForm('新增', m);
+                        }
+                    },cls: 'l-dialog-btn-highlight'
+                    },
+                    { text: '取消', onclick: function (item, dialog) { dialog.hidden(); } }
+                    ]
+            });
+        }
+
+        function Edit() {
+            clearQxData(); //打开前先清空
+            var rowDatas = $("#dgGngl").ligerGrid().getSelectedRow();
+            if (rowDatas == null) {
+                $.ligerDialog.warn("没有选中任何数据，请选择后再修改！", '系统提示');
+                return;
+            }
+            /*
+            * 将信息显示到编辑界面
+            */
+            var flbm = rowDatas.GNFL;
+            var gnmc = rowDatas.GNMC;
+            var gnsm = rowDatas.GNSM;
+            var gnct = rowDatas.GNCT;
+            var gnxh = rowDatas.GNXH;
+            var gncs = rowDatas.GNCS;
+            var gnxsmc = rowDatas.GNXSMC;
+            var gnbm = rowDatas.GNBM;
+//            var gjy = rowDatas.SFGJYSY;
+//            var sy = rowDatas.SFSYSY;
+//            var sjy = rowDatas.SFSJYSY;
+//            var qy = rowDatas.SFQYSY; 
+            var boxGn = $("#gnfl").ligerComboBox();
+            boxGn.setValue(flbm);
+            boxGn.selectValue(flbm);
+            //                    for(var i=0;i<boxGn.data.length;i++) {
+            //                        if (boxGn.data[i].id == flbm)
+            //                        {
+            //                            boxGn.setText(boxGn.data[i].text);
+            //                        }
+            //                    }
+            $("#gnmc").ligerTextBox().setValue(gnmc);
+            $("#gnsm").ligerTextBox().setValue(gnsm);
+            $("#gnct").ligerTextBox().setValue(gnct);
+            $("#gnxh").ligerTextBox().setValue(gnxh);
+            //$("#cscs").ligerTextBox().setValue(gncs);
+            //$("#gnxsmc").ligerTextBox().setValue(gnxsmc);
+//            $("#cbox_sfgjysy").prop('checked', gjy == "Y" ? true : false);
+//            $("#cbox_sfsysy").prop('checked', sy == "Y" ? true : false);
+//            $("#cbox_sfsjysy").prop('checked', sjy == "Y" ? true : false);
+//            $("#cbox_sfqjysy").prop('checked', qy == "Y" ? true : false);
+            $("#gnbm").val(gnbm);
+            var m = $.ligerDialog.open({
+                target: $("#gn_detail"),
+                height: 'auto',
+                width: 680,
+                isResize: false,
+                title: "编辑功能",
+                buttons:
+                    [
+                    { text: '确定', onclick: function (item, dialog) {
+                        if (item.text == '确定') {
+                            SaveAddForm('修改', m);
+                        }
+                    },cls: 'l-dialog-btn-highlight'
+                    },
+                    { text: '取消', onclick: function (item, dialog) { dialog.hidden(); } }
+                    ]
+            });
+        }
+
+        function Del() {
+            var rowDatas = $("#dgGngl").ligerGrid().getSelectedRow();
+            if (rowDatas == null) {
+                $.ligerDialog.warn("没有选中任何数据，请选择后再删除！", '系统提示');
+                return;
+            }
+
+            $.ligerDialog.confirm('请确认是否删除？', function (yes) {
+
+                var gnbm = rowDatas.GNBM;
+                $.post("/Handler/ZZJG/ZZJGHandler.ashx?action=DeleteGnQx", { gnbm: encodeURI('1' + gnbm), gnmc: rowDatas.GNMC },
+                    function (result) {
+                        grid.reload();
+                        $.ligerDialog.warn("操作结果: " + result, '系统提示');
+                    });
+
+            });
+        }
+
+        function clearQxData() {
+            $('#gnfl').val('');
+            $('#gnmc').val('');
+            $('#gnct').val('');
+//            $('#gnxsmc').val('');
+            $('#gnxh').val('');
+            //$('#cscs').val('');
+            $('#gnsm').val('');
+//            $("#cbox_sfgjysy").prop('checked',true);
+//            $("#cbox_sfsysy").prop('checked', true);
+//            $("#cbox_sfsjysy").prop('checked', true);
+//            $("#cbox_sfqjysy").prop('checked', true);
+        }
+        function SaveAddForm(btnText, window) {
+
+            var isExistedFlb = 1; //是否存在的父类别 1:存在，0:不存在
+            var gnfl = $('#gnfl').ligerComboBox().getValue();            
+            if (gnfl == null) {
+                gnfl = $('#gnfl').val();
+                isExistedFlb = 0;
+                if (isNull(gnfl)) {
+                    Alert('功能分类不能为空');
+                    return;
+                }
+            }
+            var gnbm = document.getElementById('gnbm').value;
+            /*
+            * 如果是保存gnbm为空表示是添加新的功能
+            */
+            if (btnText == '新增') {
+                gnbm = '';
+            }
+            var gnmc = $('#gnmc').val();
+            var gnct = $('#gnct').val();
+            var gnxsmc = $('#gnmc').val();
+            var gnxh = $('#gnxh').val();
+            //var cscs = $('#cscs').val();
+            var gnsm = $('#gnsm').val();
+            var gjy = "";// $("#cbox_sfgjysy").is(':checked');
+            var sy = "";// $("#cbox_sfsysy").is(':checked');
+            var sjy = "";// $("#cbox_sfsjysy").is(':checked');
+            var qy = ""; //$("#cbox_sfqjysy").is(':checked'); 
+           
+            if (isNull(gnmc)) {
+                Alert('名称不能为空！');
+                return;
+            }
+            if (isNull(gnct)) {
+                Alert('功能窗体不能为空！');
+                return;
+            }
+//            if (isNull(gnxsmc)) {
+//                Alert('功能显示名称不能为空！');
+//                return;
+//            }
+//            if (!gjy && !sy && !sjy && !qy) {
+//                Alert("必须选择使用院！");
+//                return;
+//            }
+            if (isNull(gnxh)) {
+                gnxh = "0";
+            }
+            $.post("/Handler/ZZJG/ZZJGHandler.ashx?action=AddGnQx", { isExistedFlb: isExistedFlb, gnfl: encodeURI(gnfl), gnbm: encodeURI('1' + gnbm), gnmc: encodeURI(gnmc), gnct: encodeURI(gnct),
+                gnxsmc: encodeURI(gnxsmc), gnxh: gnxh, cscs: '' /*encodeURI(cscs)*/, gnsm: encodeURI(gnsm), gjy: gjy, sy: sy, sjy: sjy, qy: qy
+            },
+            function (result) {
+                grid.reload();
+                $.ligerDialog.warn("操作结果: " + result, '系统提示');
+            });
+            window.hide();
+
+            if (isExistedFlb == 0) {
+                /*
+                * 添加了新的分类则刷新下拉列表
+                */
+                $('#gnfl').ligerComboBox('reload', '/Handler/ZZJG/ZZJGHandler.ashx?action=GetGnflByDwbm');
+                $('#inSslb').ligerComboBox('reload', '/Handler/ZZJG/ZZJGHandler.ashx?action=GetGnflByDwbm');
+            }
+        }
+        function loadDate() {
+
+            var gnmc = gnmcManager.getValue();
+            var sslb = ajlbManager.getValue();
+            if (gnmc == null) {
+                gnmc = '';
+            }
+            if (sslb == null) {
+                sslb = '';
+            }
+            grid = $("#dgGngl").ligerGrid({
+                columns: [
+                        { display: '功能名称', name: 'GNMC', width: 150,  },
+//                        { display: '功能显示名称', name: 'GNXSMC', width: 150,  },
+                        { display: '功能窗体', name: 'GNCT', width: 350,  },
+                        { display: '功能序号', name: 'GNXH', width: 100 },
+//                        { display: '功能参数', name: 'GNCS', width: 100 },
+                        { display: '功能说明', name: 'GNSM', width: 150,  },
+//                        { display: '高检院使用', name: 'SFGJYSY', width: 80, align: 'center', render: function (item) {
+//                            if (item.SFGJYSY == "Y")
+//                                return "是";
+//                            return "否";
+//                        }
+//                        },
+//                        { display: '省院使用', name: 'SFSYSY', width: 80, align: 'center', render: function (item) {
+//                            if (item.SFSYSY == "Y")
+//                                return "是";
+//                            return "否";
+//                        } 
+//                        },
+//                        { display: '市院使用', name: 'SFSJYSY', width: 80, align: 'center', render: function (item) {
+//                            if (item.SFSJYSY == "Y")
+//                                return "是";
+//                            return "否";
+//                        } 
+//                        },
+//                        { display: '区院使用', name: 'SFQYSY', width: 80, align: 'center', render: function (item) {
+//                            if (item.SFQYSY == "Y")
+//                                return "是";
+//                            return "否";
+//                        } 
+//                        },
+                        { display: '功能编码', name: 'GNBM', width: 1, hide: 'none', isAllowHide: false },
+                        { display: '功能分类', name: 'GNFL', width: 1, hide: 'none', isAllowHide: false }
+                        ],
+                pageSize: 50,
+                rownumbers: true,
+                pageSizeOptions: [20, 50, 100, 500],
+                dataAction: "local",
+                url: '/Handler/ZZJG/ZZJGHandler.ashx?action=QueryGnqx&gnmc=' + encodeURI(gnmc) + '&sslb=' + sslb,
+                width: '100%', height: '100%', heightDiff: -15,
+                toolbar: { items: [
+                    { text: '添加', click: Add, img: '../../images/NewAdd/add.png'},
+                   // { line: true },
+                    { text: '修改', click: Edit, img: '../../images/NewAdd/xg.png' },
+                   // { line: true },
+                    { text: '删除', click: Del, img: '../../images/NewAdd/sc.png' }
+                    ]
+                }
+
+            });
+        }
+    </script>
+</head>
+<body style="padding: 15px 15px 0px 15px; overflow: hidden;">
+    <iframe frameborder="0" src="/BaseClass/LoginValidate.aspx" style="display: none;">
+    </iframe>
+    <div id="searchbar">
+        <table>
+            <tr>
+                <td>
+                    功能名称：
+                </td>
+                <td>
+                    <input id="inMc" />
+                </td>
+                <td style="padding-left: 10px;">
+                    所属类别：
+                </td>
+                <td>
+                    <input id="inSslb_ZzjgQxgl" name="dept" style="width: 133px;" />
+                </td>
+                <td style="padding-left: 10px;">
+                    <div id="btnQuery_ZzjgQxGl" style="margin-left: 10px;">
+                    </div>
+                </td>
+                <td style="padding-left: 10px;">
+                    <div id="btnAdd_ZzjgQxGl" style="margin-left: 10px;">
+                    </div>
+                </td>
+                <td style="padding-left: 10px;">
+                    <div id="btnEdit_ZzjgQxGl" style="margin-left: 10px;">
+                    </div>
+                </td>
+                <td style="padding-left: 10px;">
+                    <div id="btnDel_ZzjgQxGl" style="margin-left: 10px;">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="sGnInfo" style="padding: 0px; margin: 0px;">
+        <div id="dgGngl">
+        </div>
+    </div>
+    <div id="gn_detail" style="text-align: left; display: none; padding: 20px 50px;">
+        <table>
+            <tr style="height: 30px;">                
+                <td style="width: 60px;">
+                    功能名称：
+                </td>
+                <td>
+                    <input type="text" class="liger-textbox" id="gnmc" ligerui="width:200" />
+                </td>
+                <td style="padding-left: 20px;">
+                    功能分类：
+                </td>
+                <td>
+                    <input name="dept" id="gnfl" ligerui="width:200" />
+                </td>
+            </tr>
+            <tr style="height: 30px;">                
+                
+                <td>
+                    功能序号：
+                </td>
+                <td>
+                    <input type="text" id="gnxh" ligerui="width:200" value="0" />
+                </td>
+            </tr>
+            <tr style="height: 30px;">
+                <td style="width: 60px;">
+                    功能窗体：
+                </td>
+                <td colspan="3">
+                    <input type="text" class="liger-textbox" id="gnct" ligerui="width:482" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 60px;">
+                    功能说明：<input type="hidden" id="gnbm" />
+                </td>
+                <td colspan="3">
+                    <input type="text" id="gnsm" class="liger-textbox" ligerui="width:482" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="/LigerUI/lib/LigerUI/JScript1.js" type="text/javascript"></script>
+</html>

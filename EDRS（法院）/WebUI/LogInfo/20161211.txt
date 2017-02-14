@@ -1,0 +1,49 @@
+日志时间：2016/12/11 10:27:14
+发起路径：http://localhost:83/Pages/Report/ProductionVolume.aspx
+客户端浏览器：Firefox50
+错误类型：Exception
+错误信息：ORA-06550: 第 1 行, 第 23 列: 
+PLS-00302: 必须声明 'PROC_REPORT_GETZZL_FY' 组件
+ORA-06550: 第 1 行, 第 7 列: 
+PL/SQL: Statement ignored
+
+所在方法：public DataSet GetYJTJ(string strWhere,string strWhereAj, string orderby, int startIndex, int endIndex, out int count, params object[] objValues)
+所在类库：EDRS.OracleDAL.DataStatistics
+SQL语句：pkg_dzjz_report.proc_report_getzzl_fy
+参数列表：{  [p_where： and JZCZSJ >= to_date('2015/12/26','yyyy-mm-dd') and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_aj： and JZSCSJ >= to_date('2015/12/26','yyyy-mm-dd') and cbdw_bm in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_ry： and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_order：cbdw_bm ]    [p_pageindex：1]    [p_pagesize：50]    [p_count：null]    [p_cursor：null]    [p_errmsg：null]    }
+
+
+日志时间：2016/12/11 10:27:30
+发起路径：http://localhost:83/Pages/Report/ProductionVolume.aspx
+客户端浏览器：Firefox50
+错误类型：Exception
+错误信息：ORA-06550: 第 1 行, 第 23 列: 
+PLS-00302: 必须声明 'PROC_REPORT_GETZZL_FY' 组件
+ORA-06550: 第 1 行, 第 7 列: 
+PL/SQL: Statement ignored
+
+所在方法：public DataSet GetYJTJ(string strWhere,string strWhereAj, string orderby, int startIndex, int endIndex, out int count, params object[] objValues)
+所在类库：EDRS.OracleDAL.DataStatistics
+SQL语句：pkg_dzjz_report.proc_report_getzzl_fy
+参数列表：{  [p_where： and JZCZSJ >= to_date('2015/12/26','yyyy-mm-dd') and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_aj： and JZSCSJ >= to_date('2015/12/26','yyyy-mm-dd') and cbdw_bm in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_where_ry： and a.DWBM in (select distinct QXBM FROM XT_DM_QX  where 1=1 AND  JSBM IN ('000') AND QXLX=0 AND trim(DWBM) = '440300000000' AND BMBM in ('0000') )]    [p_order：cbdw_bm ]    [p_pageindex：1]    [p_pagesize：50]    [p_count：null]    [p_cursor：null]    [p_errmsg：null]    }
+
+
+日志时间：2016/12/11 15:18:15
+发起路径：http://localhost:83/Pages/GNGL/GnManager.aspx?_dwbm=440300000000&_bmbm=a0000&_jsbm=a000
+客户端浏览器：Firefox50
+错误类型：Exception
+错误信息：ORA-12899: 列 "DZJZ"."YX_DZJZ_JZRZJL_20161208"."RZNR" 的值太大 (实际值: 324, 最大值: 300)
+
+所在方法：public bool Add(EDRS.Model.YX_DZJZ_JZRZJL model)
+所在类库：EDRS.OracleDAL.YX_DZJZ_JZRZJL
+SQL语句：insert into YX_DZJZ_JZRZJL_20161208(DWBM,DWMC,BMBM,BMMC,CZRGH,CZR,CZSJ,CZIP,CZLX,RZNR,CZAJBMSAH,FQL) values (:DWBM,:DWMC,:BMBM,:BMMC,:CZRGH,:CZR,:CZSJ,:CZIP,:CZLX,:RZNR,:CZAJBMSAH,:FQL)
+参数列表：{  [:DWBM：440300000000]    [:DWMC：深圳市公安局]    [:BMBM：0000]    [:BMMC：管理部门]    [:CZRGH：0000]    [:CZR：管理员]    [:CZSJ：2016/12/11 15:18:15]    [:CZIP：::1]    [:CZLX：31]    [:RZNR：查询角色已分配的功能列表失败：获取角色权限失败。SELECT dy.gnmc,dy.gnsm,dy.gnct,dy.gnxh,fp.gncs,dy.gnxsmc,dy.gnbm,dy.flbm gnfl
+                  FROM xt_qx_gndy dy
+                 JOIN xt_qx_jsgnfp fp
+                  on fp.GNBM = dy.gnbm
+                  WHERE  1=1  and fp.dwbm=undefined AND fp.bmbm=ndefined AND fp.jsbm= ndefined
+ORA-06512: 在 "DZJZ.PKG_ZZJG_MANAGE", line 975
+
+ORA-00904: "NDEFINED": 标识符无效]    [:CZAJBMSAH：]    [:FQL：2016]    }
+
+

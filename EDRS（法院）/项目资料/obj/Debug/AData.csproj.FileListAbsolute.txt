@@ -1,0 +1,8 @@
+D:\DZJZ Work\FY\EDRS（法院）\项目资料\bin\Debug\项目资料.dll
+D:\DZJZ Work\FY\EDRS（法院）\项目资料\bin\Debug\项目资料.pdb
+D:\DZJZ Work\FY\EDRS（法院）\项目资料\obj\Debug\项目资料.dll
+D:\DZJZ Work\FY\EDRS（法院）\项目资料\obj\Debug\项目资料.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\项目资料\bin\Debug\项目资料.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\项目资料\bin\Debug\项目资料.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\项目资料\obj\Debug\项目资料.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\项目资料\obj\Debug\项目资料.pdb

@@ -1,0 +1,50 @@
+日志时间：2017/01/23 17:15:14
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-03135: 连接失去联系
+进程 ID: 4432
+会话 ID: 70 序列号: 221
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSYJSQ
+SQL语句：select count(1) FROM YX_DZJZ_LSYJSQ  where 1=1  and SHRGH=:SHRGH and SQDZT='T' and SFSC='N'
+参数列表：{  [:SHRGH：0000]    }
+
+
+日志时间：2017/01/23 17:15:14
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-03114: 未连接到 ORACLE
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSAJBD
+SQL语句：SELECT count(1) from YX_DZJZ_LSYJSQ q left join  YX_DZJZ_LSAJBD T on q.yjsqdh=t.yjsqdh   where 1=1  and JDRGH=:JDRGH and JDDWBM=:JDDWBM and q.SFSC='N' and t.SFSC='N' and SQDZT='Y'
+参数列表：{  [:JDRGH：0000]    [:JDDWBM：440300000000]    }
+
+
+日志时间：2017/01/23 17:15:44
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSYJSQ
+SQL语句：select count(1) FROM YX_DZJZ_LSYJSQ  where 1=1  and SHRGH=:SHRGH and SQDZT='T' and SFSC='N'
+参数列表：{  [:SHRGH：0000]    }
+
+
+日志时间：2017/01/23 17:15:44
+发起路径：http://localhost:83/Main.aspx
+客户端浏览器：Chrome54
+错误类型：Exception
+错误信息：ORA-12514: TNS: 监听程序当前无法识别连接描述符中请求的服务
+
+所在方法：public int GetRecordCount(string strWhere, params object[] objValues)
+所在类库：EDRS.OracleDAL.YX_DZJZ_LSAJBD
+SQL语句：SELECT count(1) from YX_DZJZ_LSYJSQ q left join  YX_DZJZ_LSAJBD T on q.yjsqdh=t.yjsqdh   where 1=1  and JDRGH=:JDRGH and JDDWBM=:JDDWBM and q.SFSC='N' and t.SFSC='N' and SQDZT='Y'
+参数列表：{  [:JDRGH：0000]    [:JDDWBM：440300000000]    }
+
+

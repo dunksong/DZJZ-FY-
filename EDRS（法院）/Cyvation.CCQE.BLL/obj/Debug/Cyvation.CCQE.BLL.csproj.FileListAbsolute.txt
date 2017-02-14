@@ -1,0 +1,52 @@
+D:\DZJZ Work\FY\EDRS（法院）\Cyvation.CCQE.BLL\obj\Debug\Cyvation.CCQE.BLL.csprojResolveAssemblyReference.cache
+D:\DZJZ Work\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.BLL.dll
+D:\DZJZ Work\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.BLL.pdb
+D:\DZJZ Work\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.DataAccess.dll
+D:\DZJZ Work\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\log4net.dll
+D:\DZJZ Work\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DZJZ Work\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DZJZ Work\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.Unity.dll
+D:\DZJZ Work\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\DZJZ Work\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\DZJZ Work\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.DataAccess.pdb
+D:\DZJZ Work\FY\EDRS（法院）\Cyvation.CCQE.BLL\obj\Debug\Cyvation.CCQE.BLL.dll
+D:\DZJZ Work\FY\EDRS（法院）\Cyvation.CCQE.BLL\obj\Debug\Cyvation.CCQE.BLL.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.BLL.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.BLL.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.DataAccess.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\log4net.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.Unity.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.DataAccess.pdb
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\Cyvation.CCQE.BLL\obj\Debug\Cyvation.CCQE.BLL.csprojResolveAssemblyReference.cache
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\Cyvation.CCQE.BLL\obj\Debug\Cyvation.CCQE.BLL.dll
+F:\公司文件\DZJZ 10-24\FY\EDRS（法院）\Cyvation.CCQE.BLL\obj\Debug\Cyvation.CCQE.BLL.pdb
+E:\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.BLL.dll
+E:\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.BLL.pdb
+E:\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.DataAccess.dll
+E:\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\log4net.dll
+E:\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.Unity.dll
+E:\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\FY\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.DataAccess.pdb
+E:\FY\EDRS（法院）\Cyvation.CCQE.BLL\obj\Debug\Cyvation.CCQE.BLL.csprojResolveAssemblyReference.cache
+E:\FY\EDRS（法院）\Cyvation.CCQE.BLL\obj\Debug\Cyvation.CCQE.BLL.dll
+E:\FY\EDRS（法院）\Cyvation.CCQE.BLL\obj\Debug\Cyvation.CCQE.BLL.pdb
+D:\DZJZ\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.BLL.dll
+D:\DZJZ\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.BLL.pdb
+D:\DZJZ\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.DataAccess.dll
+D:\DZJZ\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\log4net.dll
+D:\DZJZ\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DZJZ\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DZJZ\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.Unity.dll
+D:\DZJZ\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\DZJZ\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\DZJZ\EDRS（法院）\Cyvation.CCQE.BLL\bin\Debug\Cyvation.CCQE.DataAccess.pdb
+D:\DZJZ\EDRS（法院）\Cyvation.CCQE.BLL\obj\Debug\Cyvation.CCQE.BLL.csprojResolveAssemblyReference.cache
+D:\DZJZ\EDRS（法院）\Cyvation.CCQE.BLL\obj\Debug\Cyvation.CCQE.BLL.dll
+D:\DZJZ\EDRS（法院）\Cyvation.CCQE.BLL\obj\Debug\Cyvation.CCQE.BLL.pdb

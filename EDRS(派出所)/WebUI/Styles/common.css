@@ -1,0 +1,58 @@
+﻿body
+{
+    background-color: #FFFFFF;
+    margin: 0;
+    min-width: 500px;
+    min-height: 300px;
+    font-family: 微软雅黑;
+}
+
+a.larg-iconbutton
+{
+    width:64px;
+    height:16px;
+    margin-top: 10px;
+    background-position: 34px 4px;
+    background-size:25px;
+    border: 1px solid #C0C0C0;
+    padding: 6px 20px 10px 50px;
+    text-decoration: none;
+    background-color: #FFFFCC;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; /*background-image: url('../images/icons/large_smartart.png');*/
+    background-repeat: no-repeat;
+    color: #666666;
+    display: inline-block;
+}
+a.larg-iconbutton:visited
+{
+    color: #666666;
+}
+
+a.larg-iconbutton:hover
+{
+    background-color: #FFFFBB;
+    color: #666666;
+}
+
+div.caption
+{
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+    font-family: 微软雅黑;
+    font-size: 32px;
+    padding-left: 20px;
+    text-align: left;
+    background-color: #62B0FF;
+    z-index: 9999;
+}
+
+div.yyToolBar
+{
+    border: 1px solid #b8d0d6;
+    padding: 5px;
+    text-align:left;
+}

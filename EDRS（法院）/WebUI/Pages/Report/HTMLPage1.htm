@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>图标展示</title>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="height:400px"></div>
+    <!-- ECharts单文件引入 -->
+    <script src="/Scripts/Charts/build/dist/echarts-all.js"></script>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+        var option = {
+            title: { text: '卷宗制作工作量统计', subtext: '按人员' }, calculable: true,
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                    type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            legend: {
+                data: ['销量','库存']
+            },
+            xAxis: [
+                {
+                    type: 'category',
+                    data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value'
+                }
+            ],
+                series: [
+                {
+                    "name": "销量",
+                    "type": "bar", stack: '总量',
+                    itemStyle: { normal: { label: { show: true, position: 'insideTop'}} },
+                    "data": [5, 20, 40, 10, 10, 20]
+                }, {
+                    "name": "库存",
+                    "type": "bar", 
+                    stack: '总量',
+                    itemStyle: { normal: { label: { show: true, position: 'insideTop'}} },
+            
+                    "data": [50, 200, 400, 100, 100, 200]
+                }
+            ]
+        };
+        myChart.setOption(option); 
+    </script>
+</body>

@@ -1,0 +1,116 @@
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.OracleDAL.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.OracleDAL.pdb
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Common.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.DBUtility.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.IDAL.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Model.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\ZC57s.CaseInfoServ.DigitalDossier.ICInterface.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\OpenSmtp.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\Newtonsoft.Json.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\ExcelLibrary.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\NPOI.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\COM.Excel.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\Ice.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\Yy.DownElectronicFile.IceBase.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\Yy.DownElectronicFile.TranInterface.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\MySql.Data.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\IceBox.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\IceStorm.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\IceGrid.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\Glacier2.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Common.pdb
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.DBUtility.pdb
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.IDAL.pdb
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Model.pdb
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\IceStorm.pdb
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\bin\Debug\IceStorm.xml
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\obj\Debug\OracleDAL.csprojResolveAssemblyReference.cache
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\obj\Debug\EDRS.OracleDAL.dll
+F:\公司文件\DZJZ 10-24\GA\EDRS(派出所)\OracleDAL\obj\Debug\EDRS.OracleDAL.pdb
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.OracleDAL.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.OracleDAL.pdb
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Common.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.DBUtility.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.IDAL.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Model.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\ZC57s.CaseInfoServ.DigitalDossier.ICInterface.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\ExcelLibrary.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\NPOI.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\Ice.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\Yy.DownElectronicFile.IceBase.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\Yy.DownElectronicFile.TranInterface.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\OpenSmtp.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\COM.Excel.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\Newtonsoft.Json.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\MySql.Data.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\IceBox.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\IceStorm.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\IceGrid.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\Glacier2.dll
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Common.pdb
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.DBUtility.pdb
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.IDAL.pdb
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Model.pdb
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\IceStorm.pdb
+E:\GA\EDRS(派出所)\OracleDAL\bin\Debug\IceStorm.xml
+E:\GA\EDRS(派出所)\OracleDAL\obj\Debug\OracleDAL.csprojResolveAssemblyReference.cache
+E:\GA\EDRS(派出所)\OracleDAL\obj\Debug\EDRS.OracleDAL.dll
+E:\GA\EDRS(派出所)\OracleDAL\obj\Debug\EDRS.OracleDAL.pdb
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.OracleDAL.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.OracleDAL.pdb
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Common.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.DBUtility.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.IDAL.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Model.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\ZC57s.CaseInfoServ.DigitalDossier.ICInterface.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\Newtonsoft.Json.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\COM.Excel.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\ExcelLibrary.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\NPOI.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\OpenSmtp.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\Ice.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\Yy.DownElectronicFile.IceBase.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\Yy.DownElectronicFile.TranInterface.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\MySql.Data.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\IceBox.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\IceStorm.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\IceGrid.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\Glacier2.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Common.pdb
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.DBUtility.pdb
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.IDAL.pdb
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Model.pdb
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\IceStorm.pdb
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\bin\Debug\IceStorm.xml
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\obj\Debug\OracleDAL.csprojResolveAssemblyReference.cache
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\obj\Debug\EDRS.OracleDAL.dll
+D:\DZJZ Work\GA\EDRS(派出所)\OracleDAL\obj\Debug\EDRS.OracleDAL.pdb
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.OracleDAL.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.OracleDAL.pdb
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Common.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.DBUtility.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.IDAL.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Model.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\ZC57s.CaseInfoServ.DigitalDossier.ICInterface.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\ExcelLibrary.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\NPOI.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\COM.Excel.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\OpenSmtp.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\Newtonsoft.Json.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\Ice.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\Yy.DownElectronicFile.IceBase.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\Yy.DownElectronicFile.TranInterface.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\MySql.Data.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\IceBox.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\IceStorm.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\IceGrid.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\Glacier2.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Common.pdb
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.DBUtility.pdb
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.IDAL.pdb
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\EDRS.Model.pdb
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\IceStorm.pdb
+D:\DZJZ\EDRS(派出所)\OracleDAL\bin\Debug\IceStorm.xml
+D:\DZJZ\EDRS(派出所)\OracleDAL\obj\Debug\OracleDAL.csprojResolveAssemblyReference.cache
+D:\DZJZ\EDRS(派出所)\OracleDAL\obj\Debug\EDRS.OracleDAL.dll
+D:\DZJZ\EDRS(派出所)\OracleDAL\obj\Debug\EDRS.OracleDAL.pdb
